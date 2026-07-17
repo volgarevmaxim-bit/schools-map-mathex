@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# OS cruft
+Thumbs.db
+.DS_Store
+
+# Intermediate / raw data (not final deliverables)
+PowerShellRaw/
+ScreenShots/
+candidate_cards/
+forbes_cards/
+forbes_search/
+scraper/
+school_pages/
+yandex_pages/
+*.html
+*.json
+Готово*.txt
