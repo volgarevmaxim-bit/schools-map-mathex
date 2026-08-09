@@ -399,5 +399,35 @@
     "lat": 55.66282,
     "lon": 37.5589,
     "associated_school": "Газпром школа"
+  },
+  {
+    "id": "school-lit-1533-lomonosovsky",
+    "name": "Лицей №1533 (информационных технологий) — главное здание",
+    "entity": "school",
+    "kind": "red",
+    "address": "Москва, Ломоносовский проспект, 16",
+    "lat": 55.6923,
+    "lon": 37.5437,
+    "website": "https://www.lit.msu.ru/"
+  },
+  {
+    "id": "school-lit-1533-profsoyuznaya",
+    "name": "Лицей №1533 (информационных технологий) — здание 5–8 классов",
+    "entity": "school",
+    "kind": "red",
+    "address": "Москва, Профсоюзная улица, 24к4",
+    "lat": 55.6908,
+    "lon": 37.5584,
+    "website": "https://www.lit.msu.ru/"
+  },
+  {
+    "id": "school-lit-1533-krzhizhanovskogo",
+    "name": "Лицей №1533 (информационных технологий) — здание 3–4 классов",
+    "entity": "school",
+    "kind": "red",
+    "address": "Москва, улица Кржижановского, 4А",
+    "lat": 55.68145,
+    "lon": 37.56054,
+    "website": "https://www.lit.msu.ru/"
   }
 ]
