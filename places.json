@@ -6,7 +6,8 @@
     "kind": "red",
     "address": "Малый Знаменский пер., 7/10с5, Москва",
     "lat": 55.74862,
-    "lon": 37.60499
+    "lon": 37.60499,
+    "group": "Школа №57"
   },
   {
     "id": "school-московская-гимназия-на-юго-западе-1543-им-ю-в-завельского",
@@ -15,7 +16,8 @@
     "kind": "red",
     "address": "ул. 26 Бакинских Комиссаров, 3, корп. 5, Москва",
     "lat": 55.65606,
-    "lon": 37.48618
+    "lon": 37.48618,
+    "group": "Московская гимназия на Юго-Западе №1543 им. Ю. В. Завельского"
   },
   {
     "id": "school-школа-1514",
@@ -24,7 +26,8 @@
     "kind": "red",
     "address": "улица Академика Челомея, 6А",
     "lat": 55.66314,
-    "lon": 37.53269
+    "lon": 37.53269,
+    "group": "Школа №1514"
   },
   {
     "id": "school-курчатовская-школа",
@@ -33,7 +36,8 @@
     "kind": "red",
     "address": "улица Паршина, 39",
     "lat": 55.78792,
-    "lon": 37.45006
+    "lon": 37.45006,
+    "group": "Курчатовская школа"
   },
   {
     "id": "school-лицей-вторая-школа-им-в-ф-овчинникова",
@@ -42,7 +46,8 @@
     "kind": "red",
     "address": "ул. Фотиевой, 18, Москва",
     "lat": 55.69799,
-    "lon": 37.55644
+    "lon": 37.55644,
+    "group": "Лицей «Вторая школа» им. В. Ф. Овчинникова"
   },
   {
     "id": "school-школа-179",
@@ -51,7 +56,8 @@
     "kind": "red",
     "address": "ул. Большая Дмитровка, 5/6с7, Москва",
     "lat": 55.75965,
-    "lon": 37.61473
+    "lon": 37.61473,
+    "group": "Школа №179"
   },
   {
     "id": "school-бауманская-инженерная-школа-1580",
@@ -60,7 +66,8 @@
     "kind": "red",
     "address": "Балаклавский просп., 6А, Москва",
     "lat": 55.64153,
-    "lon": 37.61307
+    "lon": 37.61307,
+    "group": "Бауманская инженерная школа №1580"
   },
   {
     "id": "school-школа-центра-педагогического-мастерства-цпм",
@@ -69,7 +76,8 @@
     "kind": "red",
     "address": "Москва, Олимпийский проспект, 11с1",
     "lat": 55.78949,
-    "lon": 37.62188
+    "lon": 37.62188,
+    "group": "Школа Центра педагогического мастерства (ЦПМ)"
   },
   {
     "id": "school-школа-1535",
@@ -78,7 +86,8 @@
     "kind": "red",
     "address": "Усачёва ул., 50, Москва",
     "lat": 55.72581,
-    "lon": 37.56494
+    "lon": 37.56494,
+    "group": "Школа №1535"
   },
   {
     "id": "school-школа-548-царицыно",
@@ -87,7 +96,8 @@
     "kind": "blue",
     "address": "Москва, Ереванская улица, 33",
     "lat": 55.62942,
-    "lon": 37.67293
+    "lon": 37.67293,
+    "group": "Школа №548 «Царицыно»"
   },
   {
     "id": "school-лицей-ниу-вшэ",
@@ -96,7 +106,8 @@
     "kind": "red",
     "address": "Москва, Большой Харитоньевский переулок, 4, стр. 1",
     "lat": 55.76364,
-    "lon": 37.64392
+    "lon": 37.64392,
+    "group": "Лицей НИУ ВШЭ"
   },
   {
     "id": "school-сунц-мгу",
@@ -105,7 +116,8 @@
     "kind": "red",
     "address": "Москва, Проектируемый 5186-й проезд",
     "lat": 55.71907,
-    "lon": 37.46482
+    "lon": 37.46482,
+    "group": "СУНЦ МГУ"
   },
   {
     "id": "school-школа-интеллектуал",
@@ -114,7 +126,8 @@
     "kind": "red",
     "address": "Кременчугская ул., 11, стр. 4, Москва",
     "lat": 55.71817,
-    "lon": 37.46446
+    "lon": 37.46446,
+    "group": "Школа «Интеллектуал»"
   },
   {
     "id": "school-школа-пансион-летово",
@@ -123,7 +136,8 @@
     "kind": "red",
     "address": "Москва, Зимёнковская улица, 3",
     "lat": 55.55754,
-    "lon": 37.42267
+    "lon": 37.42267,
+    "group": "Школа-пансион «Летово»"
   },
   {
     "id": "school-школа-президент",
@@ -132,7 +146,8 @@
     "kind": "green",
     "address": "Московская область, деревня Жуковка, Ильинский подъезд, 2с1–4",
     "lat": 55.7363,
-    "lon": 37.22625
+    "lon": 37.22625,
+    "group": "Школа «Президент»"
   },
   {
     "id": "school-brookes-moscow-international-school",
@@ -141,7 +156,8 @@
     "kind": "green",
     "address": "Москва, Лазоревый проезд, 7",
     "lat": 55.84806,
-    "lon": 37.63383
+    "lon": 37.63383,
+    "group": "Brookes Moscow International School"
   },
   {
     "id": "school-cambridge-international-school",
@@ -150,7 +166,8 @@
     "kind": "green",
     "address": "Москва, Фестивальная улица, 7а",
     "lat": 55.85576,
-    "lon": 37.47373
+    "lon": 37.47373,
+    "group": "Cambridge International School"
   },
   {
     "id": "school-mcs-school-magic-castle-school",
@@ -159,7 +176,8 @@
     "kind": "green",
     "address": "Москва, переулок Чернышевского, 4, стр. 1",
     "lat": 55.7683,
-    "lon": 37.6107
+    "lon": 37.6107,
+    "group": "MCS School / Magic Castle School"
   },
   {
     "id": "school-европейская-гимназия",
@@ -168,7 +186,8 @@
     "kind": "green",
     "address": "Москва, улица Сокольнический Вал, 28",
     "lat": 55.79107,
-    "lon": 37.66788
+    "lon": 37.66788,
+    "group": "Европейская гимназия"
   },
   {
     "id": "school-школа-интеграция-xxi-век",
@@ -177,16 +196,8 @@
     "kind": "blue",
     "address": "Москва, улица Маршала Катукова, 16к1",
     "lat": 55.80719,
-    "lon": 37.40571
-  },
-  {
-    "id": "school-хорошкола",
-    "name": "Хорошкола",
-    "entity": "school",
-    "kind": "green",
-    "address": "Москва, улица Маршала Тухачевского, 45к2",
-    "lat": 55.78402,
-    "lon": 37.4661
+    "lon": 37.40571,
+    "group": "Школа «Интеграция XXI век»"
   },
   {
     "id": "school-новая-школа",
@@ -195,7 +206,8 @@
     "kind": "green",
     "address": "Москва, Мосфильмовская улица, 88к5",
     "lat": 55.70484,
-    "lon": 37.49031
+    "lon": 37.49031,
+    "group": "Новая школа"
   },
   {
     "id": "school-школа-золотое-сечение",
@@ -204,7 +216,8 @@
     "kind": "green",
     "address": "Москва, Ленинский проспект, 13а",
     "lat": 55.72194,
-    "lon": 37.60358
+    "lon": 37.60358,
+    "group": "Школа «Золотое сечение»"
   },
   {
     "id": "school-wunderpark-international-school",
@@ -213,7 +226,8 @@
     "kind": "green",
     "address": "Московская область, деревня Борзые, 1",
     "lat": 55.82214,
-    "lon": 37.05646
+    "lon": 37.05646,
+    "group": "Wunderpark International School"
   },
   {
     "id": "school-тор-it-school",
@@ -222,7 +236,8 @@
     "kind": "blue",
     "address": "Москва, улица Покрышкина, 8 к1",
     "lat": 55.6589,
-    "lon": 37.49
+    "lon": 37.49,
+    "group": "ТОР IT SCHOOL"
   },
   {
     "id": "school-павловская-гимназия",
@@ -231,16 +246,8 @@
     "kind": "green",
     "address": "Московская область, деревня Веледниково, Живописная улица, 136",
     "lat": 55.80143,
-    "lon": 37.12611
-  },
-  {
-    "id": "school-ломоносовская-школа",
-    "name": "Ломоносовская школа",
-    "entity": "school",
-    "kind": "green",
-    "address": "Москва, Аминьевское шоссе, 18к4",
-    "lat": 55.71447,
-    "lon": 37.456
+    "lon": 37.12611,
+    "group": "Павловская гимназия"
   },
   {
     "id": "school-газпром-школа",
@@ -249,7 +256,8 @@
     "kind": "green",
     "address": "Москва, Новочерёмушкинская улица, 66",
     "lat": 55.66282,
-    "lon": 37.5589
+    "lon": 37.5589,
+    "group": "Газпром школа"
   },
   {
     "id": "school-французский-лицей-имени-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas",
@@ -258,7 +266,8 @@
     "kind": "green",
     "address": "Москва, Милютинский переулок, 7А",
     "lat": 55.7653,
-    "lon": 37.63
+    "lon": 37.63,
+    "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
   },
   {
     "id": "kindergarten-детский-сад-школы-президент",
@@ -268,17 +277,8 @@
     "address": "Жуковка, Ильинский подъезд, 2",
     "lat": 55.7363,
     "lon": 37.22625,
-    "associated_school": "Школа «Президент»"
-  },
-  {
-    "id": "kindergarten-дошкольное-отделение-школы-президент",
-    "name": "Дошкольное отделение школы «Президент»",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "Жуковка, Ильинский подъезд, 2",
-    "lat": 55.7363,
-    "lon": 37.22625,
-    "associated_school": "Школа «Президент»"
+    "associated_school": "Школа «Президент»",
+    "group": "Школа «Президент»"
   },
   {
     "id": "kindergarten-brookes-moscow-early-years-pre-nursery-и-nursery",
@@ -288,7 +288,8 @@
     "address": "Москва, Лазоревый проезд, 7",
     "lat": 55.84806,
     "lon": 37.63383,
-    "associated_school": "Brookes Moscow International School"
+    "associated_school": "Brookes Moscow International School",
+    "group": "Brookes Moscow International School"
   },
   {
     "id": "kindergarten-дошкольные-группы-cambridge-international-school",
@@ -298,7 +299,8 @@
     "address": "Москва, Фестивальная улица, 7а",
     "lat": 55.85576,
     "lon": 37.47373,
-    "associated_school": "Cambridge International School"
+    "associated_school": "Cambridge International School",
+    "group": "Cambridge International School"
   },
   {
     "id": "kindergarten-английский-детский-сад-mcs-school",
@@ -308,7 +310,8 @@
     "address": "Москва, переулок Чернышевского, 4, стр. 1",
     "lat": 55.7683,
     "lon": 37.6107,
-    "associated_school": "MCS School / Magic Castle School"
+    "associated_school": "MCS School / Magic Castle School",
+    "group": "MCS School / Magic Castle School"
   },
   {
     "id": "kindergarten-детский-сад-европейской-гимназии-в-сокольниках",
@@ -318,7 +321,8 @@
     "address": "Москва, Старослободский переулок",
     "lat": 55.79114,
     "lon": 37.66828,
-    "associated_school": "Европейская гимназия"
+    "associated_school": "Европейская гимназия",
+    "group": "Европейская гимназия"
   },
   {
     "id": "kindergarten-детский-сад-павловской-гимназии",
@@ -328,27 +332,8 @@
     "address": "деревня Веледниково, Живописная улица, 136",
     "lat": 55.80143,
     "lon": 37.12611,
-    "associated_school": "Павловская гимназия"
-  },
-  {
-    "id": "kindergarten-дошкольное-отделение-ломоносовской-школы-включая-нулевой-класс",
-    "name": "Дошкольное отделение Ломоносовской школы, включая «нулевой класс»",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "Москва, Кутузовский проспект, 24А",
-    "lat": 55.74507,
-    "lon": 37.54498,
-    "associated_school": "Ломоносовская школа"
-  },
-  {
-    "id": "kindergarten-детский-сад-хорошколы",
-    "name": "Детский сад Хорошколы",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "Москва, улица Маршала Тухачевского, 45к2",
-    "lat": 55.78402,
-    "lon": 37.4661,
-    "associated_school": "Хорошкола"
+    "associated_school": "Павловская гимназия",
+    "group": "Павловская гимназия"
   },
   {
     "id": "kindergarten-дошкольное-отделение-новой-школы",
@@ -358,7 +343,8 @@
     "address": "Москва, Мосфильмовская улица, 88к5",
     "lat": 55.70484,
     "lon": 37.49031,
-    "associated_school": "Новая школа"
+    "associated_school": "Новая школа",
+    "group": "Новая школа"
   },
   {
     "id": "kindergarten-детский-сад-и-начальная-школа-радуга-при-золотом-сечении",
@@ -368,7 +354,8 @@
     "address": "Москва, Ленинский проспект",
     "lat": 55.72194,
     "lon": 37.60358,
-    "associated_school": "Школа «Золотое сечение»"
+    "associated_school": "Школа «Золотое сечение»",
+    "group": "Школа «Золотое сечение»"
   },
   {
     "id": "kindergarten-дошкольное-отделение-wunderpark",
@@ -378,7 +365,8 @@
     "address": "деревня Борзые, 1",
     "lat": 55.82214,
     "lon": 37.05646,
-    "associated_school": "Wunderpark International School"
+    "associated_school": "Wunderpark International School",
+    "group": "Wunderpark International School"
   },
   {
     "id": "kindergarten-детский-сад-при-французском-лицее-имени-а-дюма",
@@ -388,7 +376,8 @@
     "address": "Москва, Милютинский переулок, 7А",
     "lat": 55.7653,
     "lon": 37.63,
-    "associated_school": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
+    "associated_school": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)",
+    "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
   },
   {
     "id": "kindergarten-дошкольное-отделение-газпром-школы",
@@ -398,7 +387,8 @@
     "address": "Москва, Новочерёмушкинская улица, 66; доступность детям сотрудников уточнять напрямую",
     "lat": 55.66282,
     "lon": 37.5589,
-    "associated_school": "Газпром школа"
+    "associated_school": "Газпром школа",
+    "group": "Газпром школа"
   },
   {
     "id": "school-lit-1533-lomonosovsky",
@@ -408,7 +398,8 @@
     "address": "Москва, Ломоносовский проспект, 16",
     "lat": 55.6923,
     "lon": 37.5437,
-    "website": "https://www.lit.msu.ru/"
+    "website": "https://www.lit.msu.ru/",
+    "group": "Лицей №1533 (ЛИТ)"
   },
   {
     "id": "school-lit-1533-profsoyuznaya",
@@ -418,7 +409,8 @@
     "address": "Москва, Профсоюзная улица, 24к4",
     "lat": 55.6908,
     "lon": 37.5584,
-    "website": "https://www.lit.msu.ru/"
+    "website": "https://www.lit.msu.ru/",
+    "group": "Лицей №1533 (ЛИТ)"
   },
   {
     "id": "school-lit-1533-krzhizhanovskogo",
@@ -428,6 +420,104 @@
     "address": "Москва, улица Кржижановского, 4А",
     "lat": 55.68145,
     "lon": 37.56054,
-    "website": "https://www.lit.msu.ru/"
+    "website": "https://www.lit.msu.ru/",
+    "group": "Лицей №1533 (ЛИТ)"
+  },
+  {
+    "id": "school-хорошкола-прогимназия",
+    "name": "Хорошкола — прогимназия (1–4 классы)",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, улица Народного Ополчения, 7А",
+    "lat": 55.78936,
+    "lon": 37.48188,
+    "notes": "Отдельное здание прогимназии.",
+    "source": "https://hi.horoshkola.ru/contacts",
+    "group": "Хорошкола"
+  },
+  {
+    "id": "school-хорошкола-гимназия",
+    "name": "Хорошкола — гимназия (5–11 классы)",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, улица Народного Ополчения, 9А",
+    "lat": 55.78949,
+    "lon": 37.48024,
+    "notes": "Отдельное здание гимназии.",
+    "source": "https://hi.horoshkola.ru/contacts",
+    "group": "Хорошкола"
+  },
+  {
+    "id": "kindergarten-хорошкола",
+    "name": "Детский сад Хорошколы",
+    "entity": "kindergarten",
+    "kind": "green",
+    "address": "Москва, улица Маршала Тухачевского, 45к2",
+    "lat": 55.78402,
+    "lon": 37.4661,
+    "associated_school": "Хорошкола",
+    "source": "https://hi.horoshkola.ru/contacts",
+    "group": "Хорошкола"
+  },
+  {
+    "id": "school-ломоносовская-начальная-москва",
+    "name": "Ломоносовская школа — начальная городская",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, Можайское шоссе, 31к2",
+    "lat": 55.72432,
+    "lon": 37.47168,
+    "associated_school": "Ломоносовская школа",
+    "source": "https://lomon.ru/school/map/",
+    "group": "Ломоносовская школа"
+  },
+  {
+    "id": "school-ломоносовская-аминьевское",
+    "name": "Ломоносовская школа — основная и старшая",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, Аминьевское шоссе, 18к4",
+    "lat": 55.71447,
+    "lon": 37.456,
+    "associated_school": "Ломоносовская школа",
+    "source": "https://lomon.ru/school/map/",
+    "group": "Ломоносовская школа"
+  },
+  {
+    "id": "school-ломоносовская-кременчугская",
+    "name": "Ломоносовская школа — корпус на Кременчугской",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, улица Кременчугская, 44к5",
+    "lat": 55.7181,
+    "lon": 37.4645,
+    "associated_school": "Ломоносовская школа",
+    "source": "https://lomon.ru/school/map/",
+    "group": "Ломоносовская школа"
+  },
+  {
+    "id": "kindergarten-ломоносовский-рублевка",
+    "name": "Ломоносовский детский сад на Рублевке",
+    "entity": "kindergarten",
+    "kind": "green",
+    "address": "Московская область, Одинцовский район, село Успенское, Советская улица, стр. 50",
+    "lat": 55.7009,
+    "lon": 37.1536,
+    "associated_school": "Ломоносовская школа",
+    "notes": "Официальная карта сети указывает отдельный загородный детский сад на Рублевке.",
+    "source": "https://lomon.ru/school/map/",
+    "group": "Ломоносовская школа"
+  },
+  {
+    "id": "school-mcs-polyanka",
+    "name": "MCS School — Polyanka",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, 1-й Хвостов переулок, 11с1",
+    "lat": 55.7359,
+    "lon": 37.6136,
+    "associated_school": "MCS School / Magic Castle School",
+    "source": "https://mcs-school.ru/",
+    "group": "MCS School — Polyanka"
   }
 ]
