@@ -130,16 +130,6 @@
     "group": "Школа «Интеллектуал»"
   },
   {
-    "id": "school-школа-пансион-летово",
-    "name": "Школа-пансион «Летово»",
-    "entity": "school",
-    "kind": "red",
-    "address": "Москва, Зимёнковская улица, 3",
-    "lat": 55.55754,
-    "lon": 37.42267,
-    "group": "Школа-пансион «Летово»"
-  },
-  {
     "id": "school-школа-президент",
     "name": "Школа «Президент»",
     "entity": "school",
@@ -519,5 +509,40 @@
     "associated_school": "MCS School / Magic Castle School",
     "source": "https://mcs-school.ru/",
     "group": "MCS School — Polyanka"
+  },
+  {
+    "id": "kindergarten-летово-кидс",
+    "name": "Детский сад «Летово Кидс»",
+    "entity": "kindergarten",
+    "kind": "green",
+    "address": "Москва, улица Дубининская, 59А",
+    "lat": 55.7182811,
+    "lon": 37.6360254,
+    "associated_school": "Школа-пансион «Летово»",
+    "group": "Летово",
+    "source": "https://letovo.ru/o-shkole/svedenia-ob-obrazovatelnoy-organizacii"
+  },
+  {
+    "id": "school-летово-джуниор",
+    "name": "«Летово Джуниор»",
+    "entity": "school",
+    "kind": "green",
+    "address": "Москва, Раменский бульвар, 1А, стр. 1",
+    "lat": 55.69795,
+    "lon": 37.5078,
+    "associated_school": "Школа-пансион «Летово»",
+    "group": "Летово",
+    "source": "https://letovo.ru/o-shkole/svedenia-ob-obrazovatelnoy-organizacii"
+  },
+  {
+    "id": "school-летово-пансион",
+    "name": "Школа-пансион «Летово» — основная школа",
+    "entity": "school",
+    "kind": "red",
+    "address": "Москва, район Коммунарка, улица Зимёнковская, 3",
+    "lat": 55.5574146,
+    "lon": 37.4222813,
+    "group": "Летово",
+    "source": "https://letovo.ru/o-shkole/svedenia-ob-obrazovatelnoy-organizacii"
   }
 ]
