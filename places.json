@@ -260,17 +260,6 @@
     "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
   },
   {
-    "id": "kindergarten-детский-сад-школы-президент",
-    "name": "Детский сад школы «Президент»",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "Жуковка, Ильинский подъезд, 2",
-    "lat": 55.7363,
-    "lon": 37.22625,
-    "associated_school": "Школа «Президент»",
-    "group": "Школа «Президент»"
-  },
-  {
     "id": "kindergarten-brookes-moscow-early-years-pre-nursery-и-nursery",
     "name": "Brookes Moscow Early Years: Pre-Nursery и Nursery",
     "entity": "kindergarten",
@@ -315,17 +304,6 @@
     "group": "Европейская гимназия"
   },
   {
-    "id": "kindergarten-детский-сад-павловской-гимназии",
-    "name": "Детский сад Павловской гимназии",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "деревня Веледниково, Живописная улица, 136",
-    "lat": 55.80143,
-    "lon": 37.12611,
-    "associated_school": "Павловская гимназия",
-    "group": "Павловская гимназия"
-  },
-  {
     "id": "kindergarten-дошкольное-отделение-новой-школы",
     "name": "Дошкольное отделение Новой школы",
     "entity": "kindergarten",
@@ -346,17 +324,6 @@
     "lon": 37.60358,
     "associated_school": "Школа «Золотое сечение»",
     "group": "Школа «Золотое сечение»"
-  },
-  {
-    "id": "kindergarten-дошкольное-отделение-wunderpark",
-    "name": "Дошкольное отделение Wunderpark",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "деревня Борзые, 1",
-    "lat": 55.82214,
-    "lon": 37.05646,
-    "associated_school": "Wunderpark International School",
-    "group": "Wunderpark International School"
   },
   {
     "id": "kindergarten-детский-сад-при-французском-лицее-имени-а-дюма",
@@ -482,19 +449,6 @@
     "lat": 55.7181,
     "lon": 37.4645,
     "associated_school": "Ломоносовская школа",
-    "source": "https://lomon.ru/school/map/",
-    "group": "Ломоносовская школа"
-  },
-  {
-    "id": "kindergarten-ломоносовский-рублевка",
-    "name": "Ломоносовский детский сад на Рублевке",
-    "entity": "kindergarten",
-    "kind": "green",
-    "address": "Московская область, Одинцовский район, село Успенское, Советская улица, стр. 50",
-    "lat": 55.7009,
-    "lon": 37.1536,
-    "associated_school": "Ломоносовская школа",
-    "notes": "Официальная карта сети указывает отдельный загородный детский сад на Рублевке.",
     "source": "https://lomon.ru/school/map/",
     "group": "Ломоносовская школа"
   },
