@@ -14,14 +14,15 @@
 `main` — исходники, `gh-pages` — опубликованный сайт. Pages публикует `gh-pages` / `/(root)`.
 
 ```text
-main:     будет обновлён после публикации описаний
-gh-pages: будет обновлён после публикации описаний
+main:     2a780b1 docs: enrich school descriptions and routes
+gh-pages: 801cfcf deploy: publish enriched school descriptions
 ```
 
 Последние коммиты:
 
 ```text
-ee29d4c docs: update handoff for next session
+2a780b1 docs: enrich school descriptions and routes
+801cfcf deploy: publish enriched school descriptions
 ```
 
 При следующем изменении: commit/push в `main`, затем отдельно обновить `gh-pages` и проверить live-файлы.
