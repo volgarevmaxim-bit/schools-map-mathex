@@ -14,14 +14,15 @@
 `main` — исходники, `gh-pages` — опубликованный сайт. Pages публикует `gh-pages` / `/(root)`.
 
 ```text
-main:     6a9c8f4 docs: record transit route research handoff
-gh-pages: будет обновлён после публикации handoff
+main:     4795b2d docs: update handoff ref
+gh-pages: dcd7216 deploy: publish route research handoff
 ```
 
 Последние коммиты:
 
 ```text
-6a9c8f4 docs: record transit route research handoff
+4795b2d docs: update handoff ref
+dcd7216 deploy: publish route research handoff
 ```
 
 При следующем изменении: commit/push в `main`, затем отдельно обновить `gh-pages` и проверить live-файлы.
