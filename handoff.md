@@ -1,6 +1,6 @@
 # Handoff — schools-map-mathex
 
-Дата обновления: 2026-08-12
+Дата обновления: 2026-08-13
 
 ## Проект
 
@@ -14,15 +14,14 @@
 `main` — исходники, `gh-pages` — опубликованный сайт. Pages публикует `gh-pages` / `/(root)`.
 
 ```text
-main:     d28d1954a2585d2b76798f804fc48fb866c62ffa
-gh-pages: 71aba937f97030ea3e7a0b132b7099e6bacbb400
+main:     будет обновлён после публикации описаний
+gh-pages: будет обновлён после публикации описаний
 ```
 
 Последние коммиты:
 
 ```text
-d28d195 fix: simplify tracks and remove Gazprom entries
-71aba93 deploy: publish track and Gazprom updates
+ee29d4c docs: update handoff for next session
 ```
 
 При следующем изменении: commit/push в `main`, затем отдельно обновить `gh-pages` и проверить live-файлы.
@@ -83,7 +82,7 @@ Dropdown «Обзор» показывает:
 Текущий токен:
 
 ```text
-tracks-gazprom-edge-20260812-1
+school-descriptions-20260813-1
 ```
 
 Он используется для `app.js`, `places.json` и `schools_content.json`. При следующем runtime-изменении меняй этот токен и query-параметр script URL.
