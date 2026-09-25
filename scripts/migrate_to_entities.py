@@ -315,6 +315,7 @@ for e in entities:
     sch = [p for p in pts if p['entity'] != 'kindergarten']
     if kg and sch:
         e['points'] = sch
+        e['address_normalized'] = norm_addr(sch[0]['address'])  # адрес был посчитан до сплита
         for p in kg:
             child = OrderedDict()
             child['id'] = unique_id(slugify(p['name']))
