@@ -1,6 +1,6 @@
 # AUDIT HANDOFF — schools-map-mathex: аудит (Фаза А)
 
-**Дата:** 2026-09-25. **Статус: Фаза А (Gate 1 ✓) и Фаза Б выполнены. REVIEW_KIND.md закрыт владельцем 2026-09-25 (Q2: blue = «приём с 1 класса в принципе»). Осталось: merge `refactor/canon` → main (по команде владельца) + обновление gh-pages.**
+**Дата:** 2026-09-25. **Статус: ЗАВЕРШЕНО. Фаза А (Gate 1 ✓) + Фаза Б (REVIEW_KIND закрыт 2026-09-25 ✓) влиты в main: merge `bacc480`, gh-pages синхронна `4910b87` (runtime байт-идентичен, live проверен). Снапшот openhouse-radar обновлён (@4196161): entities.json + CSV + places.json, SHA в data/raw/UPSTREAM.md.**
 **Ветка:** `audit/phase-a` (read-only аудит; main не тронут). Снапшот: `main @830f792` = актуальный origin/main.
 **Имя файла:** сознательно `AUDIT_HANDOFF.md` (не `HANDOFF.md`) — в репо уже живёт runtime-файл `handoff.md`, и на case-insensitive Windows FS имена конфликтуют.
 
