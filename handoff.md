@@ -31,11 +31,23 @@ dcd7216 deploy: publish route research handoff
 
 - `index.html` — оболочка, карта, навигация, разделы;
 - `app.js` — Leaflet, popup, фильтры, dropdown траекторий, скрытие/восстановление;
-- `places.json` — канонические физические точки карты;
+- `places.json` — физические точки карты (**генерируется** из канона, не редактировать руками);
 - `schools_content.json` — редакционные записи и `place_ids`;
+- `data/entities.json` — **канонический реестр** сущностей (73): школы/сады, точки, kind+kind_source; источник places.json и schools_normalized.csv;
+- `scripts/build_all.py` — генерация places.json + schools_normalized.csv из канона (идемпотентно);
+- `scripts/validate.py` — валидация канона и байт-синхронности артефактов;
+- `REVIEW_KIND.md` — пачка ревью меток kind (ожидает владельца);
 - `handoff.md` — этот файл.
 
-Старые Markdown/GeoJSON/CSV/XLSX не определяют текущий runtime-состав.
+Старые Markdown/GeoJSON/CSV/XLSX перемещены в `attic/` (в runtime не участвуют).
+Дата-флоу описан в README.md. Аудит Фазы А — AUDIT.md.
+
+## Канонический дата-флоу (Фаза Б, 2026-09-25)
+
+`data/entities.json` → `python scripts/build_all.py` → `places.json` + `schools_normalized.csv`;
+`python scripts/validate.py` — зелёный перед каждым коммитом. Downstream openhouse-radar
+берёт сущности (`id, name, address, kind, kind_source`) из канона; пока REVIEW_KIND.md
+не отревьюен, метки blue считаются предварительными (kind_source фиксирует происхождение).
 
 ## Текущий состав
 
@@ -110,6 +122,7 @@ school-descriptions-20260813-1
 node --check app.js
 python -m json.tool places.json > /dev/null
 python -m json.tool schools_content.json > /dev/null
+python scripts/validate.py
 git diff --check
 ```
 
