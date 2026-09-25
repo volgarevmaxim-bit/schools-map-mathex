@@ -18,4 +18,5 @@ yandex_pages/
 *.json
 !places.json
 !schools_content.json
+!data/entities.json
 Готово*.txt
