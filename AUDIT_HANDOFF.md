@@ -48,3 +48,22 @@
 **Итог канона:** 84 сущности — blue=22, red=53, green=9; 69/69 csv-строк; 45/45 точек; validate.py зелёный (включая parent_id); build_all идемпотентен (0 diff); runtime-файлы байт-идентичны main.
 
 **Дальше:** merge `refactor/canon` → main по команде владельца; обновление gh-pages; радар обновляет снапшот (§6.4).
+
+---
+
+## Приёмка ТЗ (§8) — трассировка критерий → evidence
+
+ТЗ: `C:\Users\volga\Downloads\ТЗ_аудит_schools-map-mathex_v1.md` (копия: `C:\Users\volga\openhouse-radar\docs\`).
+
+| # | Критерий §8 | Статус | Evidence |
+|---|---|---|---|
+| 1 | AUDIT.md пройден ревью владельца (Gate 1) | ✅ 2026-09-25 | Gate 1 принят владельцем (команда «ок»); отчёт: `AUDIT.md` |
+| 2 | Канон: 0 без kind, 0 без kind_source, 0 дублей; validate зелёный | ✅ | `data/entities.json`: 84 сущности (blue=22, red=53, green=9), kind_source у 100%; `scripts/validate.py` = OK (уникальность id/имён, точки↔сущности 1:1, parent_id) |
+| 3 | build_all.py: повторный запуск = 0 diff | ✅ | двойной прогон + `git status` пуст; md5 артефактов до/после идентичны; байт-формат places.json/CSV расшифрован в докстринге скрипта |
+| 4 | Каждый живой артефакт — один источник и один производитель | ✅ | README «Дата-флоу»: канон → build_all.py → places.json + schools_normalized.csv; validate.py ловит правки мимо канона (байт-сверка) |
+| 5 | Контракт радара §6: ≥90% blue матчингом имени+адреса; снапшот обновлён | ✅ с превышением | вместо матчинга — готовый реестр: 22 blue-сущности с нормализованным адресом и kind_source (матчинг для Этапа 1 больше не нужен); снапшот радара @4196161: `data/raw/` = entities.json + CSV + places.json, SHA/md5 в `data/raw/UPSTREAM.md` |
+| 6 | Один handoff, README соответствует реальности, зоны ответственности описаны | ✅ | `handoff.md` — канонический (дубль в attic/); README «Дата-флоу» + «Метки kind»; зоны скриптов — в README и докстрингах |
+
+**Решения Q1–Q7 (§7):** Q1 — вселенная = 84 сущности (68 CSV с дедупом + map-only); Q2 — blue = «приём с 1 класса в принципе» (владелец, 2026-09-25); Q3 — kind на сущности, точки наследуют; детсад-программы — отдельные green-сущности с parent_id; Q4 — зомби → attic/ (реверсибельно), канонический handoff = handoff.md; Q5 — новые slug-id, старые id сохранены в csv_rows/points; Q6 — validate.py CI-ready (exit 1), Action не подключён (по решению владельца, backlog); Q7 — счётчик «43» не восстанавливался, валидатор без магических чисел.
+
+**SHA:** main @d4817ec (merge @bacc480) · gh-pages @4910b87 · радар @4196161 · ветки audit/phase-a, refactor/canon (pushed, влиты).
