@@ -1,6 +1,6 @@
 # AUDIT HANDOFF — schools-map-mathex: аудит (Фаза А)
 
-**Дата:** 2026-09-25. **Статус: Фаза А завершена — ожидает Gate 1 (ревью владельцем AUDIT.md).**
+**Дата:** 2026-09-25. **Статус: Фаза А выполнена (Gate 1 принят владельцем 2026-09-25). Фаза Б выполнена в ветке `refactor/canon` — ожидает Gate 2 (ревью владельцем: REVIEW_KIND.md + merge).**
 **Ветка:** `audit/phase-a` (read-only аудит; main не тронут). Снапшот: `main @830f792` = актуальный origin/main.
 **Имя файла:** сознательно `AUDIT_HANDOFF.md` (не `HANDOFF.md`) — в репо уже живёт runtime-файл `handoff.md`, и на case-insensitive Windows FS имена конфликтуют.
 
@@ -30,3 +30,17 @@
 1. Владелец читает AUDIT.md → Gate 1.
 2. После «ок» — Фаза Б по ТЗ §5 (entities.json, backfill kind, build_all.py, validate.py, чистка) в feature-ветке; решения по Q1–Q7 (сводка: AUDIT.md, раздел «Входы для Фазы Б»).
 3. Радар остаётся в паркинге до завершения Фазы Б.
+
+---
+
+## Фаза Б (2026-09-25, ветка refactor/canon, pushed)
+
+- `data/entities.json` — канон: **73 сущности** (68 из CSV с дедупом ЦПМ×2 и кластеризацией Ломоносовской×3 + 8 map-only групп, MCS Polyanka слита по associated_school), 69/69 csv-строк, 45/45 точек.
+- `scripts/build_all.py` — places.json + schools_normalized.csv из канона, байт-идентично (md5 verified), идемпотентно (0 diff).
+- `scripts/validate.py` — зелёный: схема, уникальность, покрытие, синхронность канон↔артефакты, place_ids контента.
+- Backfill kind: blue=19 / red=54 по правилам (текст приёма с 1 класса из schools_content.table, NEG-aware; legacy BLUE-хардкод; kindergarten→green). У каждой сущности kind_source.
+- `REVIEW_KIND.md` — пачка из 20 позиций на ревью владельца (Gate 2).
+- Зомби-артефакты → `attic/` (реверсибельно), README/handoff актуализированы.
+- runtime-файлы (index.html, app.js, places.json, schools_content.json) байт-идентичны main.
+
+**Дальше:** 1) владелец ревьюит REVIEW_KIND.md (и решает Q2: «blue в принципе» vs «blue 2026/27»); 2) метки фиксируются в каноне (kind_source: manual review); 3) merge refactor/canon → main; 4) радар обновляет снапшот (§6.4).
