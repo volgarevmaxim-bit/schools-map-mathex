@@ -135,7 +135,7 @@
       "name_normalized": "лицей no 1533 лит",
       "address_normalized": "ломоносовский пр 16",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-lit-1533-lomonosovsky",
@@ -194,10 +194,10 @@
       "name": "Бауманская инженерная школа №1580",
       "name_normalized": "бауманская инженерная школа no 1580",
       "address_normalized": "балаклавский просп 6а",
-      "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Бауманская инженерная школа №1580 in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Набор с 1 класса и переходы в профильные классы зависят от корпуса и кампании; т…» указывает приём с 1 класса, точки kind=red"
+        "точки хранят legacy kind (цвета живой карты): school-бауманская-инженерная-школа-1580=red; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -235,7 +235,7 @@
       "name_normalized": "школа интеллектуал",
       "address_normalized": "кременчугская ул 11 стр 4",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-школа-интеллектуал",
@@ -271,10 +271,10 @@
       "name": "Летово",
       "name_normalized": "летово",
       "address_normalized": "ул дубининская 59а",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (primary point; конфликт)",
+      "kind": "red",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "kind_review": [
-        "точки расходятся в kind: kindergarten-летово-кидс=green, school-летово-джуниор=green, school-летово-пансион=red"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-летово-кидс=green, school-летово-джуниор=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -336,8 +336,11 @@
       "name": "Школа №1535",
       "name_normalized": "школа no 1535",
       "address_normalized": "усачева ул 50",
-      "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Школа №1535 in schools_content.table @830f792)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): school-школа-1535=red; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-школа-1535",
@@ -374,7 +377,7 @@
       "name_normalized": "московская гимназия на юго западе no 1543 ю в завельского",
       "address_normalized": "ул 26 бакинских комиссаров 3к 5",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-московская-гимназия-на-юго-западе-1543-им-ю-в-завельского",
@@ -411,7 +414,7 @@
       "name_normalized": "школа no 179",
       "address_normalized": "ул большая дмитровка 5/6с7",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-школа-179",
@@ -448,7 +451,7 @@
       "name_normalized": "школа 2007",
       "address_normalized": "ул горчакова 9к 1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -473,11 +476,10 @@
       "name": "Школа №57",
       "name_normalized": "школа no 57",
       "address_normalized": "малый знаменский пер 7/10с5",
-      "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Школа №57 in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «1 класс по общему московскому порядку, территориальный принцип. Профильная «наст…» указывает приём с 1 класса, точки kind=red",
-        "R2: legacy BLUE-хардкод (Школа 57), точки kind=red"
+        "точки хранят legacy kind (цвета живой карты): school-школа-57=red; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -515,7 +517,7 @@
       "name_normalized": "школа центра педагогического мастерства цпм",
       "address_normalized": "олимпийский пр 11с1",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-школа-центра-педагогического-мастерства-цпм",
@@ -565,7 +567,7 @@
       "name_normalized": "лицей воробьевы горы",
       "address_normalized": "донская ул 37",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -591,7 +593,7 @@
       "name_normalized": "лицей вторая школа в ф овчинникова",
       "address_normalized": "ул фотиевой 18",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-лицей-вторая-школа-им-в-ф-овчинникова",
@@ -628,7 +630,7 @@
       "name_normalized": "университетская гимназия мгу",
       "address_normalized": "ломоносовский пр 27к 7",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -654,7 +656,7 @@
       "name_normalized": "школа 1568 пабло неруды",
       "address_normalized": "пр шокальского 7к 2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -680,7 +682,7 @@
       "name_normalized": "школа 1534",
       "address_normalized": "ул кедрова 11а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -705,11 +707,10 @@
       "name": "Школа №1514",
       "name_normalized": "школа no 1514",
       "address_normalized": "ул академика челомея 6а",
-      "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Школа №1514 in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Есть набор в 1 класс; отдельный набор/добор возможен во 2–11 классы, в том числе…» указывает приём с 1 класса, точки kind=red",
-        "R2: legacy BLUE-хардкод (Школа 1514), точки kind=red"
+        "точки хранят legacy kind (цвета живой карты): school-школа-1514=red; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -746,11 +747,10 @@
       "name": "Курчатовская школа",
       "name_normalized": "курчатовская школа",
       "address_normalized": "ул паршина 39",
-      "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Курчатовская школа in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Принимает с 1 класса; профильный переход и набор в инженерные/медицинские классы…» указывает приём с 1 класса, точки kind=red",
-        "R2: legacy BLUE-хардкод (Курчатовская школа), точки kind=red"
+        "точки хранят legacy kind (цвета живой карты): school-курчатовская-школа=red; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -788,7 +788,7 @@
       "name_normalized": "силаэдр",
       "address_normalized": "долгоруковская ул 7",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -814,7 +814,7 @@
       "name_normalized": "абсолют",
       "address_normalized": "ской округ серпухов д райсеменовское 12а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -839,7 +839,7 @@
       "name_normalized": "вектор",
       "address_normalized": "мытищи летная ул 21б",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -864,7 +864,7 @@
       "name_normalized": "колледж xxi века",
       "address_normalized": "солнцевский пр 7к3",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -889,7 +889,7 @@
       "name_normalized": "лицей экус",
       "address_normalized": "подольск народная ул 12",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -914,7 +914,7 @@
       "name_normalized": "лотос",
       "address_normalized": "шенкурский проезд 5",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -939,7 +939,7 @@
       "name_normalized": "русская школа",
       "address_normalized": "г видное ул советская дом 16",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -964,7 +964,7 @@
       "name_normalized": "самсон",
       "address_normalized": "кленовый бул 7к2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -989,7 +989,7 @@
       "name_normalized": "солнечный ветер",
       "address_normalized": "ул академика варги 2а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1014,7 +1014,7 @@
       "name_normalized": "центр образования столичный",
       "address_normalized": "чертановская ул 34а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1039,7 +1039,7 @@
       "name_normalized": "академическая гимназия",
       "address_normalized": "новодмитровская ул 2с9",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1064,7 +1064,7 @@
       "name_normalized": "гимназия святителя василия великого",
       "address_normalized": "одинцовский ской округ д зайцево кокошкинское ш 1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1089,7 +1089,7 @@
       "name_normalized": "горчаковский лицей мгимо",
       "address_normalized": "одинцово новоcпортивная ул 3",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1114,7 +1114,7 @@
       "name_normalized": "древо познаний",
       "address_normalized": "жуковский ул калугина 9/1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1138,8 +1138,11 @@
       "name": "Европейская гимназия",
       "name_normalized": "европейская гимназия",
       "address_normalized": "ул сокольнический вал 28",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:legacy-build_data.py BLUE\\GREEN (Европейская гимназия)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): kindergarten-детский-сад-европейской-гимназии-в-сокольниках=green, school-европейская-гимназия=green; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-европейская-гимназия",
@@ -1185,8 +1188,11 @@
       "name": "Школа «Золотое сечение»",
       "name_normalized": "школа золотое сечение",
       "address_normalized": "ленинский пр 13а",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:legacy-build_data.py BLUE\\GREEN (Золотое сечение)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): kindergarten-детский-сад-и-начальная-школа-радуга-при-золотом-сечении=green, school-школа-золотое-сечение=green; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-школа-золотое-сечение",
@@ -1233,7 +1239,7 @@
       "name_normalized": "карьера",
       "address_normalized": "краснодарская ул 11",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1258,7 +1264,7 @@
       "name_normalized": "колибри",
       "address_normalized": "никитинская ул 24а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1283,7 +1289,7 @@
       "name_normalized": "лидер",
       "address_normalized": "юровская ул 41",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1308,7 +1314,7 @@
       "name_normalized": "лидеры",
       "address_normalized": "одинцовский ской округ село ромашково никольская ул 16к2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1333,7 +1339,7 @@
       "name_normalized": "лучик",
       "address_normalized": "ул вучетича 7а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1358,7 +1364,7 @@
       "name_normalized": "москвич",
       "address_normalized": "ленинский пр 86б",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1383,7 +1389,7 @@
       "name_normalized": "московский лицей ступени",
       "address_normalized": "скорняжный пер 3с2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1408,7 +1414,7 @@
       "name_normalized": "муми тролль",
       "address_normalized": "волоколамское ш 1а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1433,7 +1439,7 @@
       "name_normalized": "наследник",
       "address_normalized": "ул борисовские пруды 19к1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1458,7 +1464,7 @@
       "name_normalized": "ника",
       "address_normalized": "поселение краснопахорское село красное 3а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1482,10 +1488,10 @@
       "name": "Новая школа",
       "name_normalized": "новая школа",
       "address_normalized": "мосфильмовская ул 88к5",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Новая школа in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Набор с 1 класса; тьюторское сопровождение и самостоятельный маршрут особенно за…» указывает приём с 1 класса, точки kind=green"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-дошкольное-отделение-новой-школы=green, school-новая-школа=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -1533,7 +1539,7 @@
       "name_normalized": "областная гимназия е м примакова",
       "address_normalized": "одинцовский ской округ д раздоры утренняя ул 1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1558,7 +1564,7 @@
       "name_normalized": "областной технолицей в и долгих",
       "address_normalized": "муниципальный округ истра село павловская слобода академическая ул 1",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1583,7 +1589,7 @@
       "name_normalized": "олимп плюс",
       "address_normalized": "рублевское ш 121",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1608,7 +1614,7 @@
       "name_normalized": "сааш марина",
       "address_normalized": "ул панферова 6к2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1633,7 +1639,7 @@
       "name_normalized": "феникс",
       "address_normalized": "профсоюзная ул 27к3",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1658,7 +1664,7 @@
       "name_normalized": "британская международная школа",
       "address_normalized": "нахимовский пр 35а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1683,7 +1689,7 @@
       "name_normalized": "школа интеграция xxi век",
       "address_normalized": "ул маршала катукова 16к1",
       "kind": "blue",
-      "kind_source": "places.json @830f792 (points) + rule:content-admission",
+      "kind_source": "rule:content-admission (Школа «Интеграция XXI век» in schools_content.table @830f792)",
       "points": [
         {
           "id": "school-школа-интеграция-xxi-век",
@@ -1718,12 +1724,12 @@
       "name": "Ломоносовская школа",
       "name_normalized": "ломоносовская школа",
       "address_normalized": "можайское ш 31к2",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Ломоносовская школа in schools_content.table @830f792)",
       "kind_review": [
         "unsure link: forbes-high-06 «Ломоносовская школа — Зеленый мыс» → school-ломоносовская-начальная-москва (Москва, Можайское шоссе, 31к2)",
         "unsure link: forbes-high-05 «Ломоносовская школа «Интек»» → school-ломоносовская-кременчугская (Москва, улица Кременчугская, 44к5)",
-        "R1: текст приёма «Есть 0 класс и набор с 1 класса; основная/старшая школа — 5–11 классы. Три школь…» указывает приём с 1 класса, точки kind=green"
+        "точки хранят legacy kind (цвета живой карты): school-ломоносовская-аминьевское=green, school-ломоносовская-кременчугская=green, school-ломоносовская-начальная-москва=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -1812,7 +1818,7 @@
       "name_normalized": "международная гимназия сколково",
       "address_normalized": "территория инновационного центра сколково ул зворыкина 4",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1837,7 +1843,7 @@
       "name_normalized": "наши традиции",
       "address_normalized": "мичуринский пр 6к4",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1862,7 +1868,7 @@
       "name_normalized": "новый взгляд",
       "address_normalized": "1-й шибаевский пер 4",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1886,11 +1892,10 @@
       "name": "Павловская гимназия",
       "name_normalized": "павловская гимназия",
       "address_normalized": "д веледниково живописная ул 136",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Павловская гимназия in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Принимает с 1 класса, далее ведёт школьный маршрут; условия переходов нужно уточ…» указывает приём с 1 класса, точки kind=green",
-        "R2: legacy BLUE-хардкод (Павловская гимназия), точки kind=green"
+        "точки хранят legacy kind (цвета живой карты): school-павловская-гимназия=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -1927,7 +1932,7 @@
       "name_normalized": "первая московская гимназия",
       "address_normalized": "одинцовский ской округ д липки 63а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -1951,10 +1956,10 @@
       "name": "Школа «Президент»",
       "name_normalized": "школа президент",
       "address_normalized": "д жуковка ильинский подъезд 2с1–4",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Школа «Президент» in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Набор с 1 класса; школа также ведёт дошкольный маршрут. Правила отбора и наличие…» указывает приём с 1 класса, точки kind=green"
+        "точки хранят legacy kind (цвета живой карты): school-школа-президент=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -1991,7 +1996,7 @@
       "name_normalized": "сколка",
       "address_normalized": "территория инновационного центра сколково большой бул 37",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -2016,7 +2021,7 @@
       "name_normalized": "снегири",
       "address_normalized": "минская ул 2вк2",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -2040,10 +2045,10 @@
       "name": "Хорошкола",
       "name_normalized": "хорошкола",
       "address_normalized": "ул народного ополчения 7а",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (Хорошкола in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Школа — прогимназия 1–4 и гимназия 5–11 в разных зданиях. Для подготовительных г…» указывает приём с 1 класса, точки kind=green"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-хорошкола=green, school-хорошкола-гимназия=green, school-хорошкола-прогимназия=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -2106,7 +2111,7 @@
       "name_normalized": "школа сотрудничества",
       "address_normalized": "ул александра солженицына 9а",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -2130,8 +2135,11 @@
       "name": "Cambridge International School",
       "name_normalized": "cambridge international school",
       "address_normalized": "фестивальная ул 7а",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:legacy-build_data.py BLUE\\GREEN (Cambridge International School)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): kindergarten-дошкольные-группы-cambridge-international-school=green, school-cambridge-international-school=green; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-cambridge-international-school",
@@ -2178,7 +2186,7 @@
       "name_normalized": "heritage international school",
       "address_normalized": "верхняя краснобогатырская ул 90с3",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -2203,7 +2211,7 @@
       "name_normalized": "russian international school",
       "address_normalized": "одинцовский ской округ д барвиха 42",
       "kind": "red",
-      "kind_source": "default: школа из списка (легенда red), сигналов blue/green нет",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [],
       "csv_rows": [
         {
@@ -2227,8 +2235,11 @@
       "name": "Wunderpark International School",
       "name_normalized": "wunderpark international school",
       "address_normalized": "д борзые 1",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:legacy-build_data.py BLUE\\GREEN (Wunderpark International School)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): school-wunderpark-international-school=green; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-wunderpark-international-school",
@@ -2264,7 +2275,7 @@
       "name_normalized": "школа no 548 царицыно",
       "address_normalized": "ереванская ул 33",
       "kind": "blue",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "rule:content-admission (Школа №548 «Царицыно» in schools_content.table @830f792)",
       "points": [
         {
           "id": "school-школа-548-царицыно",
@@ -2286,7 +2297,7 @@
       "name_normalized": "лицей ниу вшэ",
       "address_normalized": "большой харитоньевский пер 4 стр 1",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-лицей-ниу-вшэ",
@@ -2308,7 +2319,7 @@
       "name_normalized": "сунц мгу",
       "address_normalized": "проектируемый 5186-й проезд",
       "kind": "red",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
       "points": [
         {
           "id": "school-сунц-мгу",
@@ -2329,10 +2340,10 @@
       "name": "Brookes Moscow International School",
       "name_normalized": "brookes moscow international school",
       "address_normalized": "лазоревый проезд 7",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:legacy-build_data.py BLUE\\GREEN (Brookes Moscow)",
       "kind_review": [
-        "R2: legacy BLUE-хардкод (Brookes Moscow)"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-brookes-moscow-early-years-pre-nursery-и-nursery=green, school-brookes-moscow-international-school=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -2365,10 +2376,10 @@
       "name": "MCS School / Magic Castle School",
       "name_normalized": "mcs school magic castle school",
       "address_normalized": "пер чернышевского 4 стр 1",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "blue",
+      "kind_source": "rule:content-admission (MCS School / Magic Castle School in schools_content.table @830f792)",
       "kind_review": [
-        "R1: текст приёма «Школьный набор заявлен с 1 класса; возрастные границы по двум площадка…» указывает приём с 1 класса"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-английский-детский-сад-mcs-school=green, school-mcs-polyanka=green, school-mcs-school-magic-castle-school=green; kind сущности — метка для радара"
       ],
       "points": [
         {
@@ -2414,7 +2425,7 @@
       "name_normalized": "тор it school",
       "address_normalized": "ул покрышкина 8 к1",
       "kind": "blue",
-      "kind_source": "places.json @830f792 (points)",
+      "kind_source": "rule:content-admission (ТОР IT SCHOOL in schools_content.table @830f792)",
       "points": [
         {
           "id": "school-тор-it-school",
@@ -2435,8 +2446,11 @@
       "name": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)",
       "name_normalized": "французский лицей а дюма при посольстве франции в москве lycée français alexandre dumas",
       "address_normalized": "милютинский пер 7а",
-      "kind": "green",
-      "kind_source": "places.json @830f792 (points)",
+      "kind": "red",
+      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): kindergarten-детский-сад-при-французском-лицее-имени-а-дюма=green, school-французский-лицей-имени-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas=green; kind сущности — метка для радара"
+      ],
       "points": [
         {
           "id": "school-французский-лицей-имени-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas",

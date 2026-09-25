@@ -52,11 +52,8 @@ BLUE_LEGACY = {'Школа 57', 'Президент', 'Brookes Moscow', 'Cambrid
                'Школа 1514', 'Курчатовская школа', 'Павловская гимназия',
                'Ломоносовская школа', 'Хорошкола', 'Новая школа', 'Золотое сечение',
                'Wunderpark International School'}
-BLUE_ONLY = BLUE_LEGACY - {'Президент', 'Cambridge International School', 'Европейская гимназия',
-                           'Ломоносовская школа', 'Хорошкола', 'Новая школа',
-                           'Золотое сечение', 'Wunderpark International School'}
 
-POS = re.compile(r'(?:с|со|в)\s+1\s*(?:го)?\s*класса?\b|с первого класса|(?:^|[.;])\s*1\s*класса?\b', re.I)
+POS = re.compile(r'(?:с|со|в)\s+1\s*(?:го)?\s*класса?\b|с первого класса|перв(?:ый|ого)\s+класс\b|(?:^|[.;])\s*1\s*класса?\b', re.I)
 NEG = re.compile(r'не подтвержд|не является|не предусмотрен|не относится|не заявлен|не найден', re.I)
 
 def admission_positive(text):
@@ -185,27 +182,29 @@ for members in seen_clusters:
         name = max((r['name'] for r in src_rows), key=len)
     trow = table.get(name) or next((table[gr] for gr in groups if gr in table), None)
     a1 = admission_positive(trow.get('admission')) if trow else None
-    r2 = hardcode_hits(name, BLUE_ONLY)
+    r2 = hardcode_hits(name, BLUE_LEGACY)
     pk = {p['kind'] for p in pts}
     flags = []
     for link in unsure_links(members):
         flags.append(link)
-    if len(pk) == 1:
-        kind = pk.pop(); ksrc = f'places.json {SNAP} (points)'
-        if kind != 'blue' and a1: flags.append(f'R1: текст приёма «{a1[:80]}…» указывает приём с 1 класса, точки kind={kind}')
-        if kind != 'blue' and r2: flags.append(f'R2: legacy BLUE-хардкод ({", ".join(r2)}), точки kind={kind}')
-        if kind == 'blue' and not (a1 or r2): flags.append('blue только из places.json; текст/хардкод не подтверждают')
+    allkg = bool(pts) and all(p['entity'] == 'kindergarten' for p in pts)
+    if allkg:
+        kind = 'green'
+        ksrc = f'kindergarten program (places.json {SNAP})'
+    elif a1:
+        kind = 'blue'
+        ksrc = f'rule:content-admission ({name} in schools_content.table {SNAP})'
+    elif r2:
+        kind = 'blue'
+        ksrc = f'rule:legacy-build_data.py BLUE\\GREEN ({", ".join(r2)})'
     else:
-        if a1: kind, ksrc = 'blue', f'rule:content-admission ({name} in schools_content.table {SNAP})'
-        elif r2: kind, ksrc = 'blue', f'rule:legacy-build_data.py BLUE\\GREEN ({", ".join(r2)})'
-        elif pk:
-            primary = pts[0]['kind']
-            kind, ksrc = primary, f'places.json {SNAP} (primary point; конфликт)'
-            flags.append('точки расходятся в kind: ' + ', '.join(sorted(f"{p['id']}={p['kind']}" for p in pts)))
-        else:
-            kind, ksrc = 'red', 'default: школа из списка (легенда red), сигналов blue/green нет'
-    if a1 and kind == 'blue' and ksrc.startswith('places'):
-        ksrc += ' + rule:content-admission'
+        kind = 'red'
+        ksrc = 'default: школа из списка (легенда red); сигналов blue нет'
+    if pts and not allkg:
+        disagree = sorted({f"{p['id']}={p['kind']}" for p in pts if p['kind'] != kind})
+        if disagree:
+            flags.append('точки хранят legacy kind (цвета живой карты): ' +
+                         ', '.join(disagree) + '; kind сущности — метка для радара')
     ent = OrderedDict()
     ent['id'] = unique_id(slugify(name))
     ent['name'] = name
@@ -242,23 +241,26 @@ for g in place_only_groups:
     pts += [p for src, tgt in merge_target.items() if tgt == g
             for p in places if place_group[p['id']] == src]
     name = g
-    allkg = all(p['entity'] == 'kindergarten' for p in pts)
-    pk = {p['kind'] for p in pts}
-    flags = []
     trow = table.get(name)
     a1 = admission_positive(trow.get('admission')) if trow else None
-    r2 = hardcode_hits(name, BLUE_ONLY)
+    r2 = hardcode_hits(name, BLUE_LEGACY)
+    allkg = all(p['entity'] == 'kindergarten' for p in pts)
+    flags = []
     if allkg:
         kind, ksrc = 'green', f'kindergarten program (places.json {SNAP})'
-        if a1: flags.append(f'R1: текст приёма «{a1[:70]}…» — возможно, школьный маршрут')
-    elif len(pk) == 1:
-        kind = pk.pop(); ksrc = f'places.json {SNAP} (points)'
-        if kind != 'blue' and a1: flags.append(f'R1: текст приёма «{a1[:70]}…» указывает приём с 1 класса')
-        if kind != 'blue' and r2: flags.append(f'R2: legacy BLUE-хардкод ({", ".join(r2)})')
-        if kind == 'blue' and not (a1 or r2): flags.append('blue только из places.json; текст/хардкод не подтверждают')
+    elif a1:
+        kind = 'blue'
+        ksrc = f'rule:content-admission ({name} in schools_content.table {SNAP})'
+    elif r2:
+        kind = 'blue'
+        ksrc = f'rule:legacy-build_data.py BLUE\\GREEN ({", ".join(r2)})'
     else:
-        kind = pts[0]['kind']; ksrc = f'places.json {SNAP} (primary point; конфликт)'
-        flags.append('точки расходятся в kind')
+        kind = 'red'
+        ksrc = 'default: школа из списка (легенда red); сигналов blue нет'
+    disagree = sorted({f"{p['id']}={p['kind']}" for p in pts if p['kind'] != kind})
+    if disagree and not allkg:
+        flags.append('точки хранят legacy kind (цвета живой карты): ' +
+                     ', '.join(disagree) + '; kind сущности — метка для радара')
     ent = OrderedDict()
     ent['id'] = unique_id(slugify(name))
     ent['name'] = name
