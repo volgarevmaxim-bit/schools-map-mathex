@@ -95,7 +95,12 @@ for r in rows:
     csv_entities.setdefault(k, {'rows': [], 'name': r['name']})['rows'].append(r)
 
 # матч-отчёт: csv_id -> (place_id, verdict)
-match_of_row = {r['csv_id']: (r['place_id'], r['verdict']) for r in report if r['place_id']}
+_all_verdicts = {r['csv_id']: (r['place_id'], r['verdict']) for r in report if r['place_id']}
+# кластеризация и присоединение точек — ТОЛЬКО по match; unsure-связи не наследуются
+# (решение владельца 2026-09-25: «Интек» и «Зеленый мыс» — отдельные юрлица сети
+#  Ломоносовских школ, а не городская Ломоносовская школа)
+match_of_row = {k: v for k, v in _all_verdicts.items() if v[1] == 'match'}
+unsure_rows = {k: v[0] for k, v in _all_verdicts.items() if v[1] == 'unsure'}
 row_id_of_key = {}
 for k, v in csv_entities.items():
     for r in v['rows']:
@@ -275,6 +280,82 @@ for g in place_only_groups:
     ent['source'] = 'map-only'
     entities.append(ent)
 
+# unsure-строки -> самостоятельные сущности (без точек: их кампусы отсутствуют в places.json)
+for r in rows:
+    if r['id'] in unsure_rows and r['id'] not in {rr['id'] for e in entities for rr in e['csv_rows']}:
+        ent = OrderedDict()
+        ent['id'] = unique_id(slugify(r['name']))
+        ent['name'] = r['name']
+        ent['name_normalized'] = norm_name(r['name'])
+        ent['address_normalized'] = norm_addr(r['address'])
+        trow2 = table.get(r['name'])
+        a12 = admission_positive(trow2.get('admission')) if trow2 else None
+        if a12:
+            ent['kind'] = 'blue'
+            ent['kind_source'] = f'rule:content-admission ({SNAP})'
+        else:
+            ent['kind'] = 'red'
+            ent['kind_source'] = 'default: сигналов blue нет'
+        ent['kind_review'] = [
+            f"unsure-связь матча (аудит): «{r['name']}» — отдельное юрлицо/кампус, не точка places.json",
+        ]
+        ent['points'] = []
+        ent['csv_rows'] = [OrderedDict(r)]
+        ent['source'] = r['source']
+        if r.get('mathex_url'):
+            ent['mathex_url'] = r['mathex_url']
+        entities.append(ent)
+
+# детсад-программы -> отдельные green-сущности с parent_id
+# (решение владельца 2026-09-25: «всё, что интересно родителям первоклассника, должно отражаться»)
+final_entities = []
+for e in entities:
+    pts = e['points']
+    kg = [p for p in pts if p['entity'] == 'kindergarten']
+    sch = [p for p in pts if p['entity'] != 'kindergarten']
+    if kg and sch:
+        e['points'] = sch
+        for p in kg:
+            child = OrderedDict()
+            child['id'] = unique_id(slugify(p['name']))
+            child['name'] = p['name']
+            child['name_normalized'] = norm_name(p['name'])
+            child['address_normalized'] = norm_addr(p['address'])
+            child['kind'] = 'green'
+            child['kind_source'] = f'kindergarten program (places.json {SNAP})'
+            child['source'] = 'map-only'
+            child['csv_rows'] = []
+            child['points'] = [OrderedDict(p)]
+            child['parent_id'] = e['id']
+            final_entities.append(child)
+    final_entities.append(e)
+entities = final_entities
+
+# решения владельца (review 2026-09-25, веб-проверка) — поверх правил
+OVERRIDES = {
+    # решения владельца 2026-09-25 (веб-проверка + ревью REVIEW_KIND.md):
+    'летово': {'kind': 'blue',
+               'kind_source': 'manual review 2026-09-25: letovojunior.ru/t.me — приём заявок в 1 класс (2025/26 закрыт)'},
+    'московская-гимназия-на-юго-западе-1543-ю-в-завельского': {
+               'kind': 'blue',
+               'kind_source': 'manual review 2026-09-25: schoolotzyv.ru — зачисление в 1 классы через mos.ru (по месту жительства)'},
+    'французский-лицей-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas': {
+               'kind': 'blue',
+               'kind_source': 'manual review 2026-09-25: ucheba.ru — свободное поступление с 3 лет, траектория до выпуска'},
+    'ломоносовская-школа-интек': {
+               'kind': 'red',
+               'kind_source': 'manual review 2026-09-25: приём с 1 класса не подтверждён (проверить при развитии)'},
+    'ломоносовская-школа-зеленый-мыс': {
+               'kind': 'red',
+               'kind_source': 'manual review 2026-09-25: приём с 1 класса не подтверждён (проверить при развитии)'},
+}
+for ent in entities:
+    ov = OVERRIDES.get(ent['id'])
+    if ov:
+        ent['kind'] = ov['kind']
+        ent['kind_source'] = ov['kind_source']
+        ent.setdefault('kind_review', []).append('override: manual review 2026-09-25 (владелец)')
+
 canon = OrderedDict()
 canon['_meta'] = OrderedDict([
     ('description', 'Канонический реестр школ/садов schools-map-mathex. Источник истины; '
@@ -282,6 +363,7 @@ canon['_meta'] = OrderedDict([
     ('created', '2026-09-25'),
     ('snapshot', SNAP),
     ('migration', 'scripts/migrate_to_entities.py'),
+    ('kind_review', '2026-09-25: REVIEW_KIND.md закрыт владельцем (веб-проверки + overrides в скрипте миграции)'),
     ('counts', {'entities': len(entities), 'csv_rows': sum(len(e['csv_rows']) for e in entities),
                 'points': sum(len(e['points']) for e in entities)}),
 ])

@@ -4,8 +4,9 @@
     "created": "2026-09-25",
     "snapshot": "@830f792",
     "migration": "scripts/migrate_to_entities.py",
+    "kind_review": "2026-09-25: REVIEW_KIND.md закрыт владельцем (веб-проверки + overrides в скрипте миграции)",
     "counts": {
-      "entities": 73,
+      "entities": 84,
       "csv_rows": 69,
       "points": 45
     }
@@ -267,15 +268,14 @@
       "mathex_url": "https://mathex.ru/shkoly/intellektual/"
     },
     {
-      "id": "летово",
-      "name": "Летово",
-      "name_normalized": "летово",
+      "id": "детский-сад-летово-кидс",
+      "name": "Детский сад «Летово Кидс»",
+      "name_normalized": "детский сад летово кидс",
       "address_normalized": "ул дубининская 59а",
-      "kind": "red",
-      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
-      "kind_review": [
-        "точки хранят legacy kind (цвета живой карты): kindergarten-летово-кидс=green, school-летово-джуниор=green; kind сущности — метка для радара"
-      ],
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
       "points": [
         {
           "id": "kindergarten-летово-кидс",
@@ -288,7 +288,22 @@
           "associated_school": "Школа-пансион «Летово»",
           "group": "Летово",
           "source": "https://letovo.ru/o-shkole/svedenia-ob-obrazovatelnoy-organizacii"
-        },
+        }
+      ],
+      "parent_id": "летово"
+    },
+    {
+      "id": "летово",
+      "name": "Летово",
+      "name_normalized": "летово",
+      "address_normalized": "ул дубининская 59а",
+      "kind": "blue",
+      "kind_source": "manual review 2026-09-25: letovojunior.ru/t.me — приём заявок в 1 класс (2025/26 закрыт)",
+      "kind_review": [
+        "точки хранят legacy kind (цвета живой карты): kindergarten-летово-кидс=green, school-летово-джуниор=green; kind сущности — метка для радара",
+        "override: manual review 2026-09-25 (владелец)"
+      ],
+      "points": [
         {
           "id": "school-летово-джуниор",
           "name": "«Летово Джуниор»",
@@ -376,8 +391,8 @@
       "name": "Московская гимназия на Юго-Западе №1543 им. Ю. В. Завельского",
       "name_normalized": "московская гимназия на юго западе no 1543 ю в завельского",
       "address_normalized": "ул 26 бакинских комиссаров 3к 5",
-      "kind": "red",
-      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
+      "kind": "blue",
+      "kind_source": "manual review 2026-09-25: schoolotzyv.ru — зачисление в 1 классы через mos.ru (по месту жительства)",
       "points": [
         {
           "id": "school-московская-гимназия-на-юго-западе-1543-им-ю-в-завельского",
@@ -406,7 +421,10 @@
         }
       ],
       "source": "mathex",
-      "mathex_url": "https://mathex.ru/shkoly/shkola-1543/"
+      "mathex_url": "https://mathex.ru/shkoly/shkola-1543/",
+      "kind_review": [
+        "override: manual review 2026-09-25 (владелец)"
+      ]
     },
     {
       "id": "школа-179",
@@ -1134,6 +1152,30 @@
       "source": "forbes"
     },
     {
+      "id": "детский-сад-европейской-гимназии-в-сокольниках",
+      "name": "Детский сад Европейской гимназии в Сокольниках",
+      "name_normalized": "детский сад европейской гимназии в сокольниках",
+      "address_normalized": "старослободский пер",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-детский-сад-европейской-гимназии-в-сокольниках",
+          "name": "Детский сад Европейской гимназии в Сокольниках",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Старослободский переулок",
+          "lat": 55.79114,
+          "lon": 37.66828,
+          "associated_school": "Европейская гимназия",
+          "group": "Европейская гимназия"
+        }
+      ],
+      "parent_id": "европейская-гимназия"
+    },
+    {
       "id": "европейская-гимназия",
       "name": "Европейская гимназия",
       "name_normalized": "европейская гимназия",
@@ -1152,17 +1194,6 @@
           "address": "Москва, улица Сокольнический Вал, 28",
           "lat": 55.79107,
           "lon": 37.66788,
-          "group": "Европейская гимназия"
-        },
-        {
-          "id": "kindergarten-детский-сад-европейской-гимназии-в-сокольниках",
-          "name": "Детский сад Европейской гимназии в Сокольниках",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Старослободский переулок",
-          "lat": 55.79114,
-          "lon": 37.66828,
-          "associated_school": "Европейская гимназия",
           "group": "Европейская гимназия"
         }
       ],
@@ -1184,6 +1215,30 @@
       "source": "forbes"
     },
     {
+      "id": "детский-сад-и-начальная-школа-радуга-при-золотом-сечении",
+      "name": "Детский сад и начальная школа «Радуга» при «Золотом сечении»",
+      "name_normalized": "детский сад и начальная школа радуга при золотом сечении",
+      "address_normalized": "ленинский пр",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-детский-сад-и-начальная-школа-радуга-при-золотом-сечении",
+          "name": "Детский сад и начальная школа «Радуга» при «Золотом сечении»",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Ленинский проспект",
+          "lat": 55.72194,
+          "lon": 37.60358,
+          "associated_school": "Школа «Золотое сечение»",
+          "group": "Школа «Золотое сечение»"
+        }
+      ],
+      "parent_id": "школа-золотое-сечение"
+    },
+    {
       "id": "школа-золотое-сечение",
       "name": "Школа «Золотое сечение»",
       "name_normalized": "школа золотое сечение",
@@ -1202,17 +1257,6 @@
           "address": "Москва, Ленинский проспект, 13а",
           "lat": 55.72194,
           "lon": 37.60358,
-          "group": "Школа «Золотое сечение»"
-        },
-        {
-          "id": "kindergarten-детский-сад-и-начальная-школа-радуга-при-золотом-сечении",
-          "name": "Детский сад и начальная школа «Радуга» при «Золотом сечении»",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Ленинский проспект",
-          "lat": 55.72194,
-          "lon": 37.60358,
-          "associated_school": "Школа «Золотое сечение»",
           "group": "Школа «Золотое сечение»"
         }
       ],
@@ -1484,6 +1528,30 @@
       "source": "forbes"
     },
     {
+      "id": "дошкольное-отделение-новой-школы",
+      "name": "Дошкольное отделение Новой школы",
+      "name_normalized": "дошкольное отделение новой школы",
+      "address_normalized": "мосфильмовская ул 88к5",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-дошкольное-отделение-новой-школы",
+          "name": "Дошкольное отделение Новой школы",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Мосфильмовская улица, 88к5",
+          "lat": 55.70484,
+          "lon": 37.49031,
+          "associated_school": "Новая школа",
+          "group": "Новая школа"
+        }
+      ],
+      "parent_id": "новая-школа"
+    },
+    {
       "id": "новая-школа",
       "name": "Новая школа",
       "name_normalized": "новая школа",
@@ -1502,17 +1570,6 @@
           "address": "Москва, Мосфильмовская улица, 88к5",
           "lat": 55.70484,
           "lon": 37.49031,
-          "group": "Новая школа"
-        },
-        {
-          "id": "kindergarten-дошкольное-отделение-новой-школы",
-          "name": "Дошкольное отделение Новой школы",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Мосфильмовская улица, 88к5",
-          "lat": 55.70484,
-          "lon": 37.49031,
-          "associated_school": "Новая школа",
           "group": "Новая школа"
         }
       ],
@@ -1727,8 +1784,6 @@
       "kind": "blue",
       "kind_source": "rule:content-admission (Ломоносовская школа in schools_content.table @830f792)",
       "kind_review": [
-        "unsure link: forbes-high-06 «Ломоносовская школа — Зеленый мыс» → school-ломоносовская-начальная-москва (Москва, Можайское шоссе, 31к2)",
-        "unsure link: forbes-high-05 «Ломоносовская школа «Интек»» → school-ломоносовская-кременчугская (Москва, улица Кременчугская, 44к5)",
         "точки хранят legacy kind (цвета живой карты): school-ломоносовская-аминьевское=green, school-ломоносовская-кременчугская=green, school-ломоносовская-начальная-москва=green; kind сущности — метка для радара"
       ],
       "points": [
@@ -1782,20 +1837,19 @@
           "description": "Ломоносовская школа\n\nМосква, Аминьевское шоссе, 18к4\n1 845 000 руб/год\nСайт: <a href=\"https://lomonosov-school.ru/\">lomonosov-school.ru</a>",
           "status": "geocoded",
           "notes": "forbes high segment, year 1993, price 1 845 000"
-        },
-        {
-          "id": "forbes-high-06",
-          "name": "Ломоносовская школа — Зеленый мыс",
-          "address": "Московская область, городской округ Мытищи, деревня Подольниха, Клубная улица, 2с1",
-          "lat": "56.085008",
-          "lon": "37.63606",
-          "mathex_url": "",
-          "source": "forbes",
-          "label": "Зел.мыс",
-          "description": "Ломоносовская школа — Зеленый мыс\n\nМосковская область, городской округ Мытищи, деревня Подольниха, Клубная улица, 2с1\n1 485 000 руб/год\nСайт: <a href=\"https://lomonosov-zm.ru/\">lomonosov-zm.ru</a>",
-          "status": "geocoded",
-          "notes": "forbes high segment, year 2008, price 1 485 000"
-        },
+        }
+      ],
+      "source": "forbes"
+    },
+    {
+      "id": "ломоносовская-школа-интек",
+      "name": "Ломоносовская школа «Интек»",
+      "name_normalized": "ломоносовская школа интек",
+      "address_normalized": "муниципальный округ истра д воронино клубный поселок монолит клубная аллея 2",
+      "kind": "red",
+      "kind_source": "manual review 2026-09-25: приём с 1 класса не подтверждён (проверить при развитии)",
+      "points": [],
+      "csv_rows": [
         {
           "id": "forbes-high-05",
           "name": "Ломоносовская школа «Интек»",
@@ -1810,7 +1864,38 @@
           "notes": "forbes high segment, year 2008, price 1 845 000"
         }
       ],
-      "source": "forbes"
+      "source": "forbes",
+      "kind_review": [
+        "override: manual review 2026-09-25 (владелец)"
+      ]
+    },
+    {
+      "id": "ломоносовская-школа-зеленый-мыс",
+      "name": "Ломоносовская школа — Зеленый мыс",
+      "name_normalized": "ломоносовская школа зеленый мыс",
+      "address_normalized": "ской округ мытищи д подольниха клубная ул 2с1",
+      "kind": "red",
+      "kind_source": "manual review 2026-09-25: приём с 1 класса не подтверждён (проверить при развитии)",
+      "points": [],
+      "csv_rows": [
+        {
+          "id": "forbes-high-06",
+          "name": "Ломоносовская школа — Зеленый мыс",
+          "address": "Московская область, городской округ Мытищи, деревня Подольниха, Клубная улица, 2с1",
+          "lat": "56.085008",
+          "lon": "37.63606",
+          "mathex_url": "",
+          "source": "forbes",
+          "label": "Зел.мыс",
+          "description": "Ломоносовская школа — Зеленый мыс\n\nМосковская область, городской округ Мытищи, деревня Подольниха, Клубная улица, 2с1\n1 485 000 руб/год\nСайт: <a href=\"https://lomonosov-zm.ru/\">lomonosov-zm.ru</a>",
+          "status": "geocoded",
+          "notes": "forbes high segment, year 2008, price 1 485 000"
+        }
+      ],
+      "source": "forbes",
+      "kind_review": [
+        "override: manual review 2026-09-25 (владелец)"
+      ]
     },
     {
       "id": "международная-гимназия-сколково",
@@ -2041,6 +2126,31 @@
       "source": "forbes"
     },
     {
+      "id": "детский-сад-хорошколы",
+      "name": "Детский сад Хорошколы",
+      "name_normalized": "детский сад хорошколы",
+      "address_normalized": "ул маршала тухачевского 45к2",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-хорошкола",
+          "name": "Детский сад Хорошколы",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, улица Маршала Тухачевского, 45к2",
+          "lat": 55.78402,
+          "lon": 37.4661,
+          "associated_school": "Хорошкола",
+          "source": "https://hi.horoshkola.ru/contacts",
+          "group": "Хорошкола"
+        }
+      ],
+      "parent_id": "хорошкола"
+    },
+    {
       "id": "хорошкола",
       "name": "Хорошкола",
       "name_normalized": "хорошкола",
@@ -2072,18 +2182,6 @@
           "lat": 55.78949,
           "lon": 37.48024,
           "notes": "Отдельное здание гимназии.",
-          "source": "https://hi.horoshkola.ru/contacts",
-          "group": "Хорошкола"
-        },
-        {
-          "id": "kindergarten-хорошкола",
-          "name": "Детский сад Хорошколы",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, улица Маршала Тухачевского, 45к2",
-          "lat": 55.78402,
-          "lon": 37.4661,
-          "associated_school": "Хорошкола",
           "source": "https://hi.horoshkola.ru/contacts",
           "group": "Хорошкола"
         }
@@ -2131,6 +2229,30 @@
       "source": "forbes"
     },
     {
+      "id": "дошкольные-группы-cambridge-international-school",
+      "name": "Дошкольные группы Cambridge International School",
+      "name_normalized": "дошкольные группы cambridge international school",
+      "address_normalized": "фестивальная ул 7а",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-дошкольные-группы-cambridge-international-school",
+          "name": "Дошкольные группы Cambridge International School",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Фестивальная улица, 7а",
+          "lat": 55.85576,
+          "lon": 37.47373,
+          "associated_school": "Cambridge International School",
+          "group": "Cambridge International School"
+        }
+      ],
+      "parent_id": "cambridge-international-school"
+    },
+    {
       "id": "cambridge-international-school",
       "name": "Cambridge International School",
       "name_normalized": "cambridge international school",
@@ -2149,17 +2271,6 @@
           "address": "Москва, Фестивальная улица, 7а",
           "lat": 55.85576,
           "lon": 37.47373,
-          "group": "Cambridge International School"
-        },
-        {
-          "id": "kindergarten-дошкольные-группы-cambridge-international-school",
-          "name": "Дошкольные группы Cambridge International School",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Фестивальная улица, 7а",
-          "lat": 55.85576,
-          "lon": 37.47373,
-          "associated_school": "Cambridge International School",
           "group": "Cambridge International School"
         }
       ],
@@ -2336,6 +2447,30 @@
       "source": "map-only"
     },
     {
+      "id": "brookes-moscow-early-years-pre-nursery-и-nursery",
+      "name": "Brookes Moscow Early Years: Pre-Nursery и Nursery",
+      "name_normalized": "brookes moscow early years: pre nursery и nursery",
+      "address_normalized": "лазоревый проезд 7",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-brookes-moscow-early-years-pre-nursery-и-nursery",
+          "name": "Brookes Moscow Early Years: Pre-Nursery и Nursery",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Лазоревый проезд, 7",
+          "lat": 55.84806,
+          "lon": 37.63383,
+          "associated_school": "Brookes Moscow International School",
+          "group": "Brookes Moscow International School"
+        }
+      ],
+      "parent_id": "brookes-moscow-international-school"
+    },
+    {
       "id": "brookes-moscow-international-school",
       "name": "Brookes Moscow International School",
       "name_normalized": "brookes moscow international school",
@@ -2355,21 +2490,34 @@
           "lat": 55.84806,
           "lon": 37.63383,
           "group": "Brookes Moscow International School"
-        },
-        {
-          "id": "kindergarten-brookes-moscow-early-years-pre-nursery-и-nursery",
-          "name": "Brookes Moscow Early Years: Pre-Nursery и Nursery",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Лазоревый проезд, 7",
-          "lat": 55.84806,
-          "lon": 37.63383,
-          "associated_school": "Brookes Moscow International School",
-          "group": "Brookes Moscow International School"
         }
       ],
       "csv_rows": [],
       "source": "map-only"
+    },
+    {
+      "id": "английский-детский-сад-mcs-school",
+      "name": "Английский детский сад MCS School",
+      "name_normalized": "английский детский сад mcs school",
+      "address_normalized": "пер чернышевского 4 стр 1",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-английский-детский-сад-mcs-school",
+          "name": "Английский детский сад MCS School",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, переулок Чернышевского, 4, стр. 1",
+          "lat": 55.7683,
+          "lon": 37.6107,
+          "associated_school": "MCS School / Magic Castle School",
+          "group": "MCS School / Magic Castle School"
+        }
+      ],
+      "parent_id": "mcs-school-magic-castle-school"
     },
     {
       "id": "mcs-school-magic-castle-school",
@@ -2390,17 +2538,6 @@
           "address": "Москва, переулок Чернышевского, 4, стр. 1",
           "lat": 55.7683,
           "lon": 37.6107,
-          "group": "MCS School / Magic Castle School"
-        },
-        {
-          "id": "kindergarten-английский-детский-сад-mcs-school",
-          "name": "Английский детский сад MCS School",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, переулок Чернышевского, 4, стр. 1",
-          "lat": 55.7683,
-          "lon": 37.6107,
-          "associated_school": "MCS School / Magic Castle School",
           "group": "MCS School / Magic Castle School"
         },
         {
@@ -2442,14 +2579,39 @@
       "source": "map-only"
     },
     {
+      "id": "детский-сад-при-французском-лицее-а-дюма",
+      "name": "Детский сад при Французском лицее имени А. Дюма",
+      "name_normalized": "детский сад при французском лицее а дюма",
+      "address_normalized": "милютинский пер 7а",
+      "kind": "green",
+      "kind_source": "kindergarten program (places.json @830f792)",
+      "source": "map-only",
+      "csv_rows": [],
+      "points": [
+        {
+          "id": "kindergarten-детский-сад-при-французском-лицее-имени-а-дюма",
+          "name": "Детский сад при Французском лицее имени А. Дюма",
+          "entity": "kindergarten",
+          "kind": "green",
+          "address": "Москва, Милютинский переулок, 7А",
+          "lat": 55.7653,
+          "lon": 37.63,
+          "associated_school": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)",
+          "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
+        }
+      ],
+      "parent_id": "французский-лицей-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas"
+    },
+    {
       "id": "французский-лицей-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas",
       "name": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)",
       "name_normalized": "французский лицей а дюма при посольстве франции в москве lycée français alexandre dumas",
       "address_normalized": "милютинский пер 7а",
-      "kind": "red",
-      "kind_source": "default: школа из списка (легенда red); сигналов blue нет",
+      "kind": "blue",
+      "kind_source": "manual review 2026-09-25: ucheba.ru — свободное поступление с 3 лет, траектория до выпуска",
       "kind_review": [
-        "точки хранят legacy kind (цвета живой карты): kindergarten-детский-сад-при-французском-лицее-имени-а-дюма=green, school-французский-лицей-имени-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas=green; kind сущности — метка для радара"
+        "точки хранят legacy kind (цвета живой карты): kindergarten-детский-сад-при-французском-лицее-имени-а-дюма=green, school-французский-лицей-имени-а-дюма-при-посольстве-франции-в-москве-lyc-e-fran-ais-alexandre-dumas=green; kind сущности — метка для радара",
+        "override: manual review 2026-09-25 (владелец)"
       ],
       "points": [
         {
@@ -2460,17 +2622,6 @@
           "address": "Москва, Милютинский переулок, 7А",
           "lat": 55.7653,
           "lon": 37.63,
-          "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
-        },
-        {
-          "id": "kindergarten-детский-сад-при-французском-лицее-имени-а-дюма",
-          "name": "Детский сад при Французском лицее имени А. Дюма",
-          "entity": "kindergarten",
-          "kind": "green",
-          "address": "Москва, Милютинский переулок, 7А",
-          "lat": 55.7653,
-          "lon": 37.63,
-          "associated_school": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)",
           "group": "Французский лицей имени А. Дюма при Посольстве Франции в Москве (Lycée français Alexandre Dumas)"
         }
       ],

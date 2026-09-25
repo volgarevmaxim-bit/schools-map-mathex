@@ -90,6 +90,15 @@ if meta:
     if c.get('csv_rows') != len(seen_row):
         err(f'_meta.counts.csv_rows={c.get("csv_rows")} != фактически {len(seen_row)}')
 
+# parent_id: ссылка на существующую сущность; у green-программ должен быть родитель
+for e in entities:
+    par = e.get('parent_id')
+    if par:
+        if par not in seen_ent:
+            err(f"{e['id']}: parent_id {par!r} не существует")
+        if e.get('kind') != 'green':
+            err(f"{e['id']}: parent_id есть, но kind={e.get('kind')} (родительская связь для green-программ)")
+
 # --- 4: синхронность артефактов (та же сериализация, что в build_all.py) ---
 point_by_id = {p['id']: p for e in entities for p in e.get('points', [])}
 row_by_id = {r['id']: r for e in entities for r in e.get('csv_rows', [])}
