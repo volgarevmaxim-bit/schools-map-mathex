@@ -20,3 +20,4 @@ yandex_pages/
 !schools_content.json
 !data/entities.json
 Готово*.txt
+!/calendar/**

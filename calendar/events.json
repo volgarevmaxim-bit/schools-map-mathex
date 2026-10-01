@@ -1,0 +1,1331 @@
+{
+ "generated": "2026-10-01",
+ "count_dated": 12,
+ "count_undated": 88,
+ "dated": [
+  {
+   "school": "Новая школа",
+   "title": "Дополнительный набор в Новую школу: 4–10 классы",
+   "grades": [
+    4,
+    10
+   ],
+   "deadline": "2026-10-02",
+   "action": "Подать заявку на допнабор до 2 октября",
+   "url": "https://t.me/nschool88/2874",
+   "posted": "2026-09-30",
+   "channel": "nschool88",
+   "msg_id": 2874
+  },
+  {
+   "school": "Школа №57",
+   "title": "Допнабор в 10 биолого-химический спецкласс, регистрация до 2 октября",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": "2026-10-02",
+   "action": "Зарегистрироваться до 2 октября 10:00",
+   "url": "https://t.me/school57official/7690",
+   "posted": "2026-09-25",
+   "channel": "school57official",
+   "msg_id": 7690
+  },
+  {
+   "school": "Школа №1514",
+   "title": "День открытых дверей 3 октября: вертикали и профили",
+   "grades": [
+    6,
+    7
+   ],
+   "deadline": "2026-10-03",
+   "action": "Посетить день открытых дверей 3 октября",
+   "url": "https://t.me/school_1514/8430",
+   "posted": "2026-09-29",
+   "channel": "school_1514",
+   "msg_id": 8430
+  },
+  {
+   "school": "Школа №1514",
+   "title": "День открытых дверей школы №1514 для 6–7 классов",
+   "grades": [
+    6,
+    7
+   ],
+   "deadline": "2026-10-03",
+   "action": "Посетить день открытых дверей 3 октября",
+   "url": "https://t.me/school_1514/8316",
+   "posted": "2026-09-18",
+   "channel": "school_1514",
+   "msg_id": 8316
+  },
+  {
+   "school": "Интеллектуал",
+   "title": "День открытых дверей дополнительного образования школы",
+   "grades": null,
+   "deadline": "2026-10-04",
+   "action": "Зарегистрироваться и прийти 4 октября в 11:00",
+   "url": "https://t.me/sch_int_official/5534",
+   "posted": "2026-09-25",
+   "channel": "sch_int_official",
+   "msg_id": 5534
+  },
+  {
+   "school": "Летово",
+   "title": "День открытых дверей «Летово» 4 октября",
+   "grades": null,
+   "deadline": "2026-10-04",
+   "action": "Записаться на день открытых дверей 4 октября",
+   "url": "https://t.me/letovonews/2926",
+   "posted": "2026-09-25",
+   "channel": "letovonews",
+   "msg_id": 2926
+  },
+  {
+   "school": "Летово",
+   "title": "День открытых дверей в «Летово» для 6–8 классов",
+   "grades": [
+    6,
+    8
+   ],
+   "deadline": "2026-10-04",
+   "action": "Записаться в личном кабинете абитуриента",
+   "url": "https://t.me/letovonews/2891",
+   "posted": "2026-09-03",
+   "channel": "letovonews",
+   "msg_id": 2891
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Допнабор в 8 и 10 классы: матвертикаль и предпринимательский класс",
+   "grades": [
+    8,
+    10
+   ],
+   "deadline": "2026-10-06",
+   "action": "Зарегистрироваться на вступительные испытания 6 октября",
+   "url": "https://t.me/school_1514/8312",
+   "posted": "2026-09-17",
+   "channel": "school_1514",
+   "msg_id": 8312
+  },
+  {
+   "school": "Летово",
+   "title": "Встреча «Летово» в Санкт-Петербурге для 3–9 классов и родителей",
+   "grades": [
+    3,
+    9
+   ],
+   "deadline": "2026-10-18",
+   "action": "Зарегистрироваться на встречу 18 октября",
+   "url": "https://t.me/letovonews/2903",
+   "posted": "2026-09-09",
+   "channel": "letovonews",
+   "msg_id": 2903
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Регистрация на предметные курсы, Онлайн-лицей и экспресс-курсы",
+   "grades": null,
+   "deadline": "2026-10-22",
+   "action": "Записаться на курсы до 22.10",
+   "url": "https://t.me/openschool_1535/431",
+   "posted": "2026-09-28",
+   "channel": "openschool_1535",
+   "msg_id": 431
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Онлайн день открытых дверей Лицея 23 октября",
+   "grades": null,
+   "deadline": "2026-10-23",
+   "action": "Зарегистрироваться на день открытых дверей",
+   "url": "https://t.me/lyceum1535/12526",
+   "posted": "2026-09-21",
+   "channel": "lyceum1535",
+   "msg_id": 12526
+  },
+  {
+   "school": "Летово",
+   "title": "День открытых дверей «Летово» 15 ноября для 6–8 классов",
+   "grades": [
+    6,
+    8
+   ],
+   "deadline": "2026-11-15",
+   "action": "Зарегистрироваться в личном кабинете на 15 ноября",
+   "url": "https://t.me/letovonews/2928",
+   "posted": "2026-09-29",
+   "channel": "letovonews",
+   "msg_id": 2928
+  }
+ ],
+ "undated": [
+  {
+   "school": "Бауманская инженерная школа №1580",
+   "title": "Лига юного олимпиадника: подготовка к олимпиадам для 3-6 классов",
+   "grades": [
+    3,
+    6
+   ],
+   "deadline": null,
+   "action": "Подать заявку на кружок с 5 октября",
+   "url": "https://t.me/sch1580/13698",
+   "posted": "2026-10-01",
+   "channel": "sch1580",
+   "msg_id": 13698
+  },
+  {
+   "school": "Бауманская инженерная школа №1580",
+   "title": "Приём заявок на проект «Уникальные документы. Взгляд нового поколения»",
+   "grades": null,
+   "deadline": null,
+   "action": "Зарегистрироваться на сайте и подготовить эссе",
+   "url": "https://t.me/sch1580/13645",
+   "posted": "2026-09-25",
+   "channel": "sch1580",
+   "msg_id": 13645
+  },
+  {
+   "school": "Бауманская инженерная школа №1580",
+   "title": "Приём заявок в сборные Москвы по олимпиадным направлениям",
+   "grades": null,
+   "deadline": null,
+   "action": "Подать заявку на отбор в сборную Москвы",
+   "url": "https://t.me/sch1580/13490",
+   "posted": "2026-09-03",
+   "channel": "sch1580",
+   "msg_id": 13490
+  },
+  {
+   "school": "Вторая школа",
+   "title": "Допнабор в ВМШ: физика, информатика, робототехника, языки",
+   "grades": [
+    4,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru по коду объединения",
+   "url": "https://t.me/lyceum2schmoscow/3084",
+   "posted": "2026-09-29",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 3084
+  },
+  {
+   "school": "Вторая школа",
+   "title": "Завершается запись на курс Python для 5 классов",
+   "grades": [
+    5,
+    5
+   ],
+   "deadline": null,
+   "action": "Успеть записаться на курс Python",
+   "url": "https://t.me/lyceum2schmoscow/3078",
+   "posted": "2026-09-28",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 3078
+  },
+  {
+   "school": "Вторая школа",
+   "title": "Открыт набор на курс робототехники для 4–6 классов",
+   "grades": [
+    4,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на курс робототехники",
+   "url": "https://t.me/lyceum2schmoscow/3075",
+   "posted": "2026-09-26",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 3075
+  },
+  {
+   "school": "Вторая школа",
+   "title": "ВМШ: регистрация завершена, допнабор с 29 сентября",
+   "grades": null,
+   "deadline": null,
+   "action": "Следить за анонсом допнабора 29 сентября",
+   "url": "https://t.me/lyceum2schmoscow/3058",
+   "posted": "2026-09-22",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 3058
+  },
+  {
+   "school": "Вторая школа",
+   "title": "Преподаватели городского кружка по олимпиадной математике для 5 класса",
+   "grades": [
+    5,
+    5
+   ],
+   "deadline": null,
+   "action": "Узнать о преподавателях кружка и записаться",
+   "url": "https://t.me/lyceum2schmoscow/2982",
+   "posted": "2026-09-10",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 2982
+  },
+  {
+   "school": "Вторая школа",
+   "title": "Регистрация в Вечернюю многопредметную школу (ВМШ), 2–7 классы",
+   "grades": [
+    2,
+    7
+   ],
+   "deadline": null,
+   "action": "Записать ребёнка в ВМШ на сайте лицея",
+   "url": "https://t.me/lyceum2schmoscow/2944",
+   "posted": "2026-09-01",
+   "channel": "lyceum2schmoscow",
+   "msg_id": 2944
+  },
+  {
+   "school": "Гимназия №1543",
+   "title": "Запись на языковые курсы: английский и испанский",
+   "grades": [
+    3,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться через mos.ru (коды 2560294, 2560414)",
+   "url": "https://t.me/ru1543/3662",
+   "posted": "2026-09-23",
+   "channel": "ru1543",
+   "msg_id": 3662
+  },
+  {
+   "school": "Гимназия №1543",
+   "title": "Добор в 10 классы: математический, биологический, универсальный",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на диагностики добора в 10 класс",
+   "url": "https://t.me/ru1543/3657",
+   "posted": "2026-09-10",
+   "channel": "ru1543",
+   "msg_id": 3657
+  },
+  {
+   "school": "Гимназия №1543",
+   "title": "Вечерняя гуманитарная школа для 7 классов: история и литература",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на курс через mos.ru или МЭШ",
+   "url": "https://t.me/ru1543/3656",
+   "posted": "2026-09-07",
+   "channel": "ru1543",
+   "msg_id": 3656
+  },
+  {
+   "school": "Гимназия №1543",
+   "title": "Открыта запись на кружок «Нестандартная математика» (4–6 классы)",
+   "grades": [
+    4,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на кружок по коду на mos.ru",
+   "url": "https://t.me/ru1543/3655",
+   "posted": "2026-09-04",
+   "channel": "ru1543",
+   "msg_id": 3655
+  },
+  {
+   "school": "Европейская гимназия",
+   "title": "Есть места в 6–9 классах, приём заявок и экскурсии",
+   "grades": [
+    6,
+    9
+   ],
+   "deadline": null,
+   "action": "Оставить заявку на поступление в 6–9 классы",
+   "url": "https://t.me/eurogym_ru/1258",
+   "posted": "2026-10-01",
+   "channel": "eurogym_ru",
+   "msg_id": 1258
+  },
+  {
+   "school": "Интеллектуал",
+   "title": "Приём заявок на проект «Уникальные документы. Взгляд нового поколения»",
+   "grades": null,
+   "deadline": null,
+   "action": "Зарегистрироваться и подготовить конкурсное эссе",
+   "url": "https://t.me/sch_int_official/5529",
+   "posted": "2026-09-25",
+   "channel": "sch_int_official",
+   "msg_id": 5529
+  },
+  {
+   "school": "Интеллектуал",
+   "title": "Кружок шахмат для взрослых: запись через mos.ru, по воскресеньям",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться в кружок шахмат через mos.ru",
+   "url": "https://t.me/sch_int_official/5496",
+   "posted": "2026-09-20",
+   "channel": "sch_int_official",
+   "msg_id": 5496
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "«Лига юного олимпиадника»: подготовка к олимпиадам по математике и естественным наукам",
+   "grades": [
+    3,
+    6
+   ],
+   "deadline": null,
+   "action": "Подать заявку с 5 октября",
+   "url": "https://t.me/kurchat/10142",
+   "posted": "2026-10-01",
+   "channel": "kurchat",
+   "msg_id": 10142
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "Кружок «Инженерный старт» для 6 классов",
+   "grades": [
+    6,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru",
+   "url": "https://t.me/kurchat/10122",
+   "posted": "2026-09-24",
+   "channel": "kurchat",
+   "msg_id": 10122
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "Занятия «Олимпиадная математика» для 4 классов с 1 октября",
+   "grades": [
+    4,
+    4
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, мест мало",
+   "url": "https://t.me/kurchat/10072",
+   "posted": "2026-09-17",
+   "channel": "kurchat",
+   "msg_id": 10072
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "Вечерние онлайн-кружки по математике для 5 и 8 классов",
+   "grades": [
+    5,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на кружок по математике",
+   "url": "https://t.me/kurchat/10035",
+   "posted": "2026-09-07",
+   "channel": "kurchat",
+   "msg_id": 10035
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "«Лига юного олимпиадника»: подготовка к олимпиадам по математике и естественным наукам",
+   "grades": [
+    3,
+    6
+   ],
+   "deadline": null,
+   "action": "Подать заявку на school.mos.ru с 5 октября",
+   "url": "https://t.me/Lit1533/12811",
+   "posted": "2026-10-01",
+   "channel": "Lit1533",
+   "msg_id": 12811
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Приём заявок на проект «Уникальные документы: взгляд нового поколения»",
+   "grades": null,
+   "deadline": null,
+   "action": "Зарегистрироваться на конкурс и написать эссе",
+   "url": "https://t.me/Lit1533/12768",
+   "posted": "2026-09-25",
+   "channel": "Lit1533",
+   "msg_id": 12768
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Запись в кружок «Решение биологических задач» для 9 класса",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на кружок по биологии на mos.ru",
+   "url": "https://t.me/Lit1533/12754",
+   "posted": "2026-09-23",
+   "channel": "Lit1533",
+   "msg_id": 12754
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в астрономический кружок «АстроЛИТ» для 9–11 классов",
+   "grades": [
+    9,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, код 2519677",
+   "url": "https://t.me/Lit1533/12745",
+   "posted": "2026-09-18",
+   "channel": "Lit1533",
+   "msg_id": 12745
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в кружок углублённой информатики (Python) для 7 классов",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, код 2522263",
+   "url": "https://t.me/Lit1533/12743",
+   "posted": "2026-09-17",
+   "channel": "Lit1533",
+   "msg_id": 12743
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Кружок по решению олимпиадных задач по физике для 8–11 классов",
+   "grades": [
+    8,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться в физический кружок на mos.ru",
+   "url": "https://t.me/Lit1533/12719",
+   "posted": "2026-09-15",
+   "channel": "Lit1533",
+   "msg_id": 12719
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Открыта запись в кружок «Математический Олимп» для 7 класса",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на кружок на mos.ru",
+   "url": "https://t.me/Lit1533/12717",
+   "posted": "2026-09-15",
+   "channel": "Lit1533",
+   "msg_id": 12717
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в кружок изготовления прототипов для 7–8 классов",
+   "grades": [
+    7,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, код 2519867",
+   "url": "https://t.me/Lit1533/12708",
+   "posted": "2026-09-14",
+   "channel": "Lit1533",
+   "msg_id": 12708
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Курс «Бизнес-аналитик: Excel и 1С» для старшеклассников",
+   "grades": [
+    10,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на курс на mos.ru, код 2519636",
+   "url": "https://t.me/Lit1533/12706",
+   "posted": "2026-09-14",
+   "channel": "Lit1533",
+   "msg_id": 12706
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в кружок Python для новичков (6–8 классы)",
+   "grades": [
+    6,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, код 2519536",
+   "url": "https://t.me/Lit1533/12703",
+   "posted": "2026-09-12",
+   "channel": "Lit1533",
+   "msg_id": 12703
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в кружок олимпиадного программирования на C++ (8 класс)",
+   "grades": [
+    8,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru, код 2560261",
+   "url": "https://t.me/Lit1533/12701",
+   "posted": "2026-09-12",
+   "channel": "Lit1533",
+   "msg_id": 12701
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Курс подготовки к ЕГЭ по математике: задания II части",
+   "grades": [
+    10,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на курс через mos.ru (код 2560282)",
+   "url": "https://t.me/Lit1533/12699",
+   "posted": "2026-09-11",
+   "channel": "Lit1533",
+   "msg_id": 12699
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Кружок «Задачи с параметром» для 10 класса",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на кружок через mos.ru (код 2519488)",
+   "url": "https://t.me/Lit1533/12697",
+   "posted": "2026-09-11",
+   "channel": "Lit1533",
+   "msg_id": 12697
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в 3D-студию: моделирование и анимация в Blender",
+   "grades": [
+    7,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться в 3D-студию",
+   "url": "https://t.me/Lit1533/12689",
+   "posted": "2026-09-10",
+   "channel": "Lit1533",
+   "msg_id": 12689
+  },
+  {
+   "school": "ЛИТ 1533",
+   "title": "Набор в кружок «Цифровой арт» для 7-8 классов",
+   "grades": [
+    7,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться в кружок цифрового арта",
+   "url": "https://t.me/Lit1533/12687",
+   "posted": "2026-09-10",
+   "channel": "Lit1533",
+   "msg_id": 12687
+  },
+  {
+   "school": "Летово",
+   "title": "ИИ-ассистент для учителей; открыт приём в 7–9 классы",
+   "grades": [
+    7,
+    9
+   ],
+   "deadline": null,
+   "action": "Подать заявку в 7–9 классы",
+   "url": "https://t.me/letovonews/2911",
+   "posted": "2026-09-16",
+   "channel": "letovonews",
+   "msg_id": 2911
+  },
+  {
+   "school": "Летово",
+   "title": "Бесплатные онлайн-курсы китайского и испанского для 3–8 классов",
+   "grades": [
+    3,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на бесплатные курсы языков",
+   "url": "https://t.me/letovonews/2910",
+   "posted": "2026-09-15",
+   "channel": "letovonews",
+   "msg_id": 2910
+  },
+  {
+   "school": "Летово Кидс",
+   "title": "Набор в кружки и секции «Летово Кидс»",
+   "grades": null,
+   "deadline": null,
+   "action": "Оставить заявку на пробное занятие",
+   "url": "https://t.me/letovo_kids/502",
+   "posted": "2026-09-29",
+   "channel": "letovo_kids",
+   "msg_id": 502
+  },
+  {
+   "school": "Летово Кидс",
+   "title": "Образовательная программа «Летово Кидс» с 1 сентября",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": null,
+   "action": "Записаться в «Летово Кидс»",
+   "url": "https://t.me/letovo_kids/493",
+   "posted": "2026-09-21",
+   "channel": "letovo_kids",
+   "msg_id": 493
+  },
+  {
+   "school": "Новая школа",
+   "title": "О развитии навыков через дополнительные занятия и кружки",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на курсы и кружки",
+   "url": "https://t.me/nschool88/2795",
+   "posted": "2026-09-11",
+   "channel": "nschool88",
+   "msg_id": 2795
+  },
+  {
+   "school": "Новая школа",
+   "title": "Кружки по развитию мягких навыков и эмоционального интеллекта",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться в кружок по мягким навыкам",
+   "url": "https://t.me/nschool88/2785",
+   "posted": "2026-09-04",
+   "channel": "nschool88",
+   "msg_id": 2785
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Осенние каникулы в Школе ТОП: «Супермиссия», 7–13 лет",
+   "grades": [
+    1,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на каникулярную программу",
+   "url": "https://t.me/top_it_school/1048",
+   "posted": "2026-10-01",
+   "channel": "top_it_school",
+   "msg_id": 1048
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Онлайн-школа ТОП: 4–11 классы, подготовка к ОГЭ и ЕГЭ",
+   "grades": [
+    4,
+    11
+   ],
+   "deadline": null,
+   "action": "Оставить заявку на онлайн-обучение",
+   "url": "https://t.me/top_it_school/1047",
+   "posted": "2026-09-29",
+   "channel": "top_it_school",
+   "msg_id": 1047
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Уроки ИТ в начальной школе Школы ТОП",
+   "grades": [
+    1,
+    4
+   ],
+   "deadline": null,
+   "action": "Оставить заявку и узнать об обучении",
+   "url": "https://t.me/top_it_school/1046",
+   "posted": "2026-09-28",
+   "channel": "top_it_school",
+   "msg_id": 1046
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Московский аттестат для 9-классников на семейном обучении",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Узнать условия прикрепления к школе",
+   "url": "https://t.me/top_it_school/1030",
+   "posted": "2026-09-19",
+   "channel": "top_it_school",
+   "msg_id": 1030
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Набор на курс «Шахматы» для детей от 7 лет",
+   "grades": [
+    1,
+    11
+   ],
+   "deadline": null,
+   "action": "Записать ребенка на курс шахмат",
+   "url": "https://t.me/top_it_school/1023",
+   "posted": "2026-09-15",
+   "channel": "top_it_school",
+   "msg_id": 1023
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Открыт набор на подготовку к школе",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": null,
+   "action": "Записаться на подготовку к школе",
+   "url": "https://t.me/top_it_school/1022",
+   "posted": "2026-09-13",
+   "channel": "top_it_school",
+   "msg_id": 1022
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Набор на курс «Китайский язык Start» для начинающих",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на курс китайского языка",
+   "url": "https://t.me/top_it_school/1011",
+   "posted": "2026-09-03",
+   "channel": "top_it_school",
+   "msg_id": 1011
+  },
+  {
+   "school": "Хорошкола",
+   "title": "Старт регистрации школьного этапа ВсОШ по французскому языку",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на школьный этап ВсОШ по французскому",
+   "url": "https://t.me/horoschool/11445",
+   "posted": "2026-09-24",
+   "channel": "horoschool",
+   "msg_id": 11445
+  },
+  {
+   "school": "Хорошкола",
+   "title": "Приглашение восьмиклассников в лабораторию слова и образа",
+   "grades": [
+    8,
+    8
+   ],
+   "deadline": null,
+   "action": "Восьмиклассникам присоединиться к сообществу",
+   "url": "https://t.me/horoschool/11394",
+   "posted": "2026-09-16",
+   "channel": "horoschool",
+   "msg_id": 11394
+  },
+  {
+   "school": "Хорошкола",
+   "title": "Приём заявок на программу детских проектов «Хорошкола.дети.проект»",
+   "grades": null,
+   "deadline": null,
+   "action": "Подать заявку на программу детских проектов",
+   "url": "https://t.me/horoschool/11345",
+   "posted": "2026-09-08",
+   "channel": "horoschool",
+   "msg_id": 11345
+  },
+  {
+   "school": "Школа №1514",
+   "title": "«Лига юного олимпиадника»: подготовка к олимпиадам по математике и естественным наукам",
+   "grades": [
+    3,
+    6
+   ],
+   "deadline": null,
+   "action": "Подать заявку на кружок с 5 октября",
+   "url": "https://t.me/school_1514/8455",
+   "posted": "2026-10-01",
+   "channel": "school_1514",
+   "msg_id": 8455
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Книжный клуб для взрослых: лекции по литературе",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на курс лекций по литературе",
+   "url": "https://t.me/school_1514/8405",
+   "posted": "2026-09-28",
+   "channel": "school_1514",
+   "msg_id": 8405
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Открылась запись на кружки для дошкольников",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": null,
+   "action": "Записаться на кружки для дошкольников",
+   "url": "https://t.me/school_1514/8363",
+   "posted": "2026-09-24",
+   "channel": "school_1514",
+   "msg_id": 8363
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Курс «Высокий старт-7» по литературе для 7 классов",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на курс по литературе",
+   "url": "https://t.me/school_1514/8343",
+   "posted": "2026-09-22",
+   "channel": "school_1514",
+   "msg_id": 8343
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Запись на курс олимпиадной экономики для 9–10 классов",
+   "grades": [
+    9,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на курс олимпиадной экономики",
+   "url": "https://t.me/school_1514/8310",
+   "posted": "2026-09-16",
+   "channel": "school_1514",
+   "msg_id": 8310
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Открыта запись на кружки для школьников в центре МОСТ",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на кружки; с 24.09 — для дошкольников",
+   "url": "https://t.me/school_1514/8308",
+   "posted": "2026-09-16",
+   "channel": "school_1514",
+   "msg_id": 8308
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Набор на авторские курсы для 2-3 классов: литература и точные науки",
+   "grades": [
+    2,
+    3
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы для 2-3 классов",
+   "url": "https://t.me/school_1514/8287",
+   "posted": "2026-09-14",
+   "channel": "school_1514",
+   "msg_id": 8287
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Набор на курсы подготовки в 8-е профильные классы «Высокий старт-7»",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы «Высокий старт-7»",
+   "url": "https://t.me/school_1514/8276",
+   "posted": "2026-09-12",
+   "channel": "school_1514",
+   "msg_id": 8276
+  },
+  {
+   "school": "Школа №1514",
+   "title": "Онлайн-группа «Словесность» для 4 класса, подготовка к 5-му",
+   "grades": [
+    4,
+    4
+   ],
+   "deadline": null,
+   "action": "Записаться в группу «Словесность»",
+   "url": "https://t.me/school_1514/8270",
+   "posted": "2026-09-10",
+   "channel": "school_1514",
+   "msg_id": 8270
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Допнабор в онлайн-курсы «Открытой школы» для будущих абитуриентов",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться в онлайн-курсы «Открытой школы»",
+   "url": "https://t.me/lyceum1535/12595",
+   "posted": "2026-09-28",
+   "channel": "lyceum1535",
+   "msg_id": 12595
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Регистрация на школьный этап ВсОШ по испанскому языку",
+   "grades": null,
+   "deadline": null,
+   "action": "Зарегистрироваться в МЭШ на олимпиаду",
+   "url": "https://t.me/lyceum1535/12567",
+   "posted": "2026-09-27",
+   "channel": "lyceum1535",
+   "msg_id": 12567
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Приём заявок на проект «Уникальные документы. Взгляд нового поколения»",
+   "grades": null,
+   "deadline": null,
+   "action": "Подать заявку на участие в проекте",
+   "url": "https://t.me/lyceum1535/12557",
+   "posted": "2026-09-25",
+   "channel": "lyceum1535",
+   "msg_id": 12557
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Занятия по олимпиадной экономике и географии в Лицее",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на занятия по экономике и географии",
+   "url": "https://t.me/lyceum1535/12532",
+   "posted": "2026-09-22",
+   "channel": "lyceum1535",
+   "msg_id": 12532
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Набор на курс подготовки к ЕГЭ по английскому языку",
+   "grades": [
+    10,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на курс подготовки к ЕГЭ по английскому",
+   "url": "https://t.me/lyceum1535/12531",
+   "posted": "2026-09-22",
+   "channel": "lyceum1535",
+   "msg_id": 12531
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Медико-биологический профиль: олимпиадная биология, медхимия, латынь",
+   "grades": [
+    7,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы медбио профиля",
+   "url": "https://t.me/lyceum1535/12515",
+   "posted": "2026-09-16",
+   "channel": "lyceum1535",
+   "msg_id": 12515
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Курсы гуманитарного профиля: олимпиадный русский язык и литература",
+   "grades": [
+    8,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы по русскому языку и литературе",
+   "url": "https://t.me/lyceum1535/12494",
+   "posted": "2026-09-15",
+   "channel": "lyceum1535",
+   "msg_id": 12494
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Неделя допобразования: кружки, секции и знакомство с педагогами",
+   "grades": null,
+   "deadline": null,
+   "action": "Узнать о кружках и записаться на занятия",
+   "url": "https://t.me/lyceum1535/12490",
+   "posted": "2026-09-14",
+   "channel": "lyceum1535",
+   "msg_id": 12490
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Спецкурс «Олимпиадная экономика» для 10–11 предпринимательских классов",
+   "grades": [
+    10,
+    11
+   ],
+   "deadline": null,
+   "action": "Уточнить запись у учителя экономики",
+   "url": "https://t.me/lyceum1535/12469",
+   "posted": "2026-09-12",
+   "channel": "lyceum1535",
+   "msg_id": 12469
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Допнабор в онлайн-лицей: английский и биология для 6 классов",
+   "grades": [
+    6,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы для 6 класса",
+   "url": "https://t.me/openschool_1535/432",
+   "posted": "2026-10-01",
+   "channel": "openschool_1535",
+   "msg_id": 432
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Открыта регистрация на предметные курсы Онлайн-лицея",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на курсы Онлайн-лицея",
+   "url": "https://t.me/openschool_1535/430",
+   "posted": "2026-09-28",
+   "channel": "openschool_1535",
+   "msg_id": 430
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Допгруппы онлайн-лицея: английский и биология для 6 классов",
+   "grades": [
+    6,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться в онлайн-группы для 6 класса",
+   "url": "https://t.me/sch1535/958",
+   "posted": "2026-10-01",
+   "channel": "sch1535",
+   "msg_id": 958
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Дополнительные группы «Открытой школы» для абитуриентов онлайн",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на онлайн-курсы",
+   "url": "https://t.me/sch1535/957",
+   "posted": "2026-09-29",
+   "channel": "sch1535",
+   "msg_id": 957
+  },
+  {
+   "school": "Школа №1535",
+   "title": "Курс «Клуб АнтиСтресс» для абитуриентов",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на курс психологической поддержки",
+   "url": "https://t.me/sch1535/956",
+   "posted": "2026-09-24",
+   "channel": "sch1535",
+   "msg_id": 956
+  },
+  {
+   "school": "Школа №1535",
+   "title": "FAQ: поступление в лицей и курсы Открытой школы",
+   "grades": [
+    7,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на курсы Открытой школы",
+   "url": "https://t.me/sch1535/950",
+   "posted": "2026-09-21",
+   "channel": "sch1535",
+   "msg_id": 950
+  },
+  {
+   "school": "Школа №548 «Царицыно»",
+   "title": "«Лига юного олимпиадника»: подготовка к олимпиадам по математике и естественным наукам",
+   "grades": [
+    3,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться в «Лигу юного олимпиадника» с 5 октября",
+   "url": "https://t.me/school_548_tsaritsyno/9688",
+   "posted": "2026-10-01",
+   "channel": "school_548_tsaritsyno",
+   "msg_id": 9688
+  },
+  {
+   "school": "Школа №548 «Царицыно»",
+   "title": "AI-хакатон для девушек 21–28 ноября, офлайн+онлайн",
+   "grades": [
+    10,
+    11
+   ],
+   "deadline": null,
+   "action": "Оставить заявку на AI-хакатон на сайте",
+   "url": "https://t.me/school_548_tsaritsyno/9687",
+   "posted": "2026-09-30",
+   "channel": "school_548_tsaritsyno",
+   "msg_id": 9687
+  },
+  {
+   "school": "Школа №548 «Царицыно»",
+   "title": "Набор в 7 класс: точные науки, ИИ, креативные индустрии",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Позвонить: 89266688331 (Анна Валерьевна)",
+   "url": "https://t.me/school_548_tsaritsyno/9568",
+   "posted": "2026-09-07",
+   "channel": "school_548_tsaritsyno",
+   "msg_id": 9568
+  },
+  {
+   "school": "Школа №57",
+   "title": "Регистрация на вступительные испытания в 10 «С» биохим-спецкласс",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на вступительные испытания",
+   "url": "https://t.me/school57official/7713",
+   "posted": "2026-09-30",
+   "channel": "school57official",
+   "msg_id": 7713
+  },
+  {
+   "school": "Школа №57",
+   "title": "Набор в шахматный клуб «Ферзь» для детей 7–12 лет",
+   "grades": [
+    1,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться в шахматный клуб",
+   "url": "https://t.me/school57official/7710",
+   "posted": "2026-09-29",
+   "channel": "school57official",
+   "msg_id": 7710
+  },
+  {
+   "school": "Школа №57",
+   "title": "Открыта регистрация на испытания в 10 биолого-химический спецкласс",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться на вступительные испытания",
+   "url": "https://t.me/school57official/7691",
+   "posted": "2026-09-26",
+   "channel": "school57official",
+   "msg_id": 7691
+  },
+  {
+   "school": "Школа №57",
+   "title": "Кружок архитектурного макетирования для 4-7 классов",
+   "grades": [
+    4,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться в кружок",
+   "url": "https://t.me/school57official/7650",
+   "posted": "2026-09-23",
+   "channel": "school57official",
+   "msg_id": 7650
+  },
+  {
+   "school": "Школа №57",
+   "title": "Допнабор в кружок по русскому языку «Слово» для 4 классов",
+   "grades": [
+    4,
+    4
+   ],
+   "deadline": null,
+   "action": "Записаться в кружок по русскому языку",
+   "url": "https://t.me/school57official/7623",
+   "posted": "2026-09-21",
+   "channel": "school57official",
+   "msg_id": 7623
+  },
+  {
+   "school": "Школа №57",
+   "title": "Интенсив по математике для 9 классов",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на интенсив по математике",
+   "url": "https://t.me/school57official/7620",
+   "posted": "2026-09-18",
+   "channel": "school57official",
+   "msg_id": 7620
+  },
+  {
+   "school": "Школа №57",
+   "title": "Курс «Знакомство с физикой» для 6 классов",
+   "grades": [
+    6,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на курс физики",
+   "url": "https://t.me/school57official/7598",
+   "posted": "2026-09-16",
+   "channel": "school57official",
+   "msg_id": 7598
+  },
+  {
+   "school": "Школа №57",
+   "title": "Бесплатные кружки Вечерних школ 57-й для учеников Москвы",
+   "grades": [
+    5,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться в кружки Вечерних школ",
+   "url": "https://t.me/school57official/7596",
+   "posted": "2026-09-15",
+   "channel": "school57official",
+   "msg_id": 7596
+  },
+  {
+   "school": "Школа №57",
+   "title": "Занятия английским Oxford Discover для 2–3 классов",
+   "grades": [
+    2,
+    3
+   ],
+   "deadline": null,
+   "action": "Записаться на занятия по английскому",
+   "url": "https://t.me/school57official/7567",
+   "posted": "2026-09-10",
+   "channel": "school57official",
+   "msg_id": 7567
+  },
+  {
+   "school": "Школа №57",
+   "title": "Набор в Научный клуб «Лантанум-57» и Медиастудию57",
+   "grades": [
+    3,
+    11
+   ],
+   "deadline": null,
+   "action": "Записать в научный клуб или медиастудию",
+   "url": "https://t.me/school57official/7509",
+   "posted": "2026-09-04",
+   "channel": "school57official",
+   "msg_id": 7509
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Календарь возможностей — школьный радар</title>
+<style>
+  :root { --ink:#1a1a2e; --dim:#5a5a72; --line:#e4e4ee; --accent:#2b5aa7; --bg:#fafafa; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+         color: var(--ink); background: var(--bg); margin: 0; padding: 24px 16px 64px; }
+  main { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: var(--dim); font-size: 14px; margin-bottom: 28px; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--line); }
+  .count { color: var(--dim); font-weight: normal; font-size: 14px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px;
+          padding: 14px 18px; margin: 10px 0; }
+  .date-badge { display: inline-block; background: var(--accent); color: #fff; border-radius: 6px;
+                font-weight: 600; font-size: 13px; padding: 3px 10px; margin-bottom: 8px; }
+  .school { font-weight: 700; }
+  .grades { color: var(--dim); font-weight: normal; font-size: 14px; }
+  .title { margin: 4px 0 6px; font-size: 15px; }
+  .action { color: var(--dim); font-size: 14px; }
+  .link { font-size: 13px; }
+  .link a { color: var(--accent); text-decoration: none; }
+  .link a:hover { text-decoration: underline; }
+  footer { margin-top: 40px; color: var(--dim); font-size: 13px; line-height: 1.5;
+           border-top: 1px solid var(--line); padding-top: 14px; }
+  .empty { color: var(--dim); font-style: italic; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Календарь возможностей</h1>
+  <div class="sub">Дни открытых дверей и профильные наборы (❗ core) из Telegram-каналов школ Москвы.
+     Обновление: <span id="generated">…</span>. Дайджесты — в чате «Школьный монитор», ежедневно в 20:00 МСК.</div>
+
+  <h2>Датированные события <span class="count" id="dated-n"></span></h2>
+  <div id="dated"></div>
+
+  <h2>Открытая запись (без дедлайна) <span class="count" id="undated-n"></span></h2>
+  <div id="undated"></div>
+
+  <footer>
+    Источник: openhouse-radar — сбор из 22 Telegram-каналов школ, LLM-классификация (core-профильность),
+    детерминированный семейный фильтр. Ссылки ведут на исходные посты.
+  </footer>
+</main>
+<script>
+const fmt = s => s ? s.split("-").reverse().join(".") : "";
+const gradesRu = g => !g ? "" : (g[0] === 0 && g[1] === 0 ? "" :
+  g[0] === g[1] ? ` (${g[0]} класс)` : ` (${g[0]}–${g[1]} классы)`);
+function card(ev, dated) {
+  return `<div class="card">` +
+    (dated && ev.deadline ? `<span class="date-badge">${fmt(ev.deadline)}</span> ` : "") +
+    `<span class="school">${ev.school}</span><span class="grades">${gradesRu(ev.grades)}</span>` +
+    `<div class="title">${ev.title}</div>` +
+    (ev.action ? `<div class="action">${ev.action}</div>` : "") +
+    `<div class="link"><a href="${ev.url}" target="_blank" rel="noopener">исходный пост ↗</a>` +
+    ` · опубликовано ${fmt(ev.posted)}</div></div>`;
+}
+fetch("./events.json").then(r => r.json()).then(d => {
+  document.getElementById("generated").textContent = fmt(d.generated);
+  const dt = document.getElementById("dated");
+  dt.innerHTML = d.dated.length
+    ? d.dated.map(e => card(e, true)).join("")
+    : `<div class="empty">На текущий момент датированных событий нет.</div>`;
+  document.getElementById("dated-n").textContent = `· ${d.dated.length}`;
+  const ud = document.getElementById("undated");
+  ud.innerHTML = d.undated.length
+    ? d.undated.map(e => card(e, false)).join("")
+    : `<div class="empty">Нет открытых наборов.</div>`;
+  document.getElementById("undated-n").textContent = `· ${d.undated.length}`;
+});
+</script>
+</body>
+</html>
