@@ -5,26 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Календарь возможностей — школьный радар</title>
 <style>
-  :root { --ink:#1a1a2e; --dim:#5a5a72; --line:#e4e4ee; --accent:#2b5aa7; --bg:#fafafa; }
+  :root { --ink:#1a1a2e; --dim:#5a5a72; --line:#e4e4ee; --accent:#2b5aa7; --urgent:#d43535; --bg:#fafafa; }
   * { box-sizing: border-box; }
   body { font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
          color: var(--ink); background: var(--bg); margin: 0; padding: 24px 16px 64px; }
   main { max-width: 860px; margin: 0 auto; }
   h1 { font-size: 26px; margin: 0 0 4px; }
   .sub { color: var(--dim); font-size: 14px; margin-bottom: 28px; }
-  h2 { font-size: 19px; margin: 34px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--line); }
-  .count { color: var(--dim); font-weight: normal; font-size: 14px; }
+  .group-header { font-size: 16px; font-weight: 600; margin: 24px 0 8px;
+                  padding: 8px 14px; background: #f0f3f8; border-radius: 8px; }
+  .group-header .gcount { color: var(--dim); font-weight: normal; font-size: 13px; }
   .card { background: #fff; border: 1px solid var(--line); border-radius: 10px;
-          padding: 14px 18px; margin: 10px 0; }
+          padding: 14px 18px; margin: 8px 0; }
+  .card.urgent { border-left: 4px solid var(--urgent); }
   .date-badge { display: inline-block; background: var(--accent); color: #fff; border-radius: 6px;
                 font-weight: 600; font-size: 13px; padding: 3px 10px; margin-bottom: 8px; }
+  .date-badge.urgent { background: var(--urgent); }
   .school { font-weight: 700; }
   .grades { color: var(--dim); font-weight: normal; font-size: 14px; }
   .title { margin: 4px 0 6px; font-size: 15px; }
   .action { color: var(--dim); font-size: 14px; }
-  .link { font-size: 13px; }
-  .link a { color: var(--accent); text-decoration: none; }
-  .link a:hover { text-decoration: underline; }
+  .meta { font-size: 13px; color: var(--dim); }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  .age-label { color: var(--dim); font-size: 12px; }
   footer { margin-top: 40px; color: var(--dim); font-size: 13px; line-height: 1.5;
            border-top: 1px solid var(--line); padding-top: 14px; }
   .empty { color: var(--dim); font-style: italic; }
@@ -43,35 +47,107 @@
   <div id="undated"></div>
 
   <footer>
-    Источник: openhouse-radar — сбор из 22 Telegram-каналов школ, LLM-классификация (core-профильность),
-    детерминированный семейный фильтр. Ссылки ведут на исходные посты.
+    Источник: openhouse-radar — сбор из 22 Telegram-каналов школ Москвы,
+    LLM-классификация (core-профильность), детерминированный семейный фильтр.
+    Ссылки ведут на исходные посты.
+    <br><a href="./build_report.txt" target="_blank">Отчёт о сборке →</a>
   </footer>
 </main>
 <script>
 const fmt = s => s ? s.split("-").reverse().join(".") : "";
-const gradesRu = g => !g ? "" : (g[0] === 0 && g[1] === 0 ? "" :
-  g[0] === g[1] ? ` (${g[0]} класс)` : ` (${g[0]}–${g[1]} классы)`);
-function card(ev, dated) {
-  return `<div class="card">` +
-    (dated && ev.deadline ? `<span class="date-badge">${fmt(ev.deadline)}</span> ` : "") +
-    `<span class="school">${ev.school}</span><span class="grades">${gradesRu(ev.grades)}</span>` +
+
+function parseISO(s) { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); }
+function startOfDay(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+const dayMonth = d => d.toLocaleDateString("ru-RU", { day: "numeric", month: "long" });
+
+/** Лейбл возраста карточки: возраст/классы/«возраст не указан» — поле age_display из билда */
+const ageText = ev => ev.age_display ? ` (${ev.age_display})` : "";
+
+/** Свежесть поста: «вчера», «N дн. назад» */
+function ageLabel(days) {
+  if (days === undefined || days === null || days < 0) return "";
+  if (days === 0) return "только что";
+  if (days === 1) return "вчера";
+  if (days < 30) return `${days} дн. назад`;
+  return `${Math.floor(days / 30)} мес. назад`;
+}
+
+/** Срочность: дедлайн <= завтра */
+function isUrgent(dl) {
+  if (!dl) return false;
+  const d0 = startOfDay(parseISO(dl));
+  const t0 = startOfDay(new Date());
+  const tomorrow = new Date(t0); tomorrow.setDate(tomorrow.getDate() + 1);
+  return d0 <= tomorrow;
+}
+
+/** Группы датированных: «Сегодня, 2 октября» / «Завтра, 3 октября» / «6 октября, вторник».
+    Вычисляется на клиенте из deadline (не из запечённого group). */
+function dateGroups(list) {
+  const t0 = startOfDay(new Date());
+  const tm0 = new Date(t0); tm0.setDate(tm0.getDate() + 1);
+  const groups = new Map();
+  for (const ev of list) {
+    if (!ev.deadline) continue;
+    const d0 = startOfDay(parseISO(ev.deadline));
+    if (d0 < t0) continue;                       // устаревшие не показываем
+    let key, label, sort;
+    if (+d0 === +t0)       { key = "today";    label = `Сегодня, ${dayMonth(d0)}`; sort = -2; }
+    else if (+d0 === +tm0) { key = "tomorrow"; label = `Завтра, ${dayMonth(d0)}`; sort = -1; }
+    else {
+      key = ev.deadline;
+      const wd = d0.toLocaleDateString("ru-RU", { weekday: "long" });
+      const yr = d0.getFullYear() !== t0.getFullYear() ? ` ${d0.getFullYear()}` : "";
+      label = `${dayMonth(d0)}${yr}, ${wd}`; sort = +d0;
+    }
+    if (!groups.has(key)) groups.set(key, { label, sort, items: [] });
+    groups.get(key).items.push(ev);
+  }
+  return [...groups.values()].sort((a, b) => a.sort - b.sort);
+}
+
+function card(ev, showDate) {
+  const urgent = isUrgent(ev.deadline) ? " urgent" : "";
+  const badgeCls = isUrgent(ev.deadline) ? "date-badge urgent" : "date-badge";
+  const al = ageLabel(ev.age_days);
+  return `<div class="card${urgent}">` +
+    (showDate && ev.deadline ? `<span class="${badgeCls}">${fmt(ev.deadline)}</span> ` : "") +
+    `<span class="school">${ev.school}</span><span class="grades">${ageText(ev)}</span>` +
     `<div class="title">${ev.title}</div>` +
     (ev.action ? `<div class="action">${ev.action}</div>` : "") +
-    `<div class="link"><a href="${ev.url}" target="_blank" rel="noopener">исходный пост ↗</a>` +
-    ` · опубликовано ${fmt(ev.posted)}</div></div>`;
+    `<div class="meta"><a href="${ev.url}" target="_blank" rel="noopener">исходный пост ↗</a>` +
+    ` · опубликовано ${fmt(ev.posted)}` +
+    (al ? ` <span class="age-label">(${al})</span>` : "") +
+    `</div></div>`;
 }
+
+function renderDated(list) {
+  const groups = dateGroups(list);
+  if (!groups.length)
+    return `<div class="empty">На текущий момент датированных событий нет.</div>`;
+  let html = "";
+  let n = 0;
+  for (const g of groups) {
+    n += g.items.length;
+    html += `<div class="group-header">${g.label} <span class="gcount">· ${g.items.length}</span></div>`;
+    html += g.items.map(e => card(e, true)).join("");
+  }
+  document.getElementById("dated-n").textContent = `· ${n}`;
+  return html;
+}
+
 fetch("./events.json").then(r => r.json()).then(d => {
   document.getElementById("generated").textContent = fmt(d.generated);
-  const dt = document.getElementById("dated");
-  dt.innerHTML = d.dated.length
-    ? d.dated.map(e => card(e, true)).join("")
-    : `<div class="empty">На текущий момент датированных событий нет.</div>`;
-  document.getElementById("dated-n").textContent = `· ${d.dated.length}`;
+  document.getElementById("dated").innerHTML = renderDated(d.dated);
   const ud = document.getElementById("undated");
   ud.innerHTML = d.undated.length
     ? d.undated.map(e => card(e, false)).join("")
     : `<div class="empty">Нет открытых наборов.</div>`;
   document.getElementById("undated-n").textContent = `· ${d.undated.length}`;
+}).catch(e => {
+  document.getElementById("dated").innerHTML =
+    `<div class="empty">Не удалось загрузить данные событий.</div>`;
+  console.error(e);
 });
 </script>
 </body>
