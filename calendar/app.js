@@ -67,54 +67,41 @@ function isUrgent(dl) {
 }
 
 /* ============================================================
- * 3. ЭВРИСТИКИ (до v4 — будут заменены нативными полями)
+ * 3. НАТИВНЫЕ ПОЛЯ v4 (subtype/format/direction/grades → фильтры)
  * ============================================================ */
+/* Маппинг v4-категорий → id чипов UI (UI-имена сохранены из v3-эвристик). */
+const SUBTYPE_TO_TYPE = {
+  open_house:     'open-house',
+  evening_school: 'evening-school',
+  admission_prep: 'prep',
+  class_admission:'admission',
+  course_club:    'courses',
+  other:          'other'
+};
+const FORMAT_VALUES   = new Set(['online','offline','mixed']);
+const DIRECTION_VALUES= new Set(['STEAM','HASS','other']);
 
-/* --- 3a. Тип (6 бакетов, приоритет сверху вниз) --- */
-const TYPE_RULES = [
-  { id: 'open-house',     re: /день\s+открытых\s+дверей|экскурс|знакомств/i },
-  { id: 'evening-school', re: /вечерн\w*\s+(?:школ|многопредметн)|ВМШ|многопредметн/i },
-  { id: 'prep',           re: /подготовк\w*\s*(?:к\s*(?:школ|поступл|5)|альные\s*курс)/i },
-  { id: 'admission',      re: /(?:набор|добор|допнабор|зачислени).*(?:класс|спецкласс|вертикали|профиль)|(?:класс|спецкласс|вертикали|профиль).*(?:набор|добор|допнабор|зачислени)/i },
-  { id: 'courses',        re: /курс|кружок|клуб|студия|олимпиадн/i }
-];
-
-function classifyType(title, school) {
-  const text = `${title} ${school}`;
-  for (const r of TYPE_RULES) {
-    if (r.re.test(text)) return r.id;
-  }
-  return 'other';
+/* 3a. Тип: берём v4.subtype, null/other → 'other'. */
+function typeFromV4(subtype) {
+  if (!subtype) return 'other';
+  return SUBTYPE_TO_TYPE[subtype] || 'other';
 }
 
-/* --- 3b. Формат --- */
-const FORMAT_RULES = [
-  { id: 'online', re: /онлайн|дистанц|виртуаль/i },
-  { id: 'mixed',  re: /офлайн\+онлайн|офлайн\s+и\s+онлайн|гибрид/i }
-];
-
-function classifyFormat(title, school) {
-  const text = `${title} ${school}`;
-  for (const r of FORMAT_RULES) {
-    if (r.re.test(text)) return r.id;
-  }
-  return 'offline'; // дефолт
+/* 3b. Формат: v4.format (online/offline/mixed). null → 'other' (не попадает ни под одну галку, кроме 'Прочее'). */
+function formatFromV4(fmt) {
+  if (!fmt) return 'other';
+  return FORMAT_VALUES.has(fmt) ? fmt : 'other';
 }
 
-/* --- 3c. Направление (STEAM → HASS → прочее) --- */
-const DIRECTION_STEAM = /математ|физик|информат|python|c\+\+|робото|биолог|хими|астроном|инженер|3d|blender|ии|искусственн|программ|excel|1с|географ|природ/i;
-const DIRECTION_HASS  = /язык|английск|испанск|китайск|французск|литератур|словесн|истори|гуманитар|эконом|бизнес|предприним|медиа|эссе|мягк\w*\s*навык|эмоциональн|обществ/i;
-
-function classifyDirection(title, school) {
-  const text = `${title} ${school}`;
-  if (DIRECTION_STEAM.test(text)) return 'steam';
-  if (DIRECTION_HASS.test(text))  return 'hass';
-  return 'other';
+/* 3c. Направление: v4.direction (STEAM/HASS/other) — нормализуем в нижний регистр. */
+function directionFromV4(dir) {
+  if (!dir) return 'other';
+  return DIRECTION_VALUES.has(dir) ? dir.toLowerCase() : 'other';
 }
 
-/* --- 3d. Класс-группа (дошкольное / 1-4 / 5-8 / 9-11) --- */
-function classifyClassGroups(grades) {
-  if (!grades || !Array.isArray(grades)) return null; // нет класса
+/* 3d. Класс-группа (дошкольное / 1-4 / 5-8 / 9-11) — из v4.grades (диапазон [lo,hi]). */
+function classGroupsFromGrades(grades) {
+  if (!Array.isArray(grades) || !grades.length) return null;
   const [lo, hi] = grades;
   const groups = [];
   if (lo === 0) groups.push('preschool');
@@ -124,12 +111,12 @@ function classifyClassGroups(grades) {
   return groups.length ? groups : null;
 }
 
-/* --- 3e. Обогащение события вычисленными полями --- */
+/* 3e. Обогащение события вычисленными полями. */
 function enrichEvent(ev) {
-  ev._type        = classifyType(ev.title, ev.school);
-  ev._format      = classifyFormat(ev.title, ev.school);
-  ev._direction   = classifyDirection(ev.title, ev.school);
-  ev._classGroups = classifyClassGroups(ev.grades);
+  ev._type        = typeFromV4(ev.subtype);
+  ev._format      = formatFromV4(ev.format);
+  ev._direction   = directionFromV4(ev.direction);
+  ev._classGroups = classGroupsFromGrades(ev.grades);
   return ev;
 }
 
