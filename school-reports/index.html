@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карточки школ — обзоры для родителей</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    color: #1a1a1a;
+    background: #fafafa;
+    line-height: 1.5;
+  }
+  header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 { font-size: 28px; margin: 0 0 8px 0; font-weight: 600; }
+  .subtitle { color: #666; font-size: 14px; margin: 0; }
+  .badge {
+    display: inline-block;
+    background: #1a5a8a; color: white;
+    font-size: 11px; padding: 2px 8px; border-radius: 3px;
+    margin-left: 8px; vertical-align: middle;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px; margin-bottom: 32px;
+  }
+  .card {
+    background: white; border: 1px solid #e0e0e0;
+    border-radius: 6px; padding: 20px;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+  .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-color: #1a5a8a; }
+  .card h2 { font-size: 18px; margin: 0 0 6px 0; color: #1a1a1a; }
+  .card .summary { font-size: 13px; color: #555; margin: 8px 0 14px 0; line-height: 1.4; }
+  .card .meta { font-size: 11px; color: #888; margin: 0 0 12px 0; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .actions a {
+    display: inline-block; padding: 6px 12px; font-size: 13px;
+    border-radius: 4px; text-decoration: none; border: 1px solid transparent;
+  }
+  .btn-primary { background: #1a5a8a; color: white; }
+  .btn-primary:hover { background: #154a72; }
+  .btn-secondary { background: white; color: #1a5a8a; border-color: #1a5a8a; }
+  .btn-secondary:hover { background: #f0f6fa; }
+  footer {
+    margin-top: 48px; padding-top: 24px;
+    border-top: 1px solid #ddd; color: #666; font-size: 12px;
+  }
+  footer a { color: #1a5a8a; }
+  .placeholder { color: #999; font-size: 11px; font-style: italic; }
+  .note { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 4px; padding: 12px 16px; margin: 0 0 24px 0; font-size: 13px; color: #5c4900; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Карточки школ <span class="badge">обзоры для родителей</span></h1>
+  <p class="subtitle">Полные обзоры топ-школ Москвы: точки невозврата, набор, профили, доп.занятия, олимпиады, сроки. На основе Telegram-каналов школ и веб-поиска. Открываются в браузере как PDF, можно скачать.</p>
+</header>
+
+<div class="note">
+  <strong>Контекст:</strong> страница <code>school-reports/</code> в репо <a href="https://github.com/volgarevmaxim-bit/schools-map-mathex">schools-map-mathex</a> (карта 69 школ Москвы × mathex.ru). Исходные обзоры готовятся в <a href="https://github.com/volgarevmaxim-bit/moscow-school-open-days-radar">moscow-school-open-days-radar</a> (Фаза 7 проекта openhouse-radar).
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>Лицей «Вторая школа» <span class="badge">Л2Ш</span></h2>
+    <div class="summary">Государственный физмат-лицей. Набор в 6 и 7 классы. Три зачёта: письменная и устная математика, русский. ВМШ — доп.занятия с 2 класса, платные/бюджетные через mos.ru.</div>
+    <div class="meta">📍 Фотиевой, 18 (ЮЗАО) · м. Октябрьская</div>
+    <div class="actions">
+      <a class="btn-primary" href="Вторая_школа_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Вторая_школа_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Вторая_школа_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Лицей №1535</h2>
+    <div class="summary">Государственный многопрофильный лицей. Набор в 7, 8, 9 классы (МАТ/ГУМ/ЕН + ИТ/МЕД/СГ/ФМ в 10–11). Три потока вступительных, проходной 21/50, олимпиада «Орбита 1535» с льготами.</div>
+    <div class="meta">📍 Хамовники, ЦАО · Усачёва 50, Саввинский 8, Кутузовский 28, Кутузовский 6</div>
+    <div class="actions">
+      <a class="btn-primary" href="Лицей_1535_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Лицей_1535_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Лицей_1535_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Школа №1514</h2>
+    <div class="summary">Государственная многопрофильная школа с предпрофессиональными классами. Три точки входа: 5 гимназический, 7 вертикали, 8 профильные. «Высок��й старт» (МОСТ) — доп.занятия.</div>
+    <div class="meta">📍 Обручевский район, ЮЗАО · Новаторов 22А/28/34к1/34к2/20к3, Крупской 12</div>
+    <div class="actions">
+      <a class="btn-primary" href="Школа_1514_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Школа_1514_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Школа_1514_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Школа №179 <span class="badge">Школа Константино��а</span></h2>
+    <div class="summary">Государственная физико-математическая школа, топ-20 Москвы, грант мэра 1-й степени. Основана учеником Н. Н. Константинова. Набор в 7, 8, 9 математические классы, 7 инженерный (бывш. изобретательский), 9 биолого-математический. Только математика (2 тура: письменный + устный) + биология для био-мата.</div>
+    <div class="meta">📍 Б. Дмитровка, 5/6 стр. 7 (м. Охотный ряд) · центр М��сквы</div>
+    <div class="actions">
+      <a class="btn-primary" href="Школа_179_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Школа_179_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Школа_179_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Школа №57</h2>
+    <div class="summary">Гранд физмат-образования Москвы. 1700 учеников, 220 учителей. Знаменитые 8-е спецклассы (М/Ф/П/Е/Л/Г/С/Ш/Я — 9+ направлений). 24 победителя и 52 призёра ВсОШ 2025/26, 157 медалистов. Топ-3 вуза: ВШЭ (29.4%), МГУ (28.5%), МФТИ (14.5%).</div>
+    <div class="meta">📍 Хамовнический Вал · м. Спортивная / Лужники</div>
+    <div class="actions">
+      <a class="btn-primary" href="Школа_57_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Школа_57_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Школа_57_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Школа «Летово»</h2>
+    <div class="summary">Частная школа-пансион мирового уровня. Набор в 7, 8, 9 классы. 4 этапа: заявка → онлайн-тесты (80%+) → контрольное → собеседования. Стипендии (финансовое состояние не влияет). Экосистема: Кидс/Джуниор/Летово/Игра. 14 летовцев в топе по информатике 2025/26, золото AIMO 2025.</div>
+    <div class="meta">📍 Зименковская, 3 (м. Сокольники) �� платная + стипендии</div>
+    <div class="actions">
+      <a class="btn-primary" href="Летово_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Летово_ПОЛ��ЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Летово_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Школа «��нтеллектуал»</h2>
+    <div class="summary">Государственная школа с гуманитарно-правовым уклоном (не физмат!). Набор в 5, 7 классы (письменный тур 25-30 апреля), добор в 10 (соц-экон, гуманит, физмат, био-хим, хим-физ). Театральное содружество, литературные конкурсы, сильная команда по праву.</div>
+    <div class="meta">📍 Москва · даты и адреса — на сайте школы</div>
+    <div class="actions">
+      <a class="btn-primary" href="Интеллектуал_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 Открыть PDF</a>
+      <a class="btn-secondary" href="Интеллектуал_ПОЛНЫЙ_ОБЗОР.pdf" download>⬇ Скачать</a>
+      <a class="btn-secondary" href="Интеллектуал_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p><strong>Источники:</strong> Telegram-каналы школ (Desktop-экспорт), сайты школ, mathex.ru, лицей-гуру, eva.ru, conf.7ya.ru, newopenschool.ru, mos.ru.</p>
+  <p><strong>Хостинг:</strong> <a href="https://volgarevmaxim-bit.github.io/schools-map-mathex/school-reports/" target="_blank" rel="noopener">volgarevmaxim-bit.github.io/schools-map-mathex/school-reports/</a> · <a href="https://github.com/volgarevmaxim-bit/schools-map-mathex/tree/main/school-reports">GitHub</a></p>
+  <p><strong>Авторство:</strong> обзоры сделаны в Фазе 7 проекта <a href="https://github.com/volgarevmaxim-bit/moscow-school-open-days-radar">openhouse-radar</a> (см. <a href="https://github.com/volgarevmaxim-bit/moscow-school-open-days-radar/tree/main/docs/school-cards">docs/school-cards/</a>).</p>
+</footer>
+
+</body>
+</html>
