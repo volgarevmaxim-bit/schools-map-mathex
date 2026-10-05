@@ -160,7 +160,12 @@ function renderCard(ev, showDate) {
   html += `<span class="school">${escHtml(ev.school)}</span><span class="grades">${ageText(ev)}</span>`;
   html += `<div class="title">${escHtml(ev.title)}</div>`;
   if (ev.action) html += `<div class="action">${escHtml(ev.action)}</div>`;
-  html += `<div class="meta"><a href="${ev.url}" target="_blank" rel="noopener">исходный пост ↗</a>`;
+  const loc = [ev.time, ev.place].filter(Boolean).join(' ');
+  if (loc) html += `<div class="place">📍 ${escHtml(loc)}</div>`;
+  if (ev.registration_url) html += `<div class="place"><a href="${escHtml(ev.registration_url)}" target="_blank" rel="noopener">регистрация ↗</a></div>`;
+  const isWeb = ev.source === 'web' || (ev.url && /mskobr\.ru/.test(ev.url));
+  html += `<div class="meta"><a href="${escHtml(ev.url)}" target="_blank" rel="noopener">${isWeb ? 'страница школы ↗' : 'исходный пост ↗'}</a>`;
+  if (ev.url_alt && ev.url_alt !== ev.url) html += ` · <a href="${escHtml(ev.url_alt)}" target="_blank" rel="noopener">TG-пост ↗</a>`;
   html += ` · опубликовано ${fmt(ev.posted)}`;
   if (al) html += ` <span class="age-label">(${al})</span>`;
   html += `</div></div>`;
