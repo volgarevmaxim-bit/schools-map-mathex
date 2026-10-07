@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-1';
+  var ASSET_VERSION = '20261008-2';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -370,11 +370,11 @@
         hint.textContent = added > 0
           ? 'Импортировано: +' + added + ' отметок (объединено с текущими).'
           : 'Файл прочитан, новых отметок не было.';
-        setTimeout(function () { hint.textContent = 'Файл school_hidden_state.json — чтобы агент видел ваши отметки.'; }, 4000);
+        setTimeout(function () { hint.textContent = 'Файл school_hidden_state.json (папка «Загрузки») — чтобы агент видел ваши отметки.'; }, 4000);
       } catch (e) {
         var h2 = $('import-hint');
         h2.textContent = 'Не удалось прочитать файл: ожидается school_hidden_state.json.';
-        setTimeout(function () { h2.textContent = 'Файл school_hidden_state.json — чтобы агент видел ваши отметки.'; }, 4000);
+        setTimeout(function () { h2.textContent = 'Файл school_hidden_state.json (папка «Загрузки») — чтобы агент видел ваши отметки.'; }, 4000);
       }
     };
     reader.readAsText(file, 'utf-8');
@@ -430,7 +430,25 @@
       renderCalendar();
     });
     $('export-btn').addEventListener('click', exportMarked);
-    $('import-btn').addEventListener('click', function () { $('import-input').click(); });
+    $('import-btn').addEventListener('click', function () {
+      /* File System Access API (Chrome/Edge, десктоп): диалог сразу в папке «Загрузки» —
+         там же, куда сохраняется school_hidden_state.json. Мобильные — обычный выбор файла. */
+      if (window.showOpenFilePicker) {
+        window.showOpenFilePicker({
+          multiple: false,
+          startIn: 'downloads',
+          types: [{ description: 'JSON-файл отметок', accept: { 'application/json': ['.json'] } }]
+        }).then(function (handles) {
+          if (handles && handles.length) {
+            return handles[0].getFile().then(function (file) { importMarked(file); });
+          }
+        }).catch(function (e) {
+          if (e && e.name !== 'AbortError') $('import-input').click(); // API отказал — запасной диалог
+        });
+        return;
+      }
+      $('import-input').click();
+    });
     $('import-input').addEventListener('change', function () {
       if (this.files && this.files[0]) importMarked(this.files[0]);
       this.value = '';
