@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-3';
+  var ASSET_VERSION = '20261008-4';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -258,6 +258,13 @@
       if (e.action) meta += '<span>' + esc(e.action) + '</span>';
       if (e.url) meta += (meta ? ' · ' : '') + '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">исходный пост ↗</a>';
       if (e.format && FORMAT_LABEL[e.format]) meta += (meta ? ' · ' : '') + esc(FORMAT_LABEL[e.format]);
+      var rec = recordForSchool(e.school);
+      var pid = rec ? primaryPlaceId(rec) : null;
+      if (pid) {
+        meta += (meta ? ' · ' : '') +
+          '<a class="ev-nav" href="#map" onclick="window.__portal.openOnMap(' + jsArg(pid) + ');return false;">↑ на карте</a>' +
+          '<a class="ev-nav" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(pid) + ');return false;">↓ к справке</a>';
+      }
       return '<div class="ev">' +
         '<span class="tag ' + t + '">' + TYPE_LABEL[t] + '</span> ' +
         '<b>' + esc(e.school) + '</b> — ' + esc(e.title) +
@@ -272,6 +279,50 @@
     if (viewMonth < 0) { viewMonth = 11; viewYear--; }
     if (viewMonth > 11) { viewMonth = 0; viewYear++; }
     renderCalendar();
+  }
+
+  /* ---------- события ↔ записи (стрелки «на карту» / «к справке») ---------- */
+  var schoolRecordCache = new Map();
+  function normName(s) {
+    return String(s || '').toLowerCase().replace(/[«»"'().,№—–-]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  function recordForSchool(school) {
+    if (!CONTENT || !school) return null;
+    var key = String(school);
+    if (schoolRecordCache.has(key)) return schoolRecordCache.get(key);
+    var found = null;
+    var norm = normName(school);
+    var i, r;
+    for (i = 0; i < CONTENT.records.length && !found; i++) {
+      r = CONTENT.records[i];
+      if (normName(r.title) === norm) found = r;
+    }
+    if (!found) {
+      var num = (String(school).match(/\d+/) || [])[0];
+      if (num) {
+        var re = new RegExp('(^|\\D)' + num + '(\\D|$)');
+        for (i = 0; i < CONTENT.records.length && !found; i++) {
+          if (re.test(CONTENT.records[i].title)) found = CONTENT.records[i];
+        }
+      }
+    }
+    if (!found) {
+      for (i = 0; i < CONTENT.records.length && !found; i++) {
+        var rt = normName(CONTENT.records[i].title);
+        if (rt && (rt.indexOf(norm) !== -1 || (norm && norm.indexOf(rt) !== -1))) found = CONTENT.records[i];
+      }
+    }
+    schoolRecordCache.set(key, found);
+    return found;
+  }
+  function primaryPlaceId(record) {
+    var ids = recordPlaceIds(record);
+    if (!ids.length) return null;
+    var school = ids.find(function (id) {
+      var p = PLACES.find(function (x) { return x.id === id; });
+      return p && p.entity === 'school';
+    });
+    return school || ids[0];
   }
 
   /* ---------- справки ---------- */
