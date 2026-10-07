@@ -30,6 +30,9 @@
   .filter-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
   #filter-bar { margin-bottom: 16px; }
   #filter-bar.open .filter-bar-inner { display: flex; }
+  #school-banner { margin: 0 0 14px; padding: 10px 14px; background: #eaf1fb; border: 1px solid var(--line);
+    border-radius: var(--radius); font-size: 14px; }
+  #school-banner a { color: var(--accent); margin-left: 10px; }
   .filter-bar-inner { display: flex; flex-wrap: wrap; gap: 8px; }
   .filter-group { border: none; padding: 0; margin: 0; }
   .filter-group legend { font-size: 12px; font-weight: 600; color: var(--dim);
@@ -136,6 +139,9 @@
     type="button">Фильтры ▾</button>
   <div id="filter-bar" class="open"></div>
 
+  <!-- Баннер фильтра по школе (?school= — приходит с карты) -->
+  <div id="school-banner" style="display:none"></div>
+
   <!-- Режим: Ближайшие -->
   <div id="list-view" role="tabpanel" aria-labelledby="tab-list">
     <div id="list-view-content"></div>
@@ -182,6 +188,6 @@
         crossorigin="anonymous"></script>
 
 <!-- Приложение -->
-<script src="./app.js"></script>
+<script src="./app.js?v=calendar-school-20261005"></script>
 </body>
 </html>

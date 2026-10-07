@@ -18,7 +18,8 @@ const filters = {
   classes:   new Set(),   // 'preschool' | '1-4' | '5-8' | '9-11'
   type:      new Set(),   // 'open-house' | 'evening-school' | 'prep' | 'admission' | 'courses' | 'other'
   format:    new Set(),   // 'online' | 'offline' | 'mixed'
-  direction: new Set()    // 'steam' | 'hass' | 'other'
+  direction: new Set(),   // 'steam' | 'hass' | 'other'
+  school:    null         // строка из ?school= (фильтр по школе с карты)
 };
 
 /* ============================================================
@@ -188,11 +189,32 @@ function passesFilters(ev) {
   if (filters.type.size > 0 && !filters.type.has(ev._type)) return false;
   if (filters.format.size > 0 && !filters.format.has(ev._format)) return false;
   if (filters.direction.size > 0 && !filters.direction.has(ev._direction)) return false;
+  if (filters.school && !schoolMatch(ev.school, filters.school)) return false;
   return true;
 }
 
+// Сопоставление имён школ: карта → календарь («Школа №57» → «№57»,
+// «Московская гимназия на Юго-Западе №1543 им. …» → «Гимназия №1543»).
+function normSchoolName(s) {
+  return (s || '').toLowerCase()
+    .replace(/ё/g, 'е').replace(/[«»"',.()\-]/g, ' ')
+    .replace(/школа|лицей|гимназия|детский сад|им\b|имени/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+}
+function digitsOf(s) {
+  return ((s || '').match(/\d{2,5}/g) || []).map(Number);
+}
+function schoolMatch(evSchool, query) {
+  const a = normSchoolName(evSchool), b = normSchoolName(query);
+  if (!a || !b) return false;
+  const da = digitsOf(a), db = digitsOf(b);
+  if (da.length && db.length && da.some(x => db.includes(x))) return true;
+  return a.includes(b) || b.includes(a);
+}
+
 function anyFilterActive() {
-  return filters.classes.size > 0 || filters.type.size > 0 || filters.format.size > 0 || filters.direction.size > 0;
+  return filters.classes.size > 0 || filters.type.size > 0 || filters.format.size > 0
+      || filters.direction.size > 0 || !!filters.school;
 }
 
 function clearAllFilters() {
@@ -200,6 +222,11 @@ function clearAllFilters() {
   filters.type.clear();
   filters.format.clear();
   filters.direction.clear();
+  filters.school = null;
+  updateSchoolBanner();
+  const u = new URL(window.location.href);
+  u.searchParams.delete('school');
+  history.replaceState(null, '', u);
   renderAll();
 }
 
@@ -455,6 +482,7 @@ function toggleChip(group, id) {
  * 12. ОБЩИЙ РЕНДЕР (применяет фильтры к обоим режимам)
  * ============================================================ */
 function renderAll() {
+  updateSchoolBanner();
   // Фильтруем
   const filteredDated   = allDated.filter(ev => passesFilters(ev) && isValidDate(ev.deadline));
   const filteredUndated = allUndated.filter(ev => passesFilters(ev));
@@ -502,9 +530,34 @@ function updateFooter() {
 }
 
 /* ============================================================
+ * 12.5 БАННЕР ФИЛЬТРА ПО ШКОЛЕ (?school= с карты)
+ * ============================================================ */
+function updateSchoolBanner() {
+  const el = document.getElementById('school-banner');
+  if (!el) return;
+  if (filters.school) {
+    el.style.display = '';
+    el.innerHTML = `Показываем события школы: <strong>${escHtml(filters.school)}</strong> ` +
+      `<a href="#" id="school-banner-clear">показать все</a>`;
+    const clear = el.querySelector('#school-banner-clear');
+    if (clear) clear.addEventListener('click', function(e) {
+      e.preventDefault();
+      clearAllFilters();
+    });
+  } else {
+    el.style.display = 'none';
+    el.innerHTML = '';
+  }
+}
+
+/* ============================================================
  * 13. ИНИЦИАЛИЗАЦИЯ
  * ============================================================ */
 function init() {
+  // Фильтр по школе из URL (?school=… — приходит с карты)
+  const schoolParam = new URLSearchParams(window.location.search).get('school');
+  if (schoolParam) filters.school = schoolParam.trim();
+
   // Проверяем hash
   if (window.location.hash === '#calendar') mode = 'calendar';
   else mode = 'list';
