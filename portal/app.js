@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261007-2';
+  var ASSET_VERSION = '20261008-1';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -24,13 +24,6 @@
     { title: 'Школа-пансион «Летово»', file: 'Летово' }
   ];
   var REVIEW_BY_TITLE = new Map(REVIEWS.map(function (r) { return [r.title, r.file]; }));
-
-  /* 3 трека принятого мокапа C; тексты записей берём из реальных данных. */
-  var TRACKS = [
-    ['Физико-математические школы', ['Лицей «Вторая школа» им. В. Ф. Овчинникова', 'Школа №179', 'Школа №57']],
-    ['Многопрофильные школы', ['Школа №1535', 'Школа №1514', 'Школа «Интеллектуал»']],
-    ['Частные школы', ['Школа-пансион «Летово»']]
-  ];
 
   var MONTHS = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
 
@@ -59,6 +52,8 @@
     });
   }
   function $(id) { return document.getElementById(id); }
+  /* JSON-строку для inline-onclick: HTML-экранируем кавычки, иначе атрибут рвётся (pitfall 07.10). */
+  function jsArg(v) { return esc(JSON.stringify(v)); }
   function iso(y, m, d) { return y + '-' + String(m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0'); }
   function validISO(s) { return typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s); }
   function dayLabel(d) { return d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long' }); }
@@ -144,8 +139,8 @@
         '<div class="popup-title">' + esc(p.name) + '</div>' +
         '<div class="popup-kind">' + esc(LABELS[p.kind] || p.kind) + ' · ' + (p.entity === 'kindergarten' ? 'детский сад' : 'школа') + '</div>' +
         '<div>' + esc(p.address || '') + '</div>' +
-        '<p><a class="popup-link" href="#schools" onclick="window.__portal.openRecord(' + JSON.stringify(esc(p.name)) + ');return false;">к справке ↓</a><br>' +
-        '<a class="hide-link" href="#!" onclick="window.__portal.hidePlace(' + JSON.stringify(esc(p.id)) + ');return false;">скрыть</a></p>'
+        '<p><a class="popup-link" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">к справке ↓</a><br>' +
+        '<a class="hide-link" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">скрыть</a></p>'
       );
       m.addTo(layer);
       markers.set(p.id, m);
@@ -161,8 +156,15 @@
     if (marker) marker.openPopup();
     $('map').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  function openRecord(title) {
-    var el = document.getElementById('record-' + title);
+  /* Запись, которой принадлежит точка (place_ids), — по ней строятся ссылки и скрытие. */
+  function recordForPlace(id) {
+    if (!CONTENT) return null;
+    return CONTENT.records.find(function (r) { return recordPlaceIds(r).indexOf(id) !== -1; }) || null;
+  }
+  function openRecordById(id) {
+    var record = recordForPlace(id);
+    if (!record) { $('schools').scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    var el = document.getElementById('record-' + record.title);
     if (el) {
       var details = el.closest('details');
       if (details) details.open = true;
@@ -279,40 +281,40 @@
       root.innerHTML = '<p class="review-note">Не удалось загрузить описания школ (schools_content.json).</p>';
       return;
     }
-    var recordByTitle = new Map(CONTENT.records.map(function (r) { return [r.title, r]; }));
     root.innerHTML = '';
-    TRACKS.forEach(function (pair) {
-      var trackName = pair[0];
-      var titles = pair[1];
-      var items = titles.map(function (t) { return recordByTitle.get(t); }).filter(function (r) {
-        return r && !recordIsHidden(r);
-      });
-      if (!items.length) return; // пустые треки не показываем (как в исходнике)
+    var tracks = new Map();
+    CONTENT.records.filter(function (r) { return !recordIsHidden(r); }).forEach(function (r) {
+      var k = r.track || 'Дошкольное образование';
+      if (!tracks.has(k)) tracks.set(k, []);
+      tracks.get(k).push(r);
+    });
+    tracks.forEach(function (items, trackName) {
       var d = document.createElement('details');
       d.className = 'track-block';
       d.open = true;
       d.innerHTML = '<summary>' + esc(trackName) + ' <span class="record-meta">(' + items.length + ')</span></summary><div></div>';
-      d.lastElementChild.innerHTML = items.map(function (r) {
-        var f = REVIEW_BY_TITLE.get(r.title);
-        var review = f
-          ? '<span class="site-links">Справка: <a href="../school-reports/' + encodeURIComponent(f) + '_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 PDF</a><a href="../school-reports/' + encodeURIComponent(f) + '_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a></span> '
-          : '';
-        var sites = r.websites && r.websites.length
-          ? '<span class="site-links">Сайт: ' + r.websites.map(function (w) {
-              return '<a href="' + esc(w.url) + '" target="_blank" rel="noopener">' + esc(w.label) + '</a>';
-            }).join(' ') + '</span>'
-          : '<span class="review-note">Сайт: не найден в проверенных материалах.</span>';
-        var meta = r.admission ? shorten(r.admission, 120) : '';
-        return '<article class="school-record" id="record-' + esc(r.title) + '"><p>' +
-          '<strong>' + esc(r.title) + '</strong> — ' + esc(r.body) + ' ' +
-          (r.place_text || '') + ' ' + sites +
-          (review ? ' ' + review : '') +
-          (meta ? '<br><span class="record-meta">' + esc(meta) + '</span>' : '') +
-          ' <a class="hide-link" href="#!" onclick="window.__portal.hideRecord(' + JSON.stringify(esc(r.title)) + ');return false;">скрыть</a>' +
-          '</p></article>';
-      }).join('');
+      d.lastElementChild.innerHTML = items.map(recordHtml).join('');
       root.appendChild(d);
     });
+  }
+  function recordHtml(r) {
+    var f = REVIEW_BY_TITLE.get(r.title);
+    var review = f
+      ? '<span class="site-links">Справка: <a href="../school-reports/' + encodeURIComponent(f) + '_ПОЛНЫЙ_ОБЗОР.pdf" target="_blank" rel="noopener">📄 PDF</a><a href="../school-reports/' + encodeURIComponent(f) + '_ПОЛНЫЙ_ОБЗОР.md" target="_blank" rel="noopener">MD</a></span> '
+      : '';
+    var sites = r.websites && r.websites.length
+      ? '<span class="site-links">Сайт: ' + r.websites.map(function (w) {
+          return '<a href="' + esc(w.url) + '" target="_blank" rel="noopener">' + esc(w.label) + '</a>';
+        }).join(' ') + '</span>'
+      : '<span class="review-note">Сайт: не найден в проверенных материалах.</span>';
+    var meta = r.admission ? shorten(r.admission, 120) : '';
+    return '<article class="school-record" id="record-' + esc(r.title) + '"><p>' +
+      '<strong>' + esc(r.title) + '</strong> — ' + esc(r.body) + ' ' +
+      (r.place_text || '') + ' ' + sites +
+      (review ? ' ' + review : '') +
+      (meta ? '<br><span class="record-meta">' + esc(meta) + '</span>' : '') +
+      ' <a class="hide-link" href="#!" onclick="window.__portal.hideRecord(' + jsArg(r.title) + ');return false;">скрыть</a>' +
+      '</p></article>';
   }
   function shorten(s, max) {
     s = String(s || '').replace(/\s+/g, ' ').trim();
@@ -341,7 +343,7 @@
     } else {
       root.innerHTML = '<ul class="hidden-list">' + records.map(function (r) {
         return '<li>' + esc(r.title) +
-          ' <a class="restore-link" href="#!" onclick="window.__portal.restoreRecord(' + JSON.stringify(esc(r.title)) + ');return false;">вернуть</a></li>';
+          ' <a class="restore-link" href="#!" onclick="window.__portal.restoreRecord(' + jsArg(r.title) + ');return false;">вернуть</a></li>';
       }).join('') + '</ul>';
     }
     note.hidden = storageOK;
@@ -394,6 +396,8 @@
     ]).then(function (res) {
       PLACES = res[0];
       CONTENT = res[1];
+      $('map-sub').textContent = 'для детей 5 и 9 лет · ' + CONTENT.records.length + ' школ и садов · ' + PLACES.length + ' точек на карте · обновлено 07.10.2026';
+      $('schools-sub').textContent = CONTENT.records.length + ' записей · ' + REVIEWS.length + ' полных обзоров (Фаза 7)';
       renderMap();
       renderRecords();
       renderHidden();
@@ -408,7 +412,7 @@
       datedEvents = Array.isArray(ev.dated) ? ev.dated : [];
       eventsGenerated = ev.generated || '';
       buildIndex();
-      $('cal-sub').textContent = eventsGenerated ? ('обновлено ' + eventsGenerated) : '';
+      $('cal-sub').textContent = eventsFailed ? '' : ('обновлено ' + (eventsGenerated || '—') + ' · ' + datedEvents.length + ' датированных событий');
     }).catch(function (e) {
       console.error('portal: не удалось загрузить events.json:', e);
       eventsFailed = true;
@@ -440,11 +444,13 @@
   /* Глобальные функции для inline-onclick в HTML (места из schools_content.json и попапы карты) */
   window.__portal = {
     openOnMap: openOnMap,
-    openRecord: openRecord,
+    openRecordById: openRecordById,
     hidePlace: hidePlace,
     hideRecord: hideRecord,
     restoreRecord: restoreRecord
   };
+  /* place_text из данных зовёт голый openOnMap (как в исходнике) — даём глобальный алиас. */
+  window.openOnMap = openOnMap;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
