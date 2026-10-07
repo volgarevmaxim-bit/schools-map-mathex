@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-2';
+  var ASSET_VERSION = '20261008-3';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -139,7 +139,7 @@
         '<div class="popup-title">' + esc(p.name) + '</div>' +
         '<div class="popup-kind">' + esc(LABELS[p.kind] || p.kind) + ' · ' + (p.entity === 'kindergarten' ? 'детский сад' : 'школа') + '</div>' +
         '<div>' + esc(p.address || '') + '</div>' +
-        '<p><a class="popup-link" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">к справке ↓</a><br>' +
+        '<p class="popup-actions"><a class="popup-link" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">к справке ↓</a>' +
         '<a class="hide-link" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">скрыть</a></p>'
       );
       m.addTo(layer);
