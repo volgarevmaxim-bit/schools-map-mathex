@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-4';
+  var ASSET_VERSION = '20261008-5';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -443,7 +443,7 @@
     ]).then(function (res) {
       PLACES = res[0];
       CONTENT = res[1];
-      $('map-sub').textContent = 'для детей 5 и 9 лет · ' + CONTENT.records.length + ' школ и садов · ' + PLACES.length + ' точек на карте · обновлено 07.10.2026';
+      $('map-sub').textContent = 'для детей 5 и 9 лет · ' + CONTENT.records.length + ' школ и садов · ' + PLACES.length + ' точек на карте · обновлено 08.10.2026';
       $('schools-sub').textContent = CONTENT.records.length + ' записей · ' + REVIEWS.length + ' полных обзоров (Фаза 7)';
       renderMap();
       renderRecords();
