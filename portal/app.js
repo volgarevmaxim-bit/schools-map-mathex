@@ -332,12 +332,8 @@
       records = CONTENT.records.filter(function (r) { return recordIsHidden(r); });
     }
     var n = records.length;
-    if (n > 0) {
-      counter.hidden = false;
-      counter.textContent = 'Скрытые (' + n + ')';
-    } else {
-      counter.hidden = true;
-    }
+    counter.textContent = 'Скрытые (' + n + ')';
+    counter.hidden = n === 0;
     if (n === 0) {
       root.innerHTML = '<span class="review-note">Пока ничего не скрыто.</span>';
     } else {
