@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Школы Москвы — карта, календарь, справки</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--ink:#17202a;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc;--green:#16a34a;--blue:#2563eb;--red:#dc2626;--accent:#0f766e;--gray:#94a3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+
+/* Топбар — одна строка, минимум хрома */
+.topbar{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:8px max(12px,calc((100% - 1240px)/2))}
+.topbar h1{font-size:16px;font-weight:800;white-space:nowrap;margin:0}
+.topbar nav{display:flex;gap:2px;margin-left:auto;align-items:center}
+.topbar nav a{color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:8px;font-size:14px;font-weight:600;white-space:nowrap}
+.topbar nav a:hover{color:var(--ink);background:#f1f5f9}
+#hidden-counter{color:var(--red);font-weight:700}
+
+main{max-width:1240px;margin:0 auto;padding:14px 16px 40px}
+section{margin-bottom:26px;scroll-margin-top:52px}
+
+.sec-line{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 2px 10px}
+.sec-line h2{font-size:19px}
+.sec-line .sub{color:var(--muted);font-size:13px}
+
+/* Карта */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+.toolbar select{font:inherit;font-size:14px;border:1px solid #cbd5e1;border-radius:10px;padding:7px 30px 7px 11px;background:#fff;max-width:220px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12.5px;margin-left:auto}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.dot.green{background:var(--green)} .dot.blue{background:var(--blue)} .dot.red{background:var(--red)} .dot.gray{background:var(--gray)}
+#map-canvas{border-radius:14px;box-shadow:0 5px 22px #0f172a14;height:min(74vh,700px);min-height:420px}
+.leaflet-popup-content{margin:12px 14px;max-width:320px}
+.popup-title{font-weight:800;font-size:15px}
+.popup-kind{color:var(--muted);font-size:12.5px;margin:3px 0 6px}
+.popup-link{color:var(--blue);text-decoration:none;font-size:13.5px}
+.hide-link{color:var(--muted);text-decoration:none;font-size:12.5px;border:1px solid var(--line);border-radius:7px;padding:1px 9px;margin-left:8px;white-space:nowrap;cursor:pointer}
+.hide-link:hover{color:var(--red);border-color:var(--red)}
+.map-link{color:var(--accent);text-decoration:none;font-weight:700}
+.place-label{color:var(--muted);font-size:13.5px}
+
+/* Календарь */
+.cal-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.month-line{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.month-nav{display:flex;gap:6px;align-items:center}
+.month-nav button{font:inherit;font-size:14px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;padding:4px 10px;cursor:pointer;color:var(--ink)}
+.month-nav button:hover{border-color:var(--accent)}
+.month-line .mn{font-weight:700;font-size:15px;min-width:130px}
+.cal-legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12.5px;margin-left:auto}
+.weekdays,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.weekdays span{font-size:11.5px;color:var(--muted);text-align:center;padding:2px 0}
+#days{grid-auto-rows:minmax(56px,1fr);height:min(66vh,620px)}
+.day{position:relative;border-radius:9px;border:1px solid transparent;background:#f8fafc;padding:5px 6px;cursor:pointer;font-size:13.5px}
+.day:hover{border-color:var(--accent)}
+.day.out{color:#cbd5e1;cursor:default}
+.day.today{background:#f0fdfa;border:1.5px solid var(--accent);font-weight:800}
+.day.sel{border:2px solid var(--accent);background:#ccfbf1}
+.day.urgent{border:1.5px solid var(--red)}
+.dots{display:flex;gap:3px;flex-wrap:wrap;margin-top:6px}
+.d{width:8px;height:8px;border-radius:50%}
+.d.open{background:var(--red)} .d.adm{background:var(--blue)} .d.course{background:var(--green)} .d.other{background:var(--gray)}
+.day-panel{border:1px dashed var(--line);border-radius:10px;padding:11px 13px;margin-top:10px;color:var(--muted);font-size:14px}
+.day-panel.has{border-style:solid;background:#fff;color:var(--ink)}
+.ev{border-bottom:1px solid #f1f5f9;padding:7px 0}
+.ev:last-child{border-bottom:0}
+.ev-meta{color:var(--muted);font-size:12.5px;margin-top:2px}
+.tag{display:inline-block;border-radius:5px;padding:1px 7px;font-size:11px;font-weight:700;vertical-align:1px}
+.tag.open{background:#fee2e2;color:#b91c1c}
+.tag.course{background:#dcfce7;color:#166534}
+.tag.adm{background:#e0f2fe;color:#075985}
+.tag.other{background:#f1f5f9;color:#475569}
+.tag.age{background:#f0fdfa;color:#0f766e}
+.tag.target{background:#fee2e2;color:#b91c1c;border:1px solid var(--red)}
+
+/* Справки */
+.content-section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:16px}
+.content-section summary{font-weight:700;font-size:17px;cursor:pointer}
+.track-block{border-top:1px solid var(--line);padding:12px 0 4px;margin-top:12px}
+.track-block summary{font-weight:600;font-size:15px;color:var(--accent);cursor:pointer}
+.record-meta{color:var(--muted);font-weight:400;font-size:13px}
+.school-record p{font-size:15px;line-height:1.6;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.school-record:last-child p{border-bottom:0}
+.school-record strong{font-size:16px}
+.place-list{color:var(--muted);font-size:13.5px}
+.site-links a{color:var(--blue);text-decoration:none;margin-right:8px}
+.site-links a:hover{text-decoration:underline}
+.review-note{color:var(--muted);font-style:italic}
+
+/* Скрытые */
+.hidden-section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.hidden-section h2{font-size:19px;margin-bottom:8px}
+.hidden-list{list-style:none;margin:6px 0 12px;font-size:15px}
+.hidden-list li{padding:5px 0;border-bottom:1px solid #f1f5f9}
+.restore-link{color:var(--accent);text-decoration:none;font-weight:600;font-size:13.5px;margin-left:6px}
+.restore-link:hover{text-decoration:underline}
+.hidden-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px}
+.btn{font:inherit;font-size:13.5px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;padding:6px 12px;cursor:pointer;color:var(--ink)}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.hint{color:var(--muted);font-size:12.5px}
+.note{background:#fefce8;border:1px solid #fde047;border-radius:9px;color:#854d0e;font-size:13px;padding:8px 12px;margin-bottom:10px}
+
+footer{border-top:1px solid var(--line);padding:14px 0 0;color:var(--muted);font-size:12.5px;line-height:1.6}
+footer a{color:var(--blue)}
+
+@media (max-width:640px){
+  .topbar{padding:6px 10px;gap:8px}
+  .topbar h1{font-size:14.5px}
+  .topbar nav a{font-size:13px;padding:5px 8px}
+  main{padding:10px 8px 32px}
+  .sec-line h2{font-size:17px}
+  #map-canvas{height:calc(100svh - 132px);min-height:0;border-radius:12px}
+  .cal-card{display:flex;flex-direction:column;min-height:calc(100svh - 128px)}
+  #days{flex:1;height:auto;grid-auto-rows:1fr}
+  .day{font-size:12.5px;padding:4px 4px}
+  .dots{gap:2px;margin-top:4px}
+  .d{width:7px;height:7px}
+  .legend,.cal-legend{font-size:11.5px;gap:8px}
+  .toolbar select{max-width:170px;font-size:13px}
+  .content-section{padding:12px 14px}
+  .school-record p{font-size:14.5px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Школы Москвы</h1>
+  <nav aria-label="Разделы">
+    <a href="#map">Карта</a><a href="#calendar">Календарь</a><a href="#schools">Справки по школам</a>
+    <a href="#hidden" id="hidden-counter" hidden>Скрытые</a>
+  </nav>
+</header>
+
+<main>
+  <section id="map" aria-label="Карта">
+    <div class="sec-line"><h2>Карта</h2><span class="sub">для детей 5 и 9 лет · обновлено 07.10.2026</span></div>
+    <div class="toolbar">
+      <select id="filter" aria-label="Фильтр карты">
+        <option value="all" selected>всё сразу</option>
+        <option value="kindergarten">сады и программы от 5 лет</option>
+        <option value="first">приём с 1 класса</option>
+        <option value="older">набор с 5–8 класса</option>
+      </select>
+      <div class="legend" aria-hidden="true">
+        <span><i class="dot green"></i>сад / связанная школа</span>
+        <span><i class="dot blue"></i>школа с 1 класса</span>
+        <span><i class="dot red"></i>школа из списка</span>
+      </div>
+    </div>
+    <div id="map-canvas" aria-label="Карта школ и детских садов Москвы"></div>
+  </section>
+
+  <section id="calendar" aria-label="Календарь">
+    <div class="sec-line"><h2>Календарь</h2><span class="sub" id="cal-sub"></span></div>
+    <div class="cal-card">
+      <div class="month-line">
+        <div class="month-nav">
+          <button id="cal-prev" type="button" aria-label="Предыдущий месяц">‹</button>
+          <span class="mn" id="cal-label"></span>
+          <button id="cal-next" type="button" aria-label="Следующий месяц">›</button>
+          <button id="cal-today" type="button">Сегодня</button>
+        </div>
+        <div class="cal-legend" aria-hidden="true">
+          <span><i class="dot red"></i>день открытых дверей</span>
+          <span><i class="dot blue"></i>набор</span>
+          <span><i class="dot green"></i>курсы</span>
+          <span><i class="dot gray"></i>прочее</span>
+        </div>
+      </div>
+      <div class="weekdays"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+      <div class="days" id="days"></div>
+      <div class="day-panel" id="day-panel">Коснитесь дня — события появятся здесь.</div>
+    </div>
+  </section>
+
+  <section id="schools" aria-label="Справки по школам">
+    <div class="sec-line"><h2>Справки по школам</h2><span class="sub">7 полных обзоров (Фаза 7)</span></div>
+    <details class="content-section" open>
+      <summary>Описания школ и дошкольных программ</summary>
+      <div id="schools-body"></div>
+    </details>
+  </section>
+
+  <section id="hidden" aria-label="Скрытые" class="hidden-section">
+    <h2>Скрытые</h2>
+    <div id="storage-note" class="note" hidden>Хранилище браузера недоступно: отметки работают только в этой вкладке и пропадут после её закрытия.</div>
+    <div id="hidden-list"></div>
+    <div class="hidden-actions">
+      <button id="export-btn" type="button" class="btn">Сохранить отметки</button>
+      <button id="import-btn" type="button" class="btn">Загрузить отметки</button>
+      <input id="import-input" type="file" accept=".json,application/json" hidden>
+      <span class="hint" id="import-hint">Файл school_hidden_state.json — чтобы агент видел ваши отметки.</span>
+    </div>
+  </section>
+
+  <footer>
+    Источники: Telegram-каналы школ, сайты школ и mos.ru, urokoff.net, mathex.ru.
+    Календарь пересобирается ежедневно (TG) и еженедельно (веб). Справки — MD+PDF на GitHub.
+  </footer>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js?v=20261007-2"></script>
+</body>
+</html>

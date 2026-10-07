@@ -21,3 +21,4 @@ yandex_pages/
 !data/entities.json
 Готово*.txt
 !/calendar/**
+!/portal/**
