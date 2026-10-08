@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-5';
+  var ASSET_VERSION = '20261008-6';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -139,6 +139,7 @@
         '<div class="popup-title">' + esc(p.name) + '</div>' +
         '<div class="popup-kind">' + esc(LABELS[p.kind] || p.kind) + ' · ' + (p.entity === 'kindergarten' ? 'детский сад' : 'школа') + '</div>' +
         '<div>' + esc(p.address || '') + '</div>' +
+        '<div class="popup-cal"><a class="popup-link" href="../calendar/?school=' + encodeURIComponent(p.name) + '#calendar">Календарь событий ↗</a></div>' +
         '<p class="popup-actions"><a class="popup-link" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">к справке ↓</a>' +
         '<a class="hide-link" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">скрыть</a></p>'
       );
@@ -358,11 +359,13 @@
           return '<a href="' + esc(w.url) + '" target="_blank" rel="noopener">' + esc(w.label) + '</a>';
         }).join(' ') + '</span>'
       : '<span class="review-note">Сайт: не найден в проверенных материалах.</span>';
+    var cal = '<span class="site-links">Календарь: <a href="../calendar/?school=' + encodeURIComponent(r.title) + '#calendar">события школы ↗</a></span>';
     var meta = r.admission ? shorten(r.admission, 120) : '';
     return '<article class="school-record" id="record-' + esc(r.title) + '"><p>' +
       '<strong>' + esc(r.title) + '</strong> — ' + esc(r.body) + ' ' +
       (r.place_text || '') + ' ' + sites +
       (review ? ' ' + review : '') +
+      ' ' + cal +
       (meta ? '<br><span class="record-meta">' + esc(meta) + '</span>' : '') +
       ' <a class="hide-link" href="#!" onclick="window.__portal.hideRecord(' + jsArg(r.title) + ');return false;">скрыть</a>' +
       '</p></article>';
