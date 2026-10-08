@@ -35,12 +35,9 @@ section{margin-bottom:26px;scroll-margin-top:52px}
 #map-canvas{border-radius:14px;box-shadow:0 5px 22px #0f172a14;height:min(74vh,700px);min-height:420px}
 .leaflet-popup-content{margin:12px 14px;max-width:320px}
 .popup-title{font-weight:800;font-size:15px}
-.popup-kind{color:var(--muted);font-size:12.5px;margin:3px 0 6px}
-.popup-link{color:var(--blue);text-decoration:none;font-size:13.5px}
-.popup-cal{margin:4px 0 0;padding:4px 0}
-.popup-actions{display:flex;align-items:center;gap:16px;margin-top:6px}
-.popup-actions .popup-link{padding:5px 0}
-.popup-actions .hide-link{margin-left:0;padding:4px 12px;font-size:13px}
+.popup-actions{display:flex;gap:8px;margin-top:8px}
+.popup-actions .popup-act{flex:1;text-align:center;font-size:13px;padding:6px 4px;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink);background:#fff;white-space:nowrap}
+.popup-actions .popup-act:hover{border-color:var(--accent);color:var(--accent)}
 .hide-link{color:var(--muted);text-decoration:none;font-size:12.5px;border:1px solid var(--line);border-radius:7px;padding:1px 9px;margin-left:8px;white-space:nowrap;cursor:pointer}
 .hide-link:hover{color:var(--red);border-color:var(--red)}
 .map-link{color:var(--accent);text-decoration:none;font-weight:700}
@@ -209,6 +206,6 @@ footer a{color:var(--blue)}
 </main>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js?v=20261008-6"></script>
+<script src="app.js?v=20261008-7"></script>
 </body>
 </html>

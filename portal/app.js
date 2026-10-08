@@ -5,12 +5,11 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-6';
+  var ASSET_VERSION = '20261008-7';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
   var COLORS = { green: '#16a34a', blue: '#2563eb', red: '#dc2626' };
-  var LABELS = { green: 'Сад / связанная школа', blue: 'Школа с 1 класса', red: 'Школа из списка' };
 
   /* Справки Фазы 7: название записи в schools_content.json → имя файла обзора.
    * Явный маппинг (у «Вторая школа», «Летово», «Интеллектуал» в имени файла нет префикса). */
@@ -137,11 +136,11 @@
       });
       m.bindPopup(
         '<div class="popup-title">' + esc(p.name) + '</div>' +
-        '<div class="popup-kind">' + esc(LABELS[p.kind] || p.kind) + ' · ' + (p.entity === 'kindergarten' ? 'детский сад' : 'школа') + '</div>' +
         '<div>' + esc(p.address || '') + '</div>' +
-        '<div class="popup-cal"><a class="popup-link" href="../calendar/?school=' + encodeURIComponent(p.name) + '#calendar">Календарь событий ↗</a></div>' +
-        '<p class="popup-actions"><a class="popup-link" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">к справке ↓</a>' +
-        '<a class="hide-link" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">скрыть</a></p>'
+        '<p class="popup-actions">' +
+        '<a class="popup-act" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">Справка</a>' +
+        '<a class="popup-act" href="../calendar/?school=' + encodeURIComponent(p.name) + '#calendar">Календарь</a>' +
+        '<a class="popup-act" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">Скрыть</a></p>'
       );
       m.addTo(layer);
       markers.set(p.id, m);
