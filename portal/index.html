@@ -44,6 +44,9 @@ section{margin-bottom:26px;scroll-margin-top:52px}
 .place-label{color:var(--muted);font-size:13.5px}
 
 /* Календарь */
+.cal-banner{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px;padding:10px 14px;background:#eaf1fb;border:1px solid var(--line);border-radius:12px;font-size:14px}
+.cal-banner[hidden]{display:none}
+.cal-banner a{color:var(--accent);font-weight:600;text-decoration:none}
 .cal-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .month-line{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .month-nav{display:flex;gap:6px;align-items:center}
@@ -158,6 +161,7 @@ footer a{color:var(--blue)}
 
   <section id="calendar" aria-label="Календарь">
     <div class="sec-line"><h2>Календарь</h2><span class="sub" id="cal-sub"></span></div>
+    <div class="cal-banner" id="cal-banner" hidden>Показываем события школы: <strong id="cal-banner-name"></strong> <a href="#!" onclick="window.__portal.clearCalSchool();return false;">показать все</a></div>
     <div class="cal-card">
       <div class="month-line">
         <div class="month-nav">
@@ -206,6 +210,6 @@ footer a{color:var(--blue)}
 </main>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js?v=20261008-7"></script>
+<script src="app.js?v=20261008-8"></script>
 </body>
 </html>

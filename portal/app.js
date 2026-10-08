@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-7';
+  var ASSET_VERSION = '20261008-8';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -43,6 +43,7 @@
   var storageOK = true;     // localStorage доступен?
   var markers = new Map();  // place id → circleMarker
   var viewYear = 0, viewMonth = 0; // текущий месяц календаря (0-based)
+  var calSchool = null; // фильтр календаря по школе (setCalSchool)
 
   /* ---------- утилиты ---------- */
   function esc(s) {
@@ -139,7 +140,7 @@
         '<div>' + esc(p.address || '') + '</div>' +
         '<p class="popup-actions">' +
         '<a class="popup-act" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">Справка</a>' +
-        '<a class="popup-act" href="../calendar/?school=' + encodeURIComponent(p.name) + '#calendar">Календарь</a>' +
+        '<a class="popup-act" href="#calendar" onclick="window.__portal.setCalSchool(' + jsArg(p.name) + ');return false;">Календарь</a>' +
         '<a class="popup-act" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">Скрыть</a></p>'
       );
       m.addTo(layer);
@@ -199,11 +200,29 @@
       byDay.get(key).push(ev);
     });
   }
+  /* Совпадение имени школы: карта/справки → школа события (номер или нормализованное вхождение). */
+  function schoolMatch(query, evSchool) {
+    var a = normName(evSchool), b = normName(query);
+    if (!a || !b) return false;
+    var da = String(a).match(/\d{2,5}/g) || [];
+    var db = String(b).match(/\d{2,5}/g) || [];
+    if (da.length && db.length && da.some(function (x) { return db.indexOf(x) !== -1; })) return true;
+    return a.indexOf(b) !== -1 || b.indexOf(a) !== -1;
+  }
+  function setCalSchool(name) {
+    calSchool = name || null;
+    if (calSchool) $('cal-banner-name').textContent = calSchool;
+    $('cal-banner').hidden = !calSchool;
+    renderCalendar();
+    $('calendar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function clearCalSchool() { setCalSchool(null); }
   function renderCalendar() {
     var grid = $('days');
     var panel = $('day-panel');
     grid.innerHTML = '';
     $('cal-label').textContent = MONTHS[viewMonth] + ' ' + viewYear;
+    $('cal-banner').hidden = !calSchool;
     if (eventsFailed || !datedEvents.length) {
       panel.className = 'day-panel';
       panel.textContent = 'Данные календаря недоступны (calendar/events.json) — карта и справки работают.';
@@ -215,6 +234,7 @@
     var now = new Date();
     var isCurrentMonth = now.getFullYear() === viewYear && now.getMonth() === viewMonth;
     var i, d, key, evs, cell;
+    var anyVisible = false;
     for (i = 0; i < blanks; i++) {
       cell = document.createElement('div');
       cell.className = 'day out';
@@ -222,7 +242,10 @@
     }
     for (d = 1; d <= ndays; d++) {
       key = iso(viewYear, viewMonth, d);
-      evs = byDay.get(key) || [];
+      evs = (byDay.get(key) || []).filter(function (e) {
+        return !calSchool || schoolMatch(calSchool, e.school);
+      });
+      if (evs.length) anyVisible = true;
       cell = document.createElement('div');
       cell.className = 'day' +
         (isCurrentMonth && d === now.getDate() ? ' today' : '') +
@@ -236,7 +259,9 @@
       grid.appendChild(cell);
     }
     panel.className = 'day-panel';
-    panel.textContent = 'Коснитесь дня — события появятся здесь.';
+    panel.textContent = (calSchool && !anyVisible)
+      ? 'Событий этой школы в выбранном месяце нет — попробуйте другой месяц или «показать все».'
+      : 'Коснитесь дня — события появятся здесь.';
   }
   function showDay(key, evs, cell) {
     document.querySelectorAll('.day.sel').forEach(function (x) { x.classList.remove('sel'); });
@@ -358,7 +383,7 @@
           return '<a href="' + esc(w.url) + '" target="_blank" rel="noopener">' + esc(w.label) + '</a>';
         }).join(' ') + '</span>'
       : '<span class="review-note">Сайт: не найден в проверенных материалах.</span>';
-    var cal = '<span class="site-links">Календарь: <a href="../calendar/?school=' + encodeURIComponent(r.title) + '#calendar">события школы ↗</a></span>';
+    var cal = '<span class="site-links">Календарь: <a href="#calendar" onclick="window.__portal.setCalSchool(' + jsArg(r.title) + ');return false;">события школы ↗</a></span>';
     var meta = r.admission ? shorten(r.admission, 120) : '';
     return '<article class="school-record" id="record-' + esc(r.title) + '"><p>' +
       '<strong>' + esc(r.title) + '</strong> — ' + esc(r.body) + ' ' +
@@ -514,7 +539,9 @@
     openRecordById: openRecordById,
     hidePlace: hidePlace,
     hideRecord: hideRecord,
-    restoreRecord: restoreRecord
+    restoreRecord: restoreRecord,
+    setCalSchool: setCalSchool,
+    clearCalSchool: clearCalSchool
   };
   /* place_text из данных зовёт голый openOnMap (как в исходнике) — даём глобальный алиас. */
   window.openOnMap = openOnMap;
