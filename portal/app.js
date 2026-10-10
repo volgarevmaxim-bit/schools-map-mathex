@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261008-10';
+  var ASSET_VERSION = '20261010-01';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
@@ -126,27 +126,68 @@
     if (filter === 'first') return p.entity === 'school' && p.kind === 'blue';
     return p.kind === 'red'; // older
   }
+  /* Групповое выделение корпусов: клик по точке подсвечивает все точки её группы. */
+  var selectedGroup = null;
+  function styleFor(p) {
+    var base = {
+      radius: p.entity === 'kindergarten' ? 7 : 9,
+      fillColor: COLORS[p.kind], color: '#fff', weight: 2, fillOpacity: 0.9
+    };
+    if (selectedGroup && p.group === selectedGroup) {
+      base.radius += 2.5;
+      base.color = '#17202a';
+      base.weight = 3.5;
+      base.fillOpacity = 1;
+    } else if (selectedGroup) {
+      base.radius = Math.max(3.5, base.radius - 1.5);
+      base.fillOpacity = 0.4;
+    }
+    return base;
+  }
+  function restyleMarkers() {
+    markers.forEach(function (m, id) {
+      var p = PLACES.find(function (x) { return x.id === id; });
+      if (p) m.setStyle(styleFor(p));
+    });
+  }
+  function selectGroup(g) {
+    selectedGroup = (selectedGroup === g) ? null : g;
+    restyleMarkers();
+  }
+  function groupPopup(p) {
+    var sibs = PLACES.filter(function (x) { return x.group === p.group; });
+    var html = '<div class="popup-title">' + esc(p.name) + '</div>';
+    if (sibs.length > 1) {
+      html += '<div class="popup-bld">' + sibs.map(function (x) {
+        var role = x.building_role
+          ? ' <span class="bld-role">· ' + esc(x.building_role) + '</span>' : '';
+        var hl = x.id === p.id ? ' class="bld-self"' : '';
+        return '<div' + hl + '>' + esc(x.address || '') + role + '</div>';
+      }).join('') + '</div>';
+    } else {
+      html += '<div>' + esc(p.address || '') + '</div>';
+    }
+    html += '<p class="popup-actions">' +
+      '<a class="popup-act" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">Справка</a>' +
+      '<a class="popup-act" href="#calendar" onclick="window.__portal.setCalSchool(' + jsArg(p.name) + ');return false;">Календарь</a>' +
+      '<a class="popup-act" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">Скрыть</a></p>';
+    return html;
+  }
   function renderMap() {
     var filter = $('filter').value;
     layer.clearLayers();
     markers.clear();
     PLACES.filter(function (p) { return !hiddenIds.has(p.id) && visible(p, filter); }).forEach(function (p) {
-      var m = L.circleMarker([p.lat, p.lon], {
-        radius: p.entity === 'kindergarten' ? 7 : 9,
-        fillColor: COLORS[p.kind], color: '#fff', weight: 2, fillOpacity: 0.9
-      });
-      m.bindPopup(
-        '<div class="popup-title">' + esc(p.name) + '</div>' +
-        '<div>' + esc(p.address || '') + '</div>' +
-        '<p class="popup-actions">' +
-        '<a class="popup-act" href="#schools" onclick="window.__portal.openRecordById(' + jsArg(p.id) + ');return false;">Справка</a>' +
-        '<a class="popup-act" href="#calendar" onclick="window.__portal.setCalSchool(' + jsArg(p.name) + ');return false;">Календарь</a>' +
-        '<a class="popup-act" href="#!" onclick="window.__portal.hidePlace(' + jsArg(p.id) + ');return false;">Скрыть</a></p>'
-      );
+      var m = L.circleMarker([p.lat, p.lon], styleFor(p));
+      m.bindPopup(groupPopup(p));
+      m.on('click', function () { selectGroup(p.group); });
       m.addTo(layer);
       markers.set(p.id, m);
     });
   }
+  map.on('click', function () {
+    if (selectedGroup) { selectedGroup = null; restyleMarkers(); }
+  });
   function openOnMap(id) {
     var p = PLACES.find(function (x) { return x.id === id; });
     if (!p) return;
@@ -470,7 +511,7 @@
     ]).then(function (res) {
       PLACES = res[0];
       CONTENT = res[1];
-      $('map-sub').textContent = 'для детей 5 и 9 лет · ' + CONTENT.records.length + ' школ и садов · ' + PLACES.length + ' точек на карте · обновлено 08.10.2026';
+      $('map-sub').textContent = 'для детей 5 и 9 лет · ' + CONTENT.records.length + ' школ и садов · ' + PLACES.length + ' точек на карте · обновлено 10.10.2026';
       $('schools-sub').textContent = CONTENT.records.length + ' записей · ' + REVIEWS.length + ' полных обзоров (Фаза 7)';
       renderMap();
       renderRecords();

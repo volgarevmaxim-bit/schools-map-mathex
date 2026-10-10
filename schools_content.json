@@ -122,9 +122,12 @@
       "title": "Бауманская инженерная школа №1580",
       "group_key": "Бауманская инженерная школа №1580",
       "place_ids": [
-        "school-бауманская-инженерная-школа-1580"
+        "school-бауманская-инженерная-школа-1580",
+        "school-бауманская-инженерная-школа-1580-b2",
+        "school-бауманская-инженерная-школа-1580-b3",
+        "school-бауманская-инженерная-школа-1580-b4"
       ],
-      "place_text": "<span id=\"place-school-бауманская-инженерная-школа-1580\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-бауманская-инженерная-школа-1580');return false;\">↑</a> <span class=\"place-label\">Бауманская инженерная школа №1580 — Балаклавский просп., 6А, Москва</span>",
+      "place_text": "<span id=\"place-school-бауманская-инженерная-школа-1580\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-бауманская-инженерная-школа-1580');return false;\">↑</a> <span class=\"place-label\">Бауманская инженерная школа №1580 — Балаклавский просп., 6А, Москва</span><br><span id=\"place-school-бауманская-инженерная-школа-1580-b2\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-бауманская-инженерная-школа-1580-b2');return false;\">↑</a> <span class=\"place-label\">Бауманская инженерная школа №1580 — старшая школа — Москва, Балаклавский проспект, 6</span><br><span id=\"place-school-бауманская-инженерная-школа-1580-b3\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-бауманская-инженерная-школа-1580-b3');return false;\">↑</a> <span class=\"place-label\">Бауманская инженерная школа №1580 — старшая школа — Москва, ул. Стасовой, 8</span><br><span id=\"place-school-бауманская-инженерная-школа-1580-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-бауманская-инженерная-школа-1580-b4');return false;\">↑</a> <span class=\"place-label\">Бауманская инженерная школа №1580 — старшая школа — Москва, проезд Невельского, 4</span>",
       "trajectory": "инженерно-техническая и физико-математическая",
       "cost": "муниципальная: 0 млн ₽/год",
       "admission": "Набор с 1 класса и переходы в профильные классы зависят от корпуса и кампании; точные классы 2026/27 нужно сверить с приёмной комиссией.",
@@ -256,9 +259,12 @@
       "place_ids": [
         "school-lit-1533-lomonosovsky",
         "school-lit-1533-profsoyuznaya",
-        "school-lit-1533-krzhizhanovskogo"
+        "school-lit-1533-krzhizhanovskogo",
+        "school-lit-1533-lomonosovsky-b4",
+        "school-lit-1533-lomonosovsky-b5",
+        "school-lit-1533-lomonosovsky-b6"
       ],
-      "place_text": "<span id=\"place-school-lit-1533-lomonosovsky\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-lomonosovsky');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — главное здание — Москва, Ломоносовский проспект, 16</span><br><span id=\"place-school-lit-1533-profsoyuznaya\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-profsoyuznaya');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — здание 5–8 классов — Москва, Профсоюзная улица, 24к4</span><br><span id=\"place-school-lit-1533-krzhizhanovskogo\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-krzhizhanovskogo');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — здание 3–4 классов — Москва, улица Кржижановского, 4А</span>",
+      "place_text": "<span id=\"place-school-lit-1533-lomonosovsky\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-lomonosovsky');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — главное здание — Москва, Ломоносовский проспект, 16</span><br><span id=\"place-school-lit-1533-profsoyuznaya\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-profsoyuznaya');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — здание 5–8 классов — Москва, Профсоюзная улица, 24к4</span><br><span id=\"place-school-lit-1533-krzhizhanovskogo\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-krzhizhanovskogo');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (информационных технологий) — здание 3–4 классов — Москва, улица Кржижановского, 4А</span><br><span id=\"place-school-lit-1533-lomonosovsky-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-lomonosovsky-b4');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (ЛИТ) — старшая школа — Москва, Профсоюзная улица, 24к4</span><br><span id=\"place-school-lit-1533-lomonosovsky-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-lomonosovsky-b5');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (ЛИТ) — старшая школа — Москва, Профсоюзная улица, дом 24, корпус 4</span><br><span id=\"place-school-lit-1533-lomonosovsky-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-lit-1533-lomonosovsky-b6');return false;\">↑</a> <span class=\"place-label\">Лицей №1533 (ЛИТ) — начальная школа — Москва, улица Кржижановского, дом 4А</span>",
       "trajectory": "IT, математика, программирование и естественные науки",
       "cost": "муниципальная: 0 млн ₽/год",
       "admission": "Подтверждён конкурсный набор в 3, 5 и 6 классы по математике, русскому и английскому; добор в 7–10 классы — при наличии мест. На карте три здания: 3–4, 5–8 и старшие классы.",
@@ -286,9 +292,14 @@
       "place_ids": [
         "school-ломоносовская-начальная-москва",
         "school-ломоносовская-аминьевское",
-        "school-ломоносовская-кременчугская"
+        "school-ломоносовская-кременчугская",
+        "school-ломоносовская-начальная-москва-b4",
+        "school-ломоносовская-начальная-москва-b5",
+        "school-ломоносовская-начальная-москва-b6",
+        "school-ломоносовская-начальная-москва-b7",
+        "school-ломоносовская-начальная-москва-b8"
       ],
-      "place_text": "<span id=\"place-school-ломоносовская-начальная-москва\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — начальная городская — Москва, Можайское шоссе, 31к2</span><br><span id=\"place-school-ломоносовская-аминьевское\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-аминьевское');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — основная и старшая — Москва, Аминьевское шоссе, 18к4</span><br><span id=\"place-school-ломоносовская-кременчугская\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-кременчугская');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — корпус на Кременчугской — Москва, улица Кременчугская, 44к5</span>",
+      "place_text": "<span id=\"place-school-ломоносовская-начальная-москва\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — начальная городская — Москва, Можайское шоссе, 31к2</span><br><span id=\"place-school-ломоносовская-аминьевское\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-аминьевское');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — основная и старшая — Москва, Аминьевское шоссе, 18к4</span><br><span id=\"place-school-ломоносовская-кременчугская\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-кременчугская');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — корпус на Кременчугской — Москва, улица Кременчугская, 44к5</span><br><span id=\"place-school-ломоносовская-начальная-москва-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва-b4');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — Москва, Московская область, с. Успенское, ул. Советская, 50Б</span><br><span id=\"place-school-ломоносовская-начальная-москва-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва-b5');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — дошкольное отделение — Москва, Московская область, с. Успенское, ул. Советская, 50В</span><br><span id=\"place-school-ломоносовская-начальная-москва-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва-b6');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — старшая школа — Москва, Аминьевское шоссе, дом 18, корпус 4</span><br><span id=\"place-school-ломоносовская-начальная-москва-b7\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва-b7');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — старшая школа — Москва, улица Кременчугская, дом 44, корпус 5</span><br><span id=\"place-school-ломоносовская-начальная-москва-b8\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-ломоносовская-начальная-москва-b8');return false;\">↑</a> <span class=\"place-label\">Ломоносовская школа — начальная школа — Москва, Можайское шоссе, дом 31, корпус 2</span>",
       "trajectory": "мультипрофильная, языки, академическая и олимпиадная подготовка",
       "cost": "частная: 2,322 млн ₽/год для 1–4 и 5–11 при 215 тыс. ₽ × 9 учебных месяцев; 0 класс — ориентировочно 1,62–1,782 млн ₽ с доплатой; прайс 2026/27 найден на официальном сайте",
       "admission": "Есть 0 класс и набор с 1 класса; основная/старшая школа — 5–11 классы. Три школьных корпуса на карте: начальная, Аминьевское шоссе и Кременчугская.",
@@ -414,9 +425,14 @@
       "title": "ТОР IT SCHOOL",
       "group_key": "ТОР IT SCHOOL",
       "place_ids": [
-        "school-тор-it-school"
+        "school-тор-it-school",
+        "school-тор-it-school-b2",
+        "school-тор-it-school-b3",
+        "school-тор-it-school-b4",
+        "school-тор-it-school-b5",
+        "school-тор-it-school-b6"
       ],
-      "place_text": "<span id=\"place-school-тор-it-school\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — Москва, улица Покрышкина, 8 к1</span>",
+      "place_text": "<span id=\"place-school-тор-it-school\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — Москва, улица Покрышкина, 8 к1</span><br><span id=\"place-school-тор-it-school-b2\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school-b2');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — основное здание — Москва, улица Яблочкова, дом 8А</span><br><span id=\"place-school-тор-it-school-b3\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school-b3');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — основное здание — Москва, Новочеремушкинская улица, дом 60, корпус 1</span><br><span id=\"place-school-тор-it-school-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school-b4');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — основное здание — Москва, Жулебинский бульвар, дом 27</span><br><span id=\"place-school-тор-it-school-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school-b5');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — основное здание — Москва, улица Софьи Ковалевской, дом 6</span><br><span id=\"place-school-тор-it-school-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-тор-it-school-b6');return false;\">↑</a> <span class=\"place-label\">ТОР IT SCHOOL — основное здание — Москва, Нагатинская улица, дом 29, корпус 4</span>",
       "trajectory": "IT, программирование, робототехника, 3D и английский",
       "cost": "частная: подготовка к школе — от 6 000 до 12 600 ₽/мес.; начальная школа — от 79 000 до 85 000 ₽/мес.",
       "admission": "Набор заявлен с 1 класса; до 14:00 базовая программа, после — IT-погружение.",
@@ -1026,9 +1042,14 @@
       "title": "Школа №109",
       "track": "Справки в работе",
       "place_ids": [
-        "school-школа-109"
+        "school-школа-109",
+        "school-школа-109-b2",
+        "school-школа-109-b3",
+        "school-школа-109-b4",
+        "school-школа-109-b5",
+        "school-школа-109-b6"
       ],
-      "place_text": "<span id=\"place-school-школа-109\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109');return false;\">↑</a> <span class=\"place-label\">Школа №109 — улица Академика Бакулева, дом 20</span>",
+      "place_text": "<span id=\"place-school-школа-109\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109');return false;\">↑</a> <span class=\"place-label\">Школа №109 — улица Академика Бакулева, дом 20</span><br><span id=\"place-school-школа-109-b2\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109-b2');return false;\">↑</a> <span class=\"place-label\">Школа №109 — начальная школа — Москва, Ленинский проспект, дом 131, корпус 4</span><br><span id=\"place-school-школа-109-b3\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109-b3');return false;\">↑</a> <span class=\"place-label\">Школа №109 — Москва, Ленинский проспект, дом 137, корпус 3</span><br><span id=\"place-school-школа-109-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109-b4');return false;\">↑</a> <span class=\"place-label\">Школа №109 — дошкольное отделение — Москва, улица Лобановский Лес, дом 2</span><br><span id=\"place-school-школа-109-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109-b5');return false;\">↑</a> <span class=\"place-label\">Школа №109 — дошкольное отделение — Москва, улица Саморы Машела, дом 1</span><br><span id=\"place-school-школа-109-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-109-b6');return false;\">↑</a> <span class=\"place-label\">Школа №109 — Москва, Ленинский проспект, дом 137Б</span>",
       "websites": [
         {
           "label": "Сайт школы",
@@ -1121,9 +1142,22 @@
       "title": "Школа №1158",
       "track": "Справки в работе",
       "place_ids": [
-        "school-школа-1158"
+        "school-школа-1158",
+        "school-школа-1158-b2",
+        "school-школа-1158-b3",
+        "school-школа-1158-b4",
+        "school-школа-1158-b5",
+        "school-школа-1158-b6",
+        "school-школа-1158-b7",
+        "school-школа-1158-b8",
+        "school-школа-1158-b9",
+        "school-школа-1158-b10",
+        "school-школа-1158-b11",
+        "school-школа-1158-b12",
+        "school-школа-1158-b13",
+        "school-школа-1158-b14"
       ],
-      "place_text": "<span id=\"place-school-школа-1158\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — Сумской проезд, дом 12Б</span>",
+      "place_text": "<span id=\"place-school-школа-1158\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — Сумской проезд, дом 12Б</span><br><span id=\"place-school-школа-1158-b2\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b2');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — начальная школа — Москва, Сумской проезд, дом 19А</span><br><span id=\"place-school-школа-1158-b3\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b3');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — начальная школа — Москва, Сумской проезд, дом 21А</span><br><span id=\"place-school-школа-1158-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b4');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — начальная школа — Москва, микрорайон Северное Чертаново, корпус 810А</span><br><span id=\"place-school-школа-1158-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b5');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — начальная школа — Москва, микрорайон Северное Чертаново, корпус 812</span><br><span id=\"place-school-школа-1158-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b6');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — старшая школа — Москва, микрорайон Северное Чертаново, корпус 809</span><br><span id=\"place-school-школа-1158-b7\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b7');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — старшая школа — Москва, микрорайон Северное Чертаново, корпус 810</span><br><span id=\"place-school-школа-1158-b8\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b8');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — старшая школа — Москва, Битцевский проезд, дом 10</span><br><span id=\"place-school-школа-1158-b9\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b9');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, Чертановская улица, дом 14Б</span><br><span id=\"place-school-школа-1158-b10\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b10');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, Чертановская улица, дом 8А</span><br><span id=\"place-school-школа-1158-b11\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b11');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, микрорайон Северное Чертаново, корпус 811</span><br><span id=\"place-school-школа-1158-b12\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b12');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, микрорайон Северное Чертаново, корпус 813</span><br><span id=\"place-school-школа-1158-b13\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b13');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, микрорайон Северное Чертаново, корпус 814</span><br><span id=\"place-school-школа-1158-b14\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-школа-1158-b14');return false;\">↑</a> <span class=\"place-label\">Школа №1158 — дошкольное отделение — Москва, Битцевский проезд, дом 12</span>",
       "websites": [
         {
           "label": "Сайт школы",
@@ -1832,9 +1866,15 @@
       "title": "Образовательный центр «Протон»",
       "track": "Справки в работе",
       "place_ids": [
-        "school-образовательный-центр-протон"
+        "school-образовательный-центр-протон",
+        "school-образовательный-центр-протон-b2",
+        "school-образовательный-центр-протон-b3",
+        "school-образовательный-центр-протон-b4",
+        "school-образовательный-центр-протон-b5",
+        "school-образовательный-центр-протон-b6",
+        "school-образовательный-центр-протон-b7"
       ],
-      "place_text": "<span id=\"place-school-образовательный-центр-протон\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — улица Большая Филёвская, 15</span>",
+      "place_text": "<span id=\"place-school-образовательный-центр-протон\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — улица Большая Филёвская, 15</span><br><span id=\"place-school-образовательный-центр-протон-b2\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b2');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — старшая школа — Москва, Филевский бульвар, 3, корп. 2</span><br><span id=\"place-school-образовательный-центр-протон-b3\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b3');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — старшая школа — Москва, ул. Большая Филевская, 21, корп. 4</span><br><span id=\"place-school-образовательный-центр-протон-b4\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b4');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — старшая школа — Москва, Филевский бульвар, 13, корп. 2</span><br><span id=\"place-school-образовательный-центр-протон-b5\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b5');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — Москва, Филевский бульвар, 1, корп. 2</span><br><span id=\"place-school-образовательный-центр-протон-b6\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b6');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — Москва, Филевский бульвар, 17А</span><br><span id=\"place-school-образовательный-центр-протон-b7\"></span><a class=\"map-link\" href=\"#map\" onclick=\"openOnMap('school-образовательный-центр-протон-b7');return false;\">↑</a> <span class=\"place-label\">Образовательный центр «Протон» — Москва, Береговой проезд, 1Б</span>",
       "websites": [],
       "body": "Справка в работе: подробное описание, траектория, правила набора и стоимость уточняются. Школа входит в мониторинг дней открытых дверей — события школы видны в календаре, точка — на карте.",
       "admission": "Набор и правила приёма уточняются (справка в работе).",
