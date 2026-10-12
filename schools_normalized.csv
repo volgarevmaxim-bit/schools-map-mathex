@@ -44,11 +44,11 @@ mathex-skola-57,Школа 57,"Малый Знаменский пер., 7/10с5,
 Малый Знаменский пер., 7/10с5, Москва
 Сайт: <a href=""https://www.sch57.ru/"">www.sch57.ru</a>
 <a href=""https://mathex.ru/shkoly/skola-57/"">Страница на Mathex</a>",geocoded,"coords from Yandex Geocoder, address from Yandex Maps org card"
-mathex-skola-cpm,ЦПМ,"Олимпийский просп., 11, стр. 1, Москва",55.789492,37.621875,https://mathex.ru/shkoly/skola-cpm/,mathex,ЦПМ,"ЦПМ
+mathex-skola-cpm,ЦПМ,"Москва, 1-й проезд Марьиной Рощи, дом 3А",55.793779,37.621705,https://mathex.ru/shkoly/skola-cpm/,mathex,ЦПМ,"ЦПМ
 
-Олимпийский просп., 11, стр. 1, Москва
+Москва, 1-й проезд Марьиной Рощи, дом 3А
 Сайт: <a href=""https://xn----7sb3aehik9cm.xn--p1ai/"">xn----7sb3aehik9cm.xn--p1ai</a>
-<a href=""https://mathex.ru/shkoly/skola-cpm/"">Страница на Mathex</a>",geocoded,"coords from Yandex Geocoder, address from Yandex Maps org card"
+<a href=""https://mathex.ru/shkoly/skola-cpm/"">Страница на Mathex</a>",geocoded,"coords from Yandex Geocoder, address from Yandex Maps org card; адрес/координаты заменены 12.10 по решению владельца: переезд 2026, Олимпийский 11с1 устарел (точка удалена), база — 1-й проезд Марьиной Рощи 3А"
 mathex-vorobgory,Лицей Воробьевы Горы,"Донская ул., 37, Москва",55.718922,37.605149,https://mathex.ru/shkoly/vorobgory/,mathex,Воробёвы,"Лицей Воробьевы Горы
 
 Донская ул., 37, Москва
@@ -242,21 +242,21 @@ forbes-mid-22,Феникс,"Москва, Профсоюзная улица, 27�
 Москва, Профсоюзная улица, 27к3
 342 000 — 825 000 руб/год
 Сайт: <a href=""https://feniks-school.ru/"">feniks-school.ru</a>",geocoded,"forbes mid segment, year 2010, price 342 000 — 825 000"
-forbes-mid-23,Школа ЦПМ,"Москва, Олимпийский проспект, 11с1",55.789492,37.621875,,forbes,ЦПМ,"Школа ЦПМ
+forbes-mid-23,Школа ЦПМ,"Москва, 1-й проезд Марьиной Рощи, дом 3А",55.793779,37.621705,,forbes,ЦПМ,"Школа ЦПМ
 
-Москва, Олимпийский проспект, 11с1
+Москва, 1-й проезд Марьиной Рощи, дом 3А
 577 800 — 652 500 руб/год
-Сайт: <a href=""https://sckool-cpm.ru/"">sckool-cpm.ru</a>",geocoded,"forbes mid segment, year 2019, price 577 800 — 652 500"
+Сайт: <a href=""https://sckool-cpm.ru/"">sckool-cpm.ru</a>",geocoded,"forbes mid segment, year 2019, price 577 800 — 652 500; адрес/координаты заменены 12.10 по решению владельца (Олимпийский 11с1 устарел, база — 1-й проезд Марьиной Рощи 3А)"
 forbes-high-01,Британская международная школа,"Москва, Нахимовский проспект, 35а",55.672174,37.574139,,forbes,Brit.Int.,"Британская международная школа
 
 Москва, Нахимовский проспект, 35а
 1 270 000 — 3 476 000 руб/год
 Сайт: <a href=""https://bismoscow.com/"">bismoscow.com</a>",geocoded,"forbes high segment, year 1994, price 1 270 000 — 3 476 000"
-forbes-high-02,Интеграция XXI век,"Москва, улица Маршала Катукова, 16к1",55.807193,37.405705,,forbes,Интегр.,"Интеграция XXI век
+forbes-high-02,Интеграция XXI век,"Москва, ул. Маршала Катукова, 16к3",55.806752,37.40354,,forbes,Интегр.,"Интеграция XXI век
 
-Москва, улица Маршала Катукова, 16к1
+Москва, ул. Маршала Катукова, 16к3
 950 000 — 1 985 000 руб/год
-Сайт: <a href=""https://integracia21.ru/"">integracia21.ru</a>",geocoded,"forbes high segment, year 1996, price 950 000 — 1 985 000"
+Сайт: <a href=""https://integracia21.ru/"">integracia21.ru</a>",geocoded,"forbes high segment, year 1996, price 950 000 — 1 985 000; адрес/координаты заменены 12.10 по решению владельца: офиц. 16к3 (точка 16к1 удалена)"
 forbes-high-04,Ломоносовская школа,"Москва, Аминьевское шоссе, 18к4",55.71447,37.456001,,forbes,Ломонос.,"Ломоносовская школа
 
 Москва, Аминьевское шоссе, 18к4
