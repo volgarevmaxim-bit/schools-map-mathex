@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var ASSET_VERSION = '20261011-02';
+  var ASSET_VERSION = '20261012-01';
   var STORAGE_KEY = 'schoolHub.hidden.v1';
   var STATE_VERSION = 1;
 
