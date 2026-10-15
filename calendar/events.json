@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-15",
  "count_dated": 17,
- "count_undated": 121,
+ "count_undated": 122,
  "dated": [
   {
    "school": "№1514",
@@ -407,6 +407,31 @@
  ],
  "undated": [
   {
+   "school": "Летово",
+   "title": "Набор на январские образовательные школы «Летово» для 6–8 классов",
+   "grades": [
+    6,
+    8
+   ],
+   "deadline": null,
+   "action": "Подать заявку на январскую смену",
+   "url": "https://t.me/letovonews/2972",
+   "posted": "2026-10-15",
+   "channel": "letovonews",
+   "msg_id": 2972,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 12,
+   "age_max": 14,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "6–8 классы"
+  },
+  {
    "school": "ТОР IT SCHOOL",
    "title": "Набор на осенние каникулы «Супермиссия: Академия героев»",
    "grades": [
@@ -426,7 +451,7 @@
    "age_max": 13,
    "city": "Москва",
    "start_date": null,
-   "age": "7–13 лет",
+   "age": null,
    "group": "undated",
    "age_days": 0,
    "age_display": "1–7 классы"
