@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-15",
  "count_dated": 17,
- "count_undated": 119,
+ "count_undated": 121,
  "dated": [
   {
    "school": "№1514",
@@ -27,28 +27,28 @@
   },
   {
    "school": "№1535",
-   "title": "Регистрация на отборочный этап МОШ по физике 7–11 кл.",
+   "title": "Запись на диагностические тестирования по предметам, 6–9 классы",
    "grades": [
-    7,
+    6,
     11
    ],
    "deadline": "2026-10-15",
-   "action": "Зарегистрировать на олимпиаду по физике",
-   "url": "https://t.me/lyceum1535/12687",
-   "posted": "2026-10-08",
-   "channel": "lyceum1535",
-   "msg_id": 12687,
+   "action": "Записаться на диагностическое тестирование",
+   "url": "https://t.me/sch1535/962",
+   "posted": "2026-10-15",
+   "channel": "sch1535",
+   "msg_id": 962,
    "subtype": "other",
-   "format": "online",
-   "direction": "STEAM",
-   "age_min": 13,
-   "age_max": 17,
+   "format": null,
+   "direction": "other",
+   "age_min": 12,
+   "age_max": 16,
    "city": "Москва",
    "start_date": "2026-10-15",
    "age": null,
    "group": "today",
-   "age_days": 7,
-   "age_display": "7–11 классы"
+   "age_days": 0,
+   "age_display": "6–11 классы"
   },
   {
    "school": "№548 «Царицыно»",
@@ -406,6 +406,56 @@
   }
  ],
  "undated": [
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Набор на осенние каникулы «Супермиссия: Академия героев»",
+   "grades": [
+    1,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться на каникулярную программу",
+   "url": "https://t.me/top_it_school/1066",
+   "posted": "2026-10-15",
+   "channel": "top_it_school",
+   "msg_id": 1066,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 7,
+   "age_max": 13,
+   "city": "Москва",
+   "start_date": null,
+   "age": "7–13 лет",
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "1–7 классы"
+  },
+  {
+   "school": "№1535",
+   "title": "Открыта запись на диагностические тестирования 6–9 классов",
+   "grades": [
+    6,
+    9
+   ],
+   "deadline": null,
+   "action": "Записать ребёнка на диагностическое тестирование",
+   "url": "https://t.me/openschool_1535/438",
+   "posted": "2026-10-15",
+   "channel": "openschool_1535",
+   "msg_id": 438,
+   "subtype": "other",
+   "format": "online",
+   "direction": "other",
+   "age_min": 11,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "6–9 классы"
+  },
   {
    "school": "ТОР IT SCHOOL",
    "title": "Бесплатный пробный день в TOP IT SCHOOL для 1–9 классов",
@@ -1253,31 +1303,6 @@
    "age_display": "10 класс"
   },
   {
-   "school": "№1535",
-   "title": "Регистрация на бесплатные тестирования «Пробы 1535» для 6–8 классов",
-   "grades": [
-    6,
-    8
-   ],
-   "deadline": null,
-   "action": "Записаться на тестирование «Пробы 1535»",
-   "url": "https://t.me/lyceum1535/12563",
-   "posted": "2026-09-25",
-   "channel": "lyceum1535",
-   "msg_id": 12563,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 20,
-   "age_display": "6–8 классы"
-  },
-  {
    "school": "№1363",
    "domain": "sch1363uv.mskobr.ru",
    "title": "Попробовать профессию ещё в школе? Можно!",
@@ -1390,6 +1415,31 @@
    "group": "undated",
    "age_days": 21,
    "age_display": "возраст не указан"
+  },
+  {
+   "school": "№1535",
+   "title": "Регистрация на бесплатные тестирования «Пробы 1535» для 6-8 классов",
+   "grades": [
+    6,
+    8
+   ],
+   "deadline": null,
+   "action": "Зарегистрироваться на тестирование",
+   "url": "https://t.me/sch1535/955",
+   "posted": "2026-09-24",
+   "channel": "sch1535",
+   "msg_id": 955,
+   "subtype": null,
+   "format": null,
+   "direction": null,
+   "age_min": null,
+   "age_max": null,
+   "city": null,
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 21,
+   "age_display": "6–8 классы"
   },
   {
    "school": "№1980",
