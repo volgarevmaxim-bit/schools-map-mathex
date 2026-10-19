@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-19",
  "count_dated": 14,
- "count_undated": 118,
+ "count_undated": 120,
  "dated": [
   {
    "school": "№1514",
@@ -339,6 +339,78 @@
   }
  ],
  "undated": [
+  {
+   "school": "Курчатовская школа",
+   "title": "Кружок «Олимпиады по журналистике» для 10 класса",
+   "grades": [
+    10,
+    10
+   ],
+   "deadline": null,
+   "action": "Записаться в кружок",
+   "url": "https://t.me/kurchat/10196",
+   "posted": "2026-10-19",
+   "channel": "kurchat",
+   "msg_id": 10196,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 16,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "10 класс"
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Осенняя мини-школа TOP IT SCHOOL «Академия супергероев»",
+   "grades": null,
+   "deadline": null,
+   "action": "Забронировать место в мини-школе",
+   "url": "https://t.me/top_it_school/1068",
+   "posted": "2026-10-19",
+   "channel": "top_it_school",
+   "msg_id": 1068,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "возраст не указан"
+  },
+  {
+   "school": "№57",
+   "title": "Курс «Знакомство с физикой» для шестиклассников всех школ",
+   "grades": [
+    6,
+    6
+   ],
+   "deadline": null,
+   "action": "Записаться на курс по физике",
+   "url": "https://t.me/school57official/7871",
+   "posted": "2026-10-19",
+   "channel": "school57official",
+   "msg_id": 7871,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 12,
+   "age_max": 12,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "6 класс"
+  },
   {
    "school": "№1535",
    "title": "Диагностические тестирования «Открытой школы» для 6–9 классов",
@@ -2212,31 +2284,6 @@
    "group": "undated",
    "age_days": 33,
    "age_display": "7–10 классы"
-  },
-  {
-   "school": "№57",
-   "title": "Курс «Знакомство с физикой» для 6 классов",
-   "grades": [
-    6,
-    6
-   ],
-   "deadline": null,
-   "action": "Записаться на курс физики",
-   "url": "https://t.me/school57official/7598",
-   "posted": "2026-09-16",
-   "channel": "school57official",
-   "msg_id": 7598,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 33,
-   "age_display": "6 класс"
   },
   {
    "school": "ЛИТ 1533",
