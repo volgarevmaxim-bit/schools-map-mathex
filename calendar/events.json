@@ -292,14 +292,14 @@
   },
   {
    "school": "№1535",
-   "title": "Конференция проектных работ «Среда обитания и здоровье»",
+   "title": "Конференция проектных работ по экологии и здоровью человека",
    "grades": null,
    "deadline": "2026-12-05",
    "action": "Подать заявку на участие в конференции",
-   "url": "https://t.me/lyceum1535/12744",
-   "posted": "2026-10-13",
+   "url": "https://t.me/lyceum1535/12823",
+   "posted": "2026-10-20",
    "channel": "lyceum1535",
-   "msg_id": 12744,
+   "msg_id": 12823,
    "subtype": "other",
    "format": "online",
    "direction": "STEAM",
@@ -309,7 +309,7 @@
    "start_date": "2026-12-05",
    "age": null,
    "group": "later",
-   "age_days": 7,
+   "age_days": 0,
    "age_display": "возраст не указан"
   },
   {
