@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-21",
  "count_dated": 14,
- "count_undated": 120,
+ "count_undated": 122,
  "dated": [
   {
    "school": "№1514",
@@ -148,15 +148,15 @@
   },
   {
    "school": "Курчатовская школа",
-   "title": "Космические каникулы: осенняя смена 26–30 октября",
+   "title": "Космические каникулы в Курчатовской школе",
    "grades": null,
    "deadline": "2026-10-26",
-   "action": "Записаться на осеннюю смену 26–30 октября",
-   "url": "https://t.me/kurchat/10170",
-   "posted": "2026-10-13",
+   "action": "Зарегистрироваться на мос.ру",
+   "url": "https://t.me/kurchat/10212",
+   "posted": "2026-10-21",
    "channel": "kurchat",
-   "msg_id": 10170,
-   "subtype": "course_club",
+   "msg_id": 10212,
+   "subtype": "other",
    "format": "offline",
    "direction": "STEAM",
    "age_min": null,
@@ -165,7 +165,7 @@
    "start_date": "2026-10-26",
    "age": null,
    "group": "this_week",
-   "age_days": 8,
+   "age_days": 0,
    "age_display": "возраст не указан"
   },
   {
@@ -341,6 +341,81 @@
  "undated": [
   {
    "school": "Курчатовская школа",
+   "title": "Набор на подготовку к ВсОШ по русскому языку",
+   "grades": [
+    9,
+    11
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru по коду 2585978",
+   "url": "https://t.me/kurchat/10210",
+   "posted": "2026-10-21",
+   "channel": "kurchat",
+   "msg_id": 10210,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 14,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9–11 классы"
+  },
+  {
+   "school": "Летово Кидс",
+   "title": "Подготовка к школе в «Летово Кидс»: экскурсия для родителей",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": null,
+   "action": "Записаться на экскурсию в сад",
+   "url": "https://t.me/letovo_kids/519",
+   "posted": "2026-10-21",
+   "channel": "letovo_kids",
+   "msg_id": 519,
+   "subtype": "open_house",
+   "format": "offline",
+   "direction": "other",
+   "age_min": 6,
+   "age_max": 7,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "дошкольники"
+  },
+  {
+   "school": "№1535",
+   "title": "Диагностические тестирования «Открытой школы» для 6–9 кл.",
+   "grades": [
+    6,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на диагностическое тестирование",
+   "url": "https://t.me/lyceum1535/12829",
+   "posted": "2026-10-21",
+   "channel": "lyceum1535",
+   "msg_id": 12829,
+   "subtype": "other",
+   "format": "online",
+   "direction": "other",
+   "age_min": 12,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "6–9 классы"
+  },
+  {
+   "school": "Курчатовская школа",
    "title": "Кружок «Олимпиады по журналистике» для 10 класса",
    "grades": [
     10,
@@ -410,31 +485,6 @@
    "group": "undated",
    "age_days": 2,
    "age_display": "6 класс"
-  },
-  {
-   "school": "№1535",
-   "title": "Диагностические тестирования «Открытой школы» для 6–9 классов",
-   "grades": [
-    6,
-    9
-   ],
-   "deadline": null,
-   "action": "Записаться на диагностическое тестирование",
-   "url": "https://t.me/lyceum1535/12775",
-   "posted": "2026-10-16",
-   "channel": "lyceum1535",
-   "msg_id": 12775,
-   "subtype": "course_club",
-   "format": "online",
-   "direction": "other",
-   "age_min": 12,
-   "age_max": 15,
-   "city": "Москва",
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 5,
-   "age_display": "6–9 классы"
   },
   {
    "school": "Летово",
