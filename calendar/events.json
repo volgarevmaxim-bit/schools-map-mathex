@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-23",
- "count_dated": 13,
- "count_undated": 118,
+ "count_dated": 14,
+ "count_undated": 120,
  "dated": [
   {
    "school": "№1535",
@@ -191,6 +191,31 @@
    "age_display": "6–8 классы"
   },
   {
+   "school": "№1514",
+   "title": "Пробный экзамен по русскому языку (4 кл.) и диагностика по словесности (7 кл.)",
+   "grades": [
+    4,
+    7
+   ],
+   "deadline": "2026-11-08",
+   "action": "Следить за стартом записи 28 октября",
+   "url": "https://t.me/school_1514/8650",
+   "posted": "2026-10-23",
+   "channel": "school_1514",
+   "msg_id": 8650,
+   "subtype": "admission_prep",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 9,
+   "age_max": 13,
+   "city": "Москва",
+   "start_date": "2026-11-08",
+   "age": null,
+   "group": "later",
+   "age_days": 0,
+   "age_display": "4–7 классы"
+  },
+  {
    "school": "Новая школа",
    "title": "Программа МетодАкадемия: мотивация на уроках иностранных языков",
    "grades": null,
@@ -311,6 +336,56 @@
   }
  ],
  "undated": [
+  {
+   "school": "Гимназия №1543",
+   "title": "Курс «Олимпиадная филология» для 5–6 и 8 классов",
+   "grades": [
+    5,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться на mos.ru (коды 2562828, 2562874)",
+   "url": "https://t.me/ru1543/3724",
+   "posted": "2026-10-23",
+   "channel": "ru1543",
+   "msg_id": 3724,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 11,
+   "age_max": 14,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "5–8 классы"
+  },
+  {
+   "school": "№57",
+   "title": "Интенсив по математике для 9 классов: подготовка к итоговой аттестации",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Записать девятиклассника на интенсив по математике",
+   "url": "https://t.me/school57official/7901",
+   "posted": "2026-10-23",
+   "channel": "school57official",
+   "msg_id": 7901,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 14,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9 класс"
+  },
   {
    "school": "Курчатовская школа",
    "title": "Набор на подготовку к ВсОШ по русскому языку",
