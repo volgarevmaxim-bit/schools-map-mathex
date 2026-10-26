@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-26",
- "count_dated": 11,
- "count_undated": 106,
+ "count_dated": 13,
+ "count_undated": 108,
  "dated": [
   {
    "school": "№2107",
@@ -94,6 +94,31 @@
    "age_display": "2–3 классы"
   },
   {
+   "school": "№1535",
+   "title": "Регистрация на МОШ по арабскому языку для 7–11 классов",
+   "grades": [
+    7,
+    11
+   ],
+   "deadline": "2026-10-27",
+   "action": "Зарегистрироваться на олимпиаду в «Сириус.Онлайн»",
+   "url": "https://t.me/lyceum1535/12856",
+   "posted": "2026-10-25",
+   "channel": "lyceum1535",
+   "msg_id": 12856,
+   "subtype": "other",
+   "format": "online",
+   "direction": "HASS",
+   "age_min": 13,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": "2026-10-27",
+   "age": null,
+   "group": "tomorrow",
+   "age_days": 1,
+   "age_display": "7–11 классы"
+  },
+  {
    "school": "Летово",
    "title": "Январские школы «Летово»: вебинар и приём заявок",
    "grades": [
@@ -164,6 +189,31 @@
    "group": "later",
    "age_days": 4,
    "age_display": "возраст не указан"
+  },
+  {
+   "school": "Хорошкола",
+   "title": "Профориентационный форум 14 ноября для 7–11 классов и родителей",
+   "grades": [
+    7,
+    11
+   ],
+   "deadline": "2026-11-14",
+   "action": "Прийти на форум 14 ноября",
+   "url": "https://t.me/horoschool/11689",
+   "posted": "2026-10-26",
+   "channel": "horoschool",
+   "msg_id": 11689,
+   "subtype": "open_house",
+   "format": "offline",
+   "direction": "other",
+   "age_min": 13,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": "2026-11-14",
+   "age": null,
+   "group": "later",
+   "age_days": 0,
+   "age_display": "7–11 классы"
   },
   {
    "school": "Летово",
@@ -265,6 +315,106 @@
  ],
  "undated": [
   {
+   "school": "Гимназия №1543",
+   "title": "Интенсив по литературе и истории для 9 классов, подготовка в профиль",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на интенсив для 9 класса",
+   "url": "https://t.me/ru1543/3731",
+   "posted": "2026-10-26",
+   "channel": "ru1543",
+   "msg_id": 3731,
+   "subtype": "admission_prep",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 15,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9 класс"
+  },
+  {
+   "school": "Летово Кидс",
+   "title": "Набор на курс подготовки к школе «Ступеньки к школе», 6–7 лет",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": null,
+   "action": "Записаться на курс подготовки к школе",
+   "url": "https://t.me/letovo_kids/525",
+   "posted": "2026-10-26",
+   "channel": "letovo_kids",
+   "msg_id": 525,
+   "subtype": "admission_prep",
+   "format": null,
+   "direction": "other",
+   "age_min": 6,
+   "age_max": 7,
+   "city": "Москва",
+   "start_date": null,
+   "age": "6–7 лет",
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "дошкольники"
+  },
+  {
+   "school": "№1514",
+   "title": "Набор в «Высокий старт-7»: английский и история, подготовка в 8 класс",
+   "grades": [
+    7,
+    7
+   ],
+   "deadline": null,
+   "action": "Записаться в группу подготовки",
+   "url": "https://t.me/school_1514/8688",
+   "posted": "2026-10-26",
+   "channel": "school_1514",
+   "msg_id": 8688,
+   "subtype": "admission_prep",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 13,
+   "age_max": 14,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "7 класс"
+  },
+  {
+   "school": "№57",
+   "title": "Бесплатные кружки Вечерних школ для учеников Москвы",
+   "grades": [
+    5,
+    8
+   ],
+   "deadline": null,
+   "action": "Записаться в кружок Вечерней школы",
+   "url": "https://t.me/school57official/7903",
+   "posted": "2026-10-26",
+   "channel": "school57official",
+   "msg_id": 7903,
+   "subtype": "evening_school",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 11,
+   "age_max": 14,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "5–8 классы"
+  },
+  {
    "school": "ТОР IT SCHOOL",
    "title": "Пробный день по изучению языков в TOP IT SCHOOL",
    "grades": [
@@ -288,31 +438,6 @@
    "group": "undated",
    "age_days": 1,
    "age_display": "1–9 классы"
-  },
-  {
-   "school": "Гимназия №1543",
-   "title": "Интенсив по биологии для 9 классов и подготовка в профиль",
-   "grades": [
-    9,
-    9
-   ],
-   "deadline": null,
-   "action": "Уточнить запись на интенсив для 9 класса",
-   "url": "https://t.me/ru1543/3730",
-   "posted": "2026-10-24",
-   "channel": "ru1543",
-   "msg_id": 3730,
-   "subtype": "course_club",
-   "format": "offline",
-   "direction": "STEAM",
-   "age_min": 15,
-   "age_max": 15,
-   "city": "Москва",
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 2,
-   "age_display": "9 класс"
   },
   {
    "school": "Гимназия №1543",
@@ -2506,31 +2631,6 @@
    "group": "undated",
    "age_days": 41,
    "age_display": "8–9 классы"
-  },
-  {
-   "school": "№57",
-   "title": "Бесплатные кружки Вечерних школ 57-й для учеников Москвы",
-   "grades": [
-    5,
-    8
-   ],
-   "deadline": null,
-   "action": "Записаться в кружки Вечерних школ",
-   "url": "https://t.me/school57official/7596",
-   "posted": "2026-09-15",
-   "channel": "school57official",
-   "msg_id": 7596,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 41,
-   "age_display": "5–8 классы"
   },
   {
    "school": "ЛИТ 1533",
