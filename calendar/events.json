@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-26",
- "count_dated": 13,
- "count_undated": 108,
+ "generated": "2026-10-27",
+ "count_dated": 10,
+ "count_undated": 109,
  "dated": [
   {
    "school": "№2107",
@@ -25,75 +25,6 @@
    "group": "later"
   },
   {
-   "school": "Курчатовская школа",
-   "title": "Космические каникулы в Курчатовской школе",
-   "grades": null,
-   "deadline": "2026-10-26",
-   "action": "Зарегистрироваться на мос.ру",
-   "url": "https://t.me/kurchat/10212",
-   "posted": "2026-10-21",
-   "channel": "kurchat",
-   "msg_id": 10212,
-   "subtype": "other",
-   "format": "offline",
-   "direction": "STEAM",
-   "age_min": null,
-   "age_max": null,
-   "city": "Москва",
-   "start_date": "2026-10-26",
-   "age": null,
-   "group": "today",
-   "age_days": 5,
-   "age_display": "возраст не указан"
-  },
-  {
-   "school": "№1535",
-   "title": "Допнабор в онлайн-курсы «Открытой школы» для абитуриентов",
-   "grades": null,
-   "deadline": "2026-10-26",
-   "action": "Записать на онлайн-курсы, старт 26 октября",
-   "url": "https://t.me/lyceum1535/12694",
-   "posted": "2026-10-08",
-   "channel": "lyceum1535",
-   "msg_id": 12694,
-   "subtype": "admission_prep",
-   "format": "online",
-   "direction": "STEAM",
-   "age_min": null,
-   "age_max": null,
-   "city": "Москва",
-   "start_date": "2026-10-26",
-   "age": null,
-   "group": "today",
-   "age_days": 18,
-   "age_display": "возраст не указан"
-  },
-  {
-   "school": "№57",
-   "title": "Онлайн-курс по русскому языку для 2–3 классов, 26–30 октября",
-   "grades": [
-    2,
-    3
-   ],
-   "deadline": "2026-10-26",
-   "action": "Записаться на онлайн-курс по русскому языку",
-   "url": "https://t.me/school57official/7868",
-   "posted": "2026-10-16",
-   "channel": "school57official",
-   "msg_id": 7868,
-   "subtype": "course_club",
-   "format": "online",
-   "direction": "HASS",
-   "age_min": 8,
-   "age_max": 9,
-   "city": "Москва",
-   "start_date": "2026-10-26",
-   "age": null,
-   "group": "today",
-   "age_days": 10,
-   "age_display": "2–3 классы"
-  },
-  {
    "school": "№1535",
    "title": "Регистрация на МОШ по арабскому языку для 7–11 классов",
    "grades": [
@@ -114,33 +45,33 @@
    "city": "Москва",
    "start_date": "2026-10-27",
    "age": null,
-   "group": "tomorrow",
-   "age_days": 1,
+   "group": "today",
+   "age_days": 2,
    "age_display": "7–11 классы"
   },
   {
    "school": "Летово",
-   "title": "Январские школы «Летово»: вебинар и приём заявок",
+   "title": "Январская школа инженерных технологий «Летово» для шестиклассников",
    "grades": [
     6,
     8
    ],
    "deadline": "2026-11-04",
-   "action": "Подать заявку на Январские школы до 4 ноября",
-   "url": "https://t.me/letovonews/2990",
-   "posted": "2026-10-22",
+   "action": "Подать заявку до 4 ноября в личном кабинете",
+   "url": "https://t.me/letovonews/2992",
+   "posted": "2026-10-27",
    "channel": "letovonews",
-   "msg_id": 2990,
+   "msg_id": 2992,
    "subtype": "course_club",
-   "format": "mixed",
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 11,
+   "age_max": 12,
    "city": "Москва",
-   "start_date": null,
+   "start_date": "2027-01-02",
    "age": null,
    "group": "next_week",
-   "age_days": 4,
+   "age_days": 0,
    "age_display": "6–8 классы"
   },
   {
@@ -165,7 +96,7 @@
    "start_date": "2026-11-08",
    "age": null,
    "group": "next_week",
-   "age_days": 3,
+   "age_days": 4,
    "age_display": "4–7 классы"
   },
   {
@@ -187,7 +118,7 @@
    "start_date": "2026-11-14",
    "age": null,
    "group": "later",
-   "age_days": 4,
+   "age_days": 5,
    "age_display": "возраст не указан"
   },
   {
@@ -212,7 +143,7 @@
    "start_date": "2026-11-14",
    "age": null,
    "group": "later",
-   "age_days": 0,
+   "age_days": 1,
    "age_display": "7–11 классы"
   },
   {
@@ -237,7 +168,7 @@
    "start_date": null,
    "age": null,
    "group": "later",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "6–8 классы"
   },
   {
@@ -262,19 +193,19 @@
    "start_date": "2026-11-21",
    "age": null,
    "group": "later",
-   "age_days": 26,
+   "age_days": 27,
    "age_display": "10–11 классы"
   },
   {
    "school": "№1535",
-   "title": "Конференция проектных работ по экологии и здоровью человека",
+   "title": "Конференция проектных работ «Среда обитания и здоровье человека»",
    "grades": null,
    "deadline": "2026-12-05",
    "action": "Подать заявку на участие в конференции",
-   "url": "https://t.me/lyceum1535/12823",
-   "posted": "2026-10-20",
+   "url": "https://t.me/lyceum1535/12864",
+   "posted": "2026-10-27",
    "channel": "lyceum1535",
-   "msg_id": 12823,
+   "msg_id": 12864,
    "subtype": "other",
    "format": "online",
    "direction": "STEAM",
@@ -284,7 +215,7 @@
    "start_date": "2026-12-05",
    "age": null,
    "group": "later",
-   "age_days": 6,
+   "age_days": 0,
    "age_display": "возраст не указан"
   },
   {
@@ -309,11 +240,36 @@
    "start_date": null,
    "age": null,
    "group": "later",
-   "age_days": 17,
+   "age_days": 18,
    "age_display": "6–8 классы"
   }
  ],
  "undated": [
+  {
+   "school": "Гимназия №1543",
+   "title": "Интенсив по углублённой математике для 9 классов",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на интенсив для 9 класса",
+   "url": "https://t.me/ru1543/3732",
+   "posted": "2026-10-27",
+   "channel": "ru1543",
+   "msg_id": 3732,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": 15,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9 класс"
+  },
   {
    "school": "Гимназия №1543",
    "title": "Интенсив по литературе и истории для 9 классов, подготовка в профиль",
@@ -336,7 +292,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 0,
+   "age_days": 1,
    "age_display": "9 класс"
   },
   {
@@ -361,7 +317,7 @@
    "start_date": null,
    "age": "6–7 лет",
    "group": "undated",
-   "age_days": 0,
+   "age_days": 1,
    "age_display": "дошкольники"
   },
   {
@@ -386,7 +342,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 0,
+   "age_days": 1,
    "age_display": "7 класс"
   },
   {
@@ -411,7 +367,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 0,
+   "age_days": 1,
    "age_display": "5–8 классы"
   },
   {
@@ -436,7 +392,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 1,
+   "age_days": 2,
    "age_display": "1–9 классы"
   },
   {
@@ -461,7 +417,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 3,
+   "age_days": 4,
    "age_display": "5–8 классы"
   },
   {
@@ -486,8 +442,30 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 3,
+   "age_days": 4,
    "age_display": "9 класс"
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "Космические каникулы в Курчатовской школе",
+   "grades": null,
+   "deadline": null,
+   "action": "Зарегистрироваться на мос.ру",
+   "url": "https://t.me/kurchat/10212",
+   "posted": "2026-10-21",
+   "channel": "kurchat",
+   "msg_id": 10212,
+   "subtype": "other",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": "2026-10-26",
+   "age": null,
+   "group": "undated",
+   "age_days": 6,
+   "age_display": "возраст не указан"
   },
   {
    "school": "Курчатовская школа",
@@ -511,7 +489,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 5,
+   "age_days": 6,
    "age_display": "9–11 классы"
   },
   {
@@ -536,7 +514,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 5,
+   "age_days": 6,
    "age_display": "дошкольники"
   },
   {
@@ -561,7 +539,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 5,
+   "age_days": 6,
    "age_display": "6–9 классы"
   },
   {
@@ -586,7 +564,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 7,
+   "age_days": 8,
    "age_display": "10 класс"
   },
   {
@@ -608,7 +586,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 7,
+   "age_days": 8,
    "age_display": "возраст не указан"
   },
   {
@@ -633,8 +611,33 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 7,
+   "age_days": 8,
    "age_display": "6 класс"
+  },
+  {
+   "school": "№57",
+   "title": "Онлайн-курс по русскому языку для 2–3 классов, 26–30 октября",
+   "grades": [
+    2,
+    3
+   ],
+   "deadline": null,
+   "action": "Записаться на онлайн-курс по русскому языку",
+   "url": "https://t.me/school57official/7868",
+   "posted": "2026-10-16",
+   "channel": "school57official",
+   "msg_id": 7868,
+   "subtype": "course_club",
+   "format": "online",
+   "direction": "HASS",
+   "age_min": 8,
+   "age_max": 9,
+   "city": "Москва",
+   "start_date": "2026-10-26",
+   "age": null,
+   "group": "undated",
+   "age_days": 11,
+   "age_display": "2–3 классы"
   },
   {
    "school": "Летово",
@@ -658,7 +661,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 11,
+   "age_days": 12,
    "age_display": "6–8 классы"
   },
   {
@@ -683,7 +686,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 11,
+   "age_days": 12,
    "age_display": "1–7 классы"
   },
   {
@@ -708,7 +711,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 11,
+   "age_days": 12,
    "age_display": "6–9 классы"
   },
   {
@@ -733,8 +736,30 @@
    "start_date": "2026-10-23",
    "age": null,
    "group": "undated",
-   "age_days": 12,
+   "age_days": 13,
    "age_display": "7–9 классы"
+  },
+  {
+   "school": "Курчатовская школа",
+   "title": "Космические каникулы: осенняя смена 26–30 октября",
+   "grades": null,
+   "deadline": null,
+   "action": "Записаться на осеннюю смену 26–30 октября",
+   "url": "https://t.me/kurchat/10170",
+   "posted": "2026-10-13",
+   "channel": "kurchat",
+   "msg_id": 10170,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": "2026-10-26",
+   "age": null,
+   "group": "undated",
+   "age_days": 14,
+   "age_display": "возраст не указан"
   },
   {
    "school": "№548 «Царицыно»",
@@ -758,7 +783,7 @@
    "start_date": "2026-10-15",
    "age": null,
    "group": "undated",
-   "age_days": 13,
+   "age_days": 14,
    "age_display": "1–7 классы"
   },
   {
@@ -780,7 +805,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 14,
+   "age_days": 15,
    "age_display": "возраст не указан"
   },
   {
@@ -805,8 +830,30 @@
    "start_date": "2026-10-22",
    "age": null,
    "group": "undated",
-   "age_days": 14,
+   "age_days": 15,
    "age_display": "5–6 классы"
+  },
+  {
+   "school": "№1535",
+   "title": "Допнабор в онлайн-курсы «Открытой школы» для абитуриентов",
+   "grades": null,
+   "deadline": null,
+   "action": "Записать на онлайн-курсы, старт 26 октября",
+   "url": "https://t.me/lyceum1535/12694",
+   "posted": "2026-10-08",
+   "channel": "lyceum1535",
+   "msg_id": 12694,
+   "subtype": "admission_prep",
+   "format": "online",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": "2026-10-26",
+   "age": null,
+   "group": "undated",
+   "age_days": 19,
+   "age_display": "возраст не указан"
   },
   {
    "school": "№1535",
@@ -830,7 +877,7 @@
    "start_date": "2026-10-15",
    "age": null,
    "group": "undated",
-   "age_days": 18,
+   "age_days": 19,
    "age_display": "7–11 классы"
   },
   {
@@ -855,7 +902,7 @@
    "start_date": "2026-10-12",
    "age": null,
    "group": "undated",
-   "age_days": 19,
+   "age_days": 20,
    "age_display": "6–7 классы"
   },
   {
@@ -877,7 +924,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 19,
+   "age_days": 20,
    "age_display": "возраст не указан"
   },
   {
@@ -902,7 +949,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 19,
+   "age_days": 20,
    "age_display": "0–1 классы"
   },
   {
@@ -927,7 +974,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 19,
+   "age_days": 20,
    "age_display": "9 класс"
   },
   {
@@ -952,7 +999,7 @@
    "start_date": "2026-10-12",
    "age": null,
    "group": "undated",
-   "age_days": 20,
+   "age_days": 21,
    "age_display": "9–10 классы"
   },
   {
@@ -977,7 +1024,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 20,
+   "age_days": 21,
    "age_display": "4–11 классы"
   },
   {
@@ -1002,7 +1049,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 22,
+   "age_days": 23,
    "age_display": "7 класс"
   },
   {
@@ -1027,7 +1074,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "3–6 классы"
   },
   {
@@ -1052,7 +1099,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "6–9 классы"
   },
   {
@@ -1077,7 +1124,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "3–6 классы"
   },
   {
@@ -1102,7 +1149,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "3–6 классы"
   },
   {
@@ -1127,7 +1174,7 @@
    "start_date": null,
    "age": "7–9 лет",
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "1–3 классы"
   },
   {
@@ -1152,7 +1199,7 @@
    "start_date": null,
    "age": "7–13 лет",
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "1–7 классы"
   },
   {
@@ -1177,7 +1224,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "3–6 классы"
   },
   {
@@ -1202,7 +1249,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "6 класс"
   },
   {
@@ -1227,7 +1274,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 25,
+   "age_days": 26,
    "age_display": "3–6 классы"
   },
   {
@@ -1249,7 +1296,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 26,
+   "age_days": 27,
    "age_display": "возраст не указан"
   },
   {
@@ -1274,7 +1321,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 26,
+   "age_days": 27,
    "age_display": "10–11 классы"
   },
   {
@@ -1299,7 +1346,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 26,
+   "age_days": 27,
    "age_display": "10 класс"
   },
   {
@@ -1324,7 +1371,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "4–6 классы"
   },
   {
@@ -1349,7 +1396,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "дошкольники"
   },
   {
@@ -1374,7 +1421,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "4–11 классы"
   },
   {
@@ -1396,7 +1443,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "возраст не указан"
   },
   {
@@ -1421,7 +1468,7 @@
    "start_date": null,
    "age": "7–12 лет",
    "group": "undated",
-   "age_days": 27,
+   "age_days": 28,
    "age_display": "1–6 классы"
   },
   {
@@ -1446,7 +1493,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 28,
+   "age_days": 29,
    "age_display": "5 класс"
   },
   {
@@ -1471,7 +1518,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 28,
+   "age_days": 29,
    "age_display": "1–4 классы"
   },
   {
@@ -1493,30 +1540,8 @@
    "start_date": null,
    "age": "для взрослых",
    "group": "undated",
-   "age_days": 28,
+   "age_days": 29,
    "age_display": "для взрослых"
-  },
-  {
-   "school": "№1535",
-   "title": "Допнабор в онлайн-курсы «Открытой школы» для будущих абитуриентов",
-   "grades": null,
-   "deadline": null,
-   "action": "Записаться в онлайн-курсы «Открытой школы»",
-   "url": "https://t.me/lyceum1535/12595",
-   "posted": "2026-09-28",
-   "channel": "lyceum1535",
-   "msg_id": 12595,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 28,
-   "age_display": "возраст не указан"
   },
   {
    "school": "№1535",
@@ -1537,7 +1562,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 28,
+   "age_days": 29,
    "age_display": "возраст не указан"
   },
   {
@@ -1559,7 +1584,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 29,
+   "age_days": 30,
    "age_display": "возраст не указан"
   },
   {
@@ -1604,7 +1629,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 30,
+   "age_days": 31,
    "age_display": "4–6 классы"
   },
   {
@@ -1629,7 +1654,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 30,
+   "age_days": 31,
    "age_display": "10 класс"
   },
   {
@@ -1674,7 +1699,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 32,
+   "age_days": 33,
    "age_display": "6 класс"
   },
   {
@@ -1696,7 +1721,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 32,
+   "age_days": 33,
    "age_display": "возраст не указан"
   },
   {
@@ -1721,7 +1746,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 32,
+   "age_days": 33,
    "age_display": "дошкольники"
   },
   {
@@ -1743,7 +1768,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 32,
+   "age_days": 33,
    "age_display": "возраст не указан"
   },
   {
@@ -1768,7 +1793,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 32,
+   "age_days": 33,
    "age_display": "6–8 классы"
   },
   {
@@ -1813,7 +1838,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 33,
+   "age_days": 34,
    "age_display": "3–11 классы"
   },
   {
@@ -1838,7 +1863,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 33,
+   "age_days": 34,
    "age_display": "9 класс"
   },
   {
@@ -1863,7 +1888,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 33,
+   "age_days": 34,
    "age_display": "7–8 классы"
   },
   {
@@ -1888,7 +1913,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 33,
+   "age_days": 34,
    "age_display": "4–7 классы"
   },
   {
@@ -1910,7 +1935,7 @@
    "start_date": "2026-09-26",
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "возраст не указан"
   },
   {
@@ -1932,7 +1957,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "возраст не указан"
   },
   {
@@ -1957,7 +1982,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "7 класс"
   },
   {
@@ -1982,7 +2007,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "7–11 классы"
   },
   {
@@ -2004,7 +2029,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "возраст не указан"
   },
   {
@@ -2029,7 +2054,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 34,
+   "age_days": 35,
    "age_display": "10–11 классы"
   },
   {
@@ -2054,7 +2079,7 @@
    "start_date": null,
    "age": "2–3 лет",
    "group": "undated",
-   "age_days": 35,
+   "age_days": 36,
    "age_display": "дошкольники"
   },
   {
@@ -2079,7 +2104,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 35,
+   "age_days": 36,
    "age_display": "7–11 классы"
   },
   {
@@ -2104,7 +2129,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 35,
+   "age_days": 36,
    "age_display": "4 класс"
   },
   {
@@ -2146,7 +2171,7 @@
    "start_date": null,
    "age": "для взрослых",
    "group": "undated",
-   "age_days": 36,
+   "age_days": 37,
    "age_display": "для взрослых"
   },
   {
@@ -2171,7 +2196,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 37,
+   "age_days": 38,
    "age_display": "9 класс"
   },
   {
@@ -2196,7 +2221,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 38,
+   "age_days": 39,
    "age_display": "6 класс"
   },
   {
@@ -2221,7 +2246,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 38,
+   "age_days": 39,
    "age_display": "9–11 классы"
   },
   {
@@ -2266,15 +2291,15 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 39,
+   "age_days": 40,
    "age_display": "4 класс"
   },
   {
    "school": "ЛИТ 1533",
    "title": "Набор в кружок углублённой информатики (Python) для 7 классов",
    "grades": [
-    6,
-    8
+    7,
+    7
    ],
    "deadline": null,
    "action": "Записаться на mos.ru, код 2522263",
@@ -2291,8 +2316,8 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 39,
-   "age_display": "6–8 классы"
+   "age_days": 40,
+   "age_display": "7 класс"
   },
   {
    "school": "Новая школа",
@@ -2313,7 +2338,7 @@
    "start_date": "2026-10-09",
    "age": null,
    "group": "undated",
-   "age_days": 39,
+   "age_days": 40,
    "age_display": "возраст не указан"
   },
   {
@@ -2335,7 +2360,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 39,
+   "age_days": 40,
    "age_display": "возраст не указан"
   },
   {
@@ -2357,7 +2382,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 39,
+   "age_days": 40,
    "age_display": "возраст не указан"
   },
   {
@@ -2382,7 +2407,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "7–9 классы"
   },
   {
@@ -2407,7 +2432,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "8 класс"
   },
   {
@@ -2432,7 +2457,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "5–8 классы"
   },
   {
@@ -2457,7 +2482,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "9–10 классы"
   },
   {
@@ -2479,7 +2504,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "возраст не указан"
   },
   {
@@ -2504,7 +2529,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 40,
+   "age_days": 41,
    "age_display": "7–10 классы"
   },
   {
@@ -2529,7 +2554,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 41,
+   "age_days": 42,
    "age_display": "8–11 классы"
   },
   {
@@ -2554,7 +2579,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 41,
+   "age_days": 42,
    "age_display": "7 класс"
   },
   {
@@ -2579,7 +2604,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 41,
+   "age_days": 42,
    "age_display": "3–8 классы"
   },
   {
@@ -2604,7 +2629,7 @@
    "start_date": null,
    "age": "от 7 лет",
    "group": "undated",
-   "age_days": 41,
+   "age_days": 42,
    "age_display": "1–11 классы"
   },
   {
@@ -2629,7 +2654,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 41,
+   "age_days": 42,
    "age_display": "8–9 классы"
   },
   {
@@ -2654,7 +2679,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 42,
+   "age_days": 43,
    "age_display": "10–11 классы"
   },
   {
@@ -2679,7 +2704,7 @@
    "start_date": null,
    "age": "11–13 лет",
    "group": "undated",
-   "age_days": 42,
+   "age_days": 43,
    "age_display": "7–8 классы"
   },
   {
@@ -2704,7 +2729,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 42,
+   "age_days": 43,
    "age_display": "2–3 классы"
   },
   {
@@ -2729,7 +2754,7 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 42,
+   "age_days": 43,
    "age_display": "7–10 классы"
   },
   {
@@ -2754,83 +2779,8 @@
    "start_date": null,
    "age": null,
    "group": "undated",
-   "age_days": 43,
+   "age_days": 44,
    "age_display": "дошкольники"
-  },
-  {
-   "school": "ЛИТ 1533",
-   "title": "Набор в кружок олимпиадного программирования на C++ (8 класс)",
-   "grades": [
-    8,
-    8
-   ],
-   "deadline": null,
-   "action": "Записаться на mos.ru, код 2560261",
-   "url": "https://t.me/Lit1533/12701",
-   "posted": "2026-09-12",
-   "channel": "Lit1533",
-   "msg_id": 12701,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 44,
-   "age_display": "8 класс"
-  },
-  {
-   "school": "№1514",
-   "title": "Набор на курсы подготовки в 8-е профильные классы «Высокий старт-7»",
-   "grades": [
-    7,
-    7
-   ],
-   "deadline": null,
-   "action": "Записаться на курсы «Высокий старт-7»",
-   "url": "https://t.me/school_1514/8276",
-   "posted": "2026-09-12",
-   "channel": "school_1514",
-   "msg_id": 8276,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 44,
-   "age_display": "7 класс"
-  },
-  {
-   "school": "№1535",
-   "title": "Спецкурс «Олимпиадная экономика» для 10–11 предпринимательских классов",
-   "grades": [
-    10,
-    11
-   ],
-   "deadline": null,
-   "action": "Уточнить запись у учителя экономики",
-   "url": "https://t.me/lyceum1535/12469",
-   "posted": "2026-09-12",
-   "channel": "lyceum1535",
-   "msg_id": 12469,
-   "subtype": null,
-   "format": null,
-   "direction": null,
-   "age_min": null,
-   "age_max": null,
-   "city": null,
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 44,
-   "age_display": "10–11 классы"
   },
   {
    "school": "№1517",
