@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-28",
- "count_dated": 9,
- "count_undated": 109,
+ "count_dated": 10,
+ "count_undated": 111,
  "dated": [
   {
    "school": "№2107",
@@ -23,6 +23,28 @@
    "web_event_id": 13988,
    "age_display": "возраст не указан",
    "group": "later"
+  },
+  {
+   "school": "Летово",
+   "title": "Вебинар: подготовка к олимпиадам и поступление по БВИ, 29 октября",
+   "grades": null,
+   "deadline": "2026-10-29",
+   "action": "Зарегистрироваться на вебинар к 29 октября",
+   "url": "https://t.me/letovonews/2993",
+   "posted": "2026-10-28",
+   "channel": "letovonews",
+   "msg_id": 2993,
+   "subtype": "admission_prep",
+   "format": "online",
+   "direction": null,
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": "2026-10-29",
+   "age": null,
+   "group": "tomorrow",
+   "age_days": 0,
+   "age_display": "возраст не указан"
   },
   {
    "school": "Летово",
@@ -51,27 +73,27 @@
   },
   {
    "school": "№1514",
-   "title": "Пробный экзамен по русскому языку (4 кл.) и диагностика по словесности (7 кл.)",
+   "title": "Пробный экзамен по русскому (4 кл.) и диагностика (7 кл.) 8 ноября",
    "grades": [
     4,
     7
    ],
    "deadline": "2026-11-08",
-   "action": "Следить за стартом записи 28 октября",
-   "url": "https://t.me/school_1514/8650",
-   "posted": "2026-10-23",
+   "action": "Записаться на мос.ру: коды 2593885 и 2594961",
+   "url": "https://t.me/school_1514/8697",
+   "posted": "2026-10-28",
    "channel": "school_1514",
-   "msg_id": 8650,
-   "subtype": "admission_prep",
+   "msg_id": 8697,
+   "subtype": "class_admission",
    "format": "offline",
    "direction": "HASS",
-   "age_min": 9,
+   "age_min": 10,
    "age_max": 13,
    "city": "Москва",
    "start_date": "2026-11-08",
    "age": null,
    "group": "next_week",
-   "age_days": 5,
+   "age_days": 0,
    "age_display": "4–7 классы"
   },
   {
@@ -220,6 +242,53 @@
   }
  ],
  "undated": [
+  {
+   "school": "Гимназия №1543",
+   "title": "Интенсив по физике и химии для 9 классов в Гимназии 1543",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Уточнить запись на интенсив",
+   "url": "https://t.me/ru1543/3733",
+   "posted": "2026-10-28",
+   "channel": "ru1543",
+   "msg_id": 3733,
+   "subtype": "admission_prep",
+   "format": null,
+   "direction": "STEAM",
+   "age_min": 14,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9 класс"
+  },
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Курс «Китайский язык Start» для детей: набор в группы",
+   "grades": null,
+   "deadline": null,
+   "action": "Оставить заявку на курс китайского",
+   "url": "https://t.me/top_it_school/1077",
+   "posted": "2026-10-28",
+   "channel": "top_it_school",
+   "msg_id": 1077,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": null,
+   "age_max": null,
+   "city": null,
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "возраст не указан"
+  },
   {
    "school": "Гимназия №1543",
    "title": "Интенсив по углублённой математике для 9 классов",
