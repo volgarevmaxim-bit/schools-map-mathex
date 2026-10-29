@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-29",
- "count_dated": 10,
- "count_undated": 107,
+ "count_dated": 11,
+ "count_undated": 108,
  "dated": [
   {
    "school": "№2107",
@@ -70,6 +70,31 @@
    "group": "this_week",
    "age_days": 2,
    "age_display": "6–8 классы"
+  },
+  {
+   "school": "Бауманская инженерная школа №1580",
+   "title": "Регистрация на Предпрофессиональную олимпиаду школьников",
+   "grades": [
+    8,
+    11
+   ],
+   "deadline": "2026-11-05",
+   "action": "Зарегистрироваться на олимпиаду для 8–11 классов",
+   "url": "https://t.me/sch1580/14004",
+   "posted": "2026-10-29",
+   "channel": "sch1580",
+   "msg_id": 14004,
+   "subtype": "other",
+   "format": "mixed",
+   "direction": "STEAM",
+   "age_min": 14,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": "2026-11-05",
+   "age": null,
+   "group": "next_week",
+   "age_days": 0,
+   "age_display": "8–11 классы"
   },
   {
    "school": "№1514",
@@ -242,6 +267,31 @@
   }
  ],
  "undated": [
+  {
+   "school": "Гимназия №1543",
+   "title": "Интенсив по английскому и обществознанию для 9 классов",
+   "grades": [
+    9,
+    9
+   ],
+   "deadline": null,
+   "action": "Уточнить запись на интенсив и расписание курсов",
+   "url": "https://t.me/ru1543/3734",
+   "posted": "2026-10-29",
+   "channel": "ru1543",
+   "msg_id": 3734,
+   "subtype": "course_club",
+   "format": "offline",
+   "direction": "HASS",
+   "age_min": 14,
+   "age_max": 15,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "9 класс"
+  },
   {
    "school": "Гимназия №1543",
    "title": "Интенсив по физике и химии для 9 классов в Гимназии 1543",
