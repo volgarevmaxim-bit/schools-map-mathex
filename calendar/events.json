@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-30",
  "count_dated": 10,
- "count_undated": 103,
+ "count_undated": 104,
  "dated": [
   {
    "school": "№2107",
@@ -245,6 +245,31 @@
   }
  ],
  "undated": [
+  {
+   "school": "Хорошкола",
+   "title": "Профориентационный форум для 7–11 классов, родителей и педагогов",
+   "grades": [
+    7,
+    11
+   ],
+   "deadline": null,
+   "action": "Зарегистрироваться на профориентационный форум",
+   "url": "https://t.me/horoschool/11730",
+   "posted": "2026-10-30",
+   "channel": "horoschool",
+   "msg_id": 11730,
+   "subtype": "other",
+   "format": "offline",
+   "direction": "other",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "7–11 классы"
+  },
   {
    "school": "Гимназия №1543",
    "title": "Интенсив по английскому и обществознанию для 9 классов",
