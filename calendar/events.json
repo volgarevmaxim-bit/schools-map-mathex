@@ -1,7 +1,7 @@
 {
  "generated": "2026-10-31",
  "count_dated": 10,
- "count_undated": 98,
+ "count_undated": 99,
  "dated": [
   {
    "school": "№2107",
@@ -245,6 +245,28 @@
   }
  ],
  "undated": [
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Онлайн-школа TOP IT SCHOOL: обучение из любого города",
+   "grades": null,
+   "deadline": null,
+   "action": "Узнать об онлайн-обучении в TOP IT SCHOOL",
+   "url": "https://t.me/top_it_school/1078",
+   "posted": "2026-10-31",
+   "channel": "top_it_school",
+   "msg_id": 1078,
+   "subtype": "class_admission",
+   "format": "online",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": null,
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "возраст не указан"
+  },
   {
    "school": "Хорошкола",
    "title": "Профориентационный форум для 7–11 классов, родителей и педагогов",
