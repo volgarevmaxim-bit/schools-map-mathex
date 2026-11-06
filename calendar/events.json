@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-06",
- "count_dated": 12,
+ "count_dated": 13,
  "count_undated": 88,
  "dated": [
   {
@@ -51,28 +51,53 @@
   },
   {
    "school": "Европейская гимназия",
-   "title": "День открытых дверей начальной школы 12 ноября",
+   "title": "День открытых дверей Европейской гимназии 12 ноября",
    "grades": [
     0,
     4
    ],
    "deadline": "2026-11-12",
-   "action": "Зарегистрироваться на ДОД 12 ноября",
-   "url": "https://t.me/eurogym_ru/1293",
-   "posted": "2026-11-03",
+   "action": "Записаться на день открытых дверей 12 ноября",
+   "url": "https://t.me/eurogym_ru/1304",
+   "posted": "2026-11-06",
    "channel": "eurogym_ru",
-   "msg_id": 1293,
+   "msg_id": 1304,
    "subtype": "open_house",
    "format": "offline",
    "direction": null,
    "age_min": 6,
-   "age_max": 10,
+   "age_max": 11,
    "city": "Москва",
    "start_date": null,
    "age": null,
    "group": "this_week",
-   "age_days": 3,
+   "age_days": 0,
    "age_display": "0–4 классы"
+  },
+  {
+   "school": "Ломоносовская школа",
+   "title": "День индивидуальных экскурсий 14 ноября и подготовительные курсы",
+   "grades": [
+    0,
+    0
+   ],
+   "deadline": "2026-11-14",
+   "action": "Записаться на экскурсию 14 ноября по телефону",
+   "url": "https://t.me/lomon_school/13656",
+   "posted": "2026-11-06",
+   "channel": "lomon_school",
+   "msg_id": 13656,
+   "subtype": "open_house",
+   "format": "offline",
+   "direction": null,
+   "age_min": 5,
+   "age_max": 7,
+   "city": "Москва",
+   "start_date": null,
+   "age": "от 5 лет",
+   "group": "next_week",
+   "age_days": 0,
+   "age_display": "дошкольники"
   },
   {
    "school": "Новая школа",
@@ -292,6 +317,31 @@
   }
  ],
  "undated": [
+  {
+   "school": "ТОР IT SCHOOL",
+   "title": "Бесплатный пробный день в TOP IT SCHOOL",
+   "grades": [
+    1,
+    9
+   ],
+   "deadline": null,
+   "action": "Записаться на бесплатный пробный день",
+   "url": "https://t.me/top_it_school/1086",
+   "posted": "2026-11-06",
+   "channel": "top_it_school",
+   "msg_id": 1086,
+   "subtype": "open_house",
+   "format": "offline",
+   "direction": "STEAM",
+   "age_min": null,
+   "age_max": null,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "undated",
+   "age_days": 0,
+   "age_display": "1–9 классы"
+  },
   {
    "school": "Гимназия №1543",
    "title": "Запись на курсы подготовки к ОГЭ и в профильные классы для 9-классников",
@@ -707,31 +757,6 @@
    "group": "undated",
    "age_days": 11,
    "age_display": "5–8 классы"
-  },
-  {
-   "school": "ТОР IT SCHOOL",
-   "title": "Пробный день по изучению языков в TOP IT SCHOOL",
-   "grades": [
-    1,
-    9
-   ],
-   "deadline": null,
-   "action": "Записаться на пробный день",
-   "url": "https://t.me/top_it_school/1071",
-   "posted": "2026-10-25",
-   "channel": "top_it_school",
-   "msg_id": 1071,
-   "subtype": "course_club",
-   "format": "offline",
-   "direction": "HASS",
-   "age_min": null,
-   "age_max": null,
-   "city": "Москва",
-   "start_date": null,
-   "age": null,
-   "group": "undated",
-   "age_days": 12,
-   "age_display": "1–9 классы"
   },
   {
    "school": "№1535",
