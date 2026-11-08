@@ -1,29 +1,8 @@
 {
  "generated": "2026-11-08",
- "count_dated": 15,
- "count_undated": 79,
+ "count_dated": 14,
+ "count_undated": 83,
  "dated": [
-  {
-   "school": "№2107",
-   "domain": "sch2107.mskobr.ru",
-   "title": "ДЕНЬ ОТКРЫТЫХ ДВЕРЕЙ В СТАРШЕЙ ШКОЛЕ 2107",
-   "grades": null,
-   "deadline": "2026-10-24",
-   "time": "10:00",
-   "action": null,
-   "url": "https://sch2107.mskobr.ru/edu-news/15286",
-   "url_alt": "https://forms.yandex.ru/u/69981f99e010dbafb7ac363c/",
-   "source": "web",
-   "place": "ул. Гиляровского, 21 (м. Проспект Мира / Сухаревская) Мы расскажем всё о поступлении и покажем, чем живет наша школа! Скорее регистрируйся: https://forms.yandex.ru/u/69981f99e010db",
-   "registration_url": "https://forms.yandex.ru/u/69981f99e010dbafb7ac363c/",
-   "posted": "2026-10-15",
-   "channel": null,
-   "msg_id": null,
-   "format": "offline",
-   "web_event_id": 13988,
-   "age_display": "возраст не указан",
-   "group": "later"
-  },
   {
    "school": "№1514",
    "title": "Пробный экзамен по русскому (4 кл.) и диагностика (7 кл.) 8 ноября",
@@ -434,6 +413,26 @@
    "age_display": "возраст не указан"
   },
   {
+   "school": "№1329",
+   "domain": "sch1329.mskobr.ru",
+   "title": "Предпрофклассы. День открытых дверей",
+   "grades": null,
+   "deadline": null,
+   "time": "10:00",
+   "action": null,
+   "url": "https://sch1329.mskobr.ru/edu-news/37300",
+   "url_alt": "https://gorizonty.mos.ru/?platforms=505",
+   "source": "web",
+   "place": "Москва, ул. Лобачевского д. 66",
+   "registration_url": "https://gorizonty.mos.ru/?platforms=505",
+   "posted": "2026-11-05",
+   "channel": null,
+   "msg_id": null,
+   "format": "offline",
+   "web_event_id": 14135,
+   "age_display": "возраст не указан"
+  },
+  {
    "school": "Хорошкола",
    "title": "Профориентационный форум «Траектория будущего» для 7–11 классов",
    "grades": [
@@ -507,6 +506,26 @@
    "group": "undated",
    "age_days": 5,
    "age_display": "3–6 классы"
+  },
+  {
+   "school": "№1535",
+   "domain": "lyc1535.mskobr.ru",
+   "title": "Приглашаем на Дни открытых дверей в Лицее № 1535",
+   "grades": null,
+   "deadline": null,
+   "time": "18:30",
+   "action": null,
+   "url": "https://lyc1535.mskobr.ru/edu-news/2962",
+   "url_alt": "https://forms.yandex.ru/u/6ae8428d5057b2067aeb8def",
+   "source": "web",
+   "place": "Малый Саввинский переулок, 8",
+   "registration_url": "https://forms.yandex.ru/u/6ae8428d5057b2067aeb8def",
+   "posted": "2026-11-03",
+   "channel": null,
+   "msg_id": null,
+   "format": "offline",
+   "web_event_id": 14105,
+   "age_display": "возраст не указан"
   },
   {
    "school": "Хорошкола",
@@ -828,6 +847,26 @@
    "age_display": "7–11 классы"
   },
   {
+   "school": "№1575",
+   "domain": "lyc1575.mskobr.ru",
+   "title": "Школа — это больше, чем уроки: в школе прошёл День открытых дверей",
+   "grades": null,
+   "deadline": null,
+   "time": null,
+   "action": null,
+   "url": "https://lyc1575.mskobr.ru/edu-news/18772",
+   "url_alt": null,
+   "source": "web",
+   "place": null,
+   "registration_url": null,
+   "posted": "2026-10-24",
+   "channel": null,
+   "msg_id": null,
+   "format": null,
+   "web_event_id": 14117,
+   "age_display": "возраст не указан"
+  },
+  {
    "school": "Гимназия №1543",
    "title": "Курс «Олимпиадная филология» для 5–6 и 8 классов",
    "grades": [
@@ -1045,6 +1084,26 @@
    "group": "undated",
    "age_days": 20,
    "age_display": "6 класс"
+  },
+  {
+   "school": "№1474",
+   "domain": "sch1474s.mskobr.ru",
+   "title": "Кадеты знакомятся с работой полиции!",
+   "grades": null,
+   "deadline": null,
+   "time": null,
+   "action": null,
+   "url": "https://sch1474s.mskobr.ru/edu-news/8560",
+   "url_alt": null,
+   "source": "web",
+   "place": null,
+   "registration_url": null,
+   "posted": "2026-10-19",
+   "channel": null,
+   "msg_id": null,
+   "format": null,
+   "web_event_id": 14145,
+   "age_display": "возраст не указан"
   },
   {
    "school": "№57",
@@ -2170,6 +2229,26 @@
    "age_display": "возраст не указан"
   },
   {
+   "school": "№1533 «ЛИТ»",
+   "domain": "lyc1533.mskobr.ru",
+   "title": "Путь к выбору профильного вуза",
+   "grades": null,
+   "deadline": null,
+   "time": null,
+   "action": null,
+   "url": "https://lyc1533.mskobr.ru/edu-news/3913",
+   "url_alt": null,
+   "source": "web",
+   "place": null,
+   "registration_url": null,
+   "posted": "2026-09-04",
+   "channel": null,
+   "msg_id": null,
+   "format": null,
+   "web_event_id": 14098,
+   "age_display": "возраст не указан"
+  },
+  {
    "school": "№1517",
    "domain": "1517.mskobr.ru",
    "title": "График встреч и консультаций педагогов ГБОУ Школа № 1517 с родителями в 2026-2027 учебном году",
@@ -2227,26 +2306,6 @@
    "msg_id": null,
    "format": "offline",
    "web_event_id": 955,
-   "age_display": "возраст не указан"
-  },
-  {
-   "school": "№1504",
-   "domain": "gym1504.mskobr.ru",
-   "title": "Полезные советы для родителей учеников 9-11 классов на летних каникулах",
-   "grades": null,
-   "deadline": null,
-   "time": null,
-   "action": null,
-   "url": "https://gym1504.mskobr.ru/edu-news/14470",
-   "url_alt": null,
-   "source": "web",
-   "place": null,
-   "registration_url": null,
-   "posted": "2026-08-08",
-   "channel": null,
-   "msg_id": null,
-   "format": null,
-   "web_event_id": 151,
    "age_display": "возраст не указан"
   }
  ]
