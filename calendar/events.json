@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-08",
- "count_dated": 14,
+ "count_dated": 15,
  "count_undated": 83,
  "dated": [
   {
@@ -74,6 +74,31 @@
    "group": "this_week",
    "age_days": 1,
    "age_display": "возраст не указан"
+  },
+  {
+   "school": "Бауманская инженерная школа №1580",
+   "title": "Подготовка к конкурсу «Интеллектуальный мегаполис. Потенциал» в Бауманке",
+   "grades": [
+    11,
+    11
+   ],
+   "deadline": "2026-11-14",
+   "action": "Зарегистрироваться на тренировочный этап",
+   "url": "https://t.me/sch1580/14088",
+   "posted": "2026-11-08",
+   "channel": "sch1580",
+   "msg_id": 14088,
+   "subtype": "admission_prep",
+   "format": "mixed",
+   "direction": "STEAM",
+   "age_min": 17,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": "2026-11-14",
+   "age": null,
+   "group": "this_week",
+   "age_days": 0,
+   "age_display": "11 класс"
   },
   {
    "school": "Ломоносовская школа",
