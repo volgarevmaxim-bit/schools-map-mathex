@@ -1,9 +1,9 @@
 Unified calendar build report — 2026-11-12
 ==================================================
-TG календарь: 24 dated + 70 undated (built 2026-11-12)
+TG календарь: 24 dated + 72 undated (built 2026-11-12)
 Веб unified:  1 dated + 16 undated (built 2026-11-08)
 Слияний:      0 (обогащение TG / склейка дублей)
-ИТОГ:         24 dated + 83 undated
+ИТОГ:         24 dated + 85 undated
 
 Группировка датированных:
   🗓 Сегодня: 1 (Европейская гимназия)
