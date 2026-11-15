@@ -1,31 +1,31 @@
 {
  "generated": "2026-11-15",
- "count_dated": 21,
+ "count_dated": 22,
  "count_undated": 77,
  "dated": [
   {
    "school": "Летово",
-   "title": "День открытых дверей «Летово» 15 ноября для 6–8 классов",
+   "title": "День открытых дверей в «Летово» и конкурс для гостей",
    "grades": [
     6,
     8
    ],
    "deadline": "2026-11-15",
-   "action": "Зарегистрироваться на день открытых дверей 15 ноября",
-   "url": "https://t.me/letovonews/3010",
-   "posted": "2026-11-05",
+   "action": "Посетить день открытых дверей «Летово»",
+   "url": "https://t.me/letovonews/3042",
+   "posted": "2026-11-15",
    "channel": "letovonews",
-   "msg_id": 3010,
+   "msg_id": 3042,
    "subtype": "open_house",
    "format": "offline",
    "direction": null,
-   "age_min": 12,
-   "age_max": 14,
+   "age_min": null,
+   "age_max": null,
    "city": "Москва",
-   "start_date": "2026-11-15",
+   "start_date": null,
    "age": null,
    "group": "today",
-   "age_days": 10,
+   "age_days": 0,
    "age_display": "6–8 классы"
   },
   {
@@ -74,6 +74,31 @@
    "group": "today",
    "age_days": 10,
    "age_display": "4 класс"
+  },
+  {
+   "school": "№1535",
+   "title": "Отборочный этап МОШ по труду (техника и технологии) 7–8 класс",
+   "grades": [
+    7,
+    8
+   ],
+   "deadline": "2026-11-15",
+   "action": "Подать заявку на олимпиаду до 15 ноября",
+   "url": "https://t.me/lyceum1535/13009",
+   "posted": "2026-11-15",
+   "channel": "lyceum1535",
+   "msg_id": 13009,
+   "subtype": "other",
+   "format": "online",
+   "direction": "STEAM",
+   "age_min": 13,
+   "age_max": 14,
+   "city": "Москва",
+   "start_date": null,
+   "age": null,
+   "group": "today",
+   "age_days": 0,
+   "age_display": "7–8 классы"
   },
   {
    "school": "Новая школа",
