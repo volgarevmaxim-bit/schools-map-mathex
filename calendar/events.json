@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-18",
- "count_dated": 19,
+ "count_dated": 20,
  "count_undated": 83,
  "dated": [
   {
@@ -161,6 +161,31 @@
    "web_event_id": 14339,
    "age_display": "возраст не указан",
    "group": "next_week"
+  },
+  {
+   "school": "Летово",
+   "title": "EcoSmile: кейс-чемпионат по биологии и экологии в «Летово»",
+   "grades": [
+    7,
+    11
+   ],
+   "deadline": "2026-11-29",
+   "action": "Собрать команду 3–5 человек и зарегистрироваться",
+   "url": "https://t.me/letovonews/3044",
+   "posted": "2026-11-18",
+   "channel": "letovonews",
+   "msg_id": 3044,
+   "subtype": "other",
+   "format": "mixed",
+   "direction": "STEAM",
+   "age_min": 13,
+   "age_max": 17,
+   "city": "Москва",
+   "start_date": "2026-11-29",
+   "age": null,
+   "group": "next_week",
+   "age_days": 0,
+   "age_display": "7–11 классы"
   },
   {
    "school": "№1535",
