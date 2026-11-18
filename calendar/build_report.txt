@@ -1,9 +1,9 @@
-Unified calendar build report — 2026-11-17
+Unified calendar build report — 2026-11-18
 ==================================================
-TG календарь: 15 dated + 70 undated (built 2026-11-17)
+TG календарь: 15 dated + 69 undated (built 2026-11-18)
 Веб unified:  5 dated + 17 undated (built 2026-11-15)
 Слияний:      0 (обогащение TG / склейка дублей)
-ИТОГ:         19 dated + 84 undated
+ИТОГ:         19 dated + 83 undated
 
 Группировка датированных:
   🗓 Сегодня: 0
